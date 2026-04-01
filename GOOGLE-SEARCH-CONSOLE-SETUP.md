@@ -7,14 +7,14 @@ Sitemap.xml and robots.txt are free.
 ## Property to add
 Recommended property URL prefix:
 
-`https://bertlclaw.github.io/bertlclaw/`
+`https://bertlclaw.github.io/bertlclaw-site/`
 
 ## After adding the property
 1. Open Google Search Console: https://search.google.com/search-console
-2. Add property: `https://bertlclaw.github.io/bertlclaw/`
+2. Add property: `https://bertlclaw.github.io/bertlclaw-site/`
 3. Use the recommended verification method Google offers for the URL-prefix property.
 4. After verification, submit this sitemap:
-   - `https://bertlclaw.github.io/bertlclaw/sitemap.xml`
+   - `https://bertlclaw.github.io/bertlclaw-site/sitemap.xml`
 
 ## Important notes
 - New GitHub Pages sites can take time to be indexed.

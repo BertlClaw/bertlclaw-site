@@ -1,6 +1,6 @@
 # BertlClaw Go-Live QA Checklist
 
-Praktische Release-Checkliste für den Livegang von `https://bertlclaw.github.io/bertlclaw/`.
+Praktische Release-Checkliste für den Livegang von `https://bertlclaw.github.io/bertlclaw-site/`.
 
 Stand der lokalen Prüfung: 2026-03-31  
 Basis: aktueller Workspace-Inhalt (`index.html`, Service-/Use-Case-Seiten, `impressum.html`, `datenschutz.html`, `danke.html`, `sitemap.xml`, GitHub-/Brand-Dokumente).

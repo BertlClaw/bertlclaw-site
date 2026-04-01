@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bertlclaw.github.io/bertlclaw/sitemap.xml
+Sitemap: https://bertlclaw.github.io/bertlclaw-site/sitemap.xml

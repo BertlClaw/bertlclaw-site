@@ -34,9 +34,9 @@ Kein anonymer Agentur-Auftritt, sondern ein klar zugeordnetes deutschsprachiges 
 
 ## Links
 
-- Website: https://bertlclaw.github.io/bertlclaw/
-- Leistungen: https://bertlclaw.github.io/bertlclaw/services.html
-- Anwendungsfälle: https://bertlclaw.github.io/bertlclaw/use-cases.html
+- Website: https://bertlclaw.github.io/bertlclaw-site/
+- Leistungen: https://bertlclaw.github.io/bertlclaw-site/services.html
+- Anwendungsfälle: https://bertlclaw.github.io/bertlclaw-site/use-cases.html
 
 ## Kurzprofil
 
@@ -47,7 +47,7 @@ BertlClaw verbindet klare Kommunikation, digitale Struktur und praktische Umsetz
 
 - **Display name:** BertlClaw
 - **Bio:** Projektmarke von Dominic Reisenbichler, MSc. für Landingpages, Website-Texte, Positionierung, digitale Struktur und KI-Unterstützung.
-- **Website:** https://bertlclaw.github.io/bertlclaw/
+- **Website:** https://bertlclaw.github.io/bertlclaw-site/
 - **Location:** Austria
 - **Pronouns:** leer lassen, wenn nicht bewusst gewünscht
 
