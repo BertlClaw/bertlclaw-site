@@ -1,0 +1,24 @@
+project_name: 
+project_slug: 
+year: 2026
+client_name: 
+client_alias: 
+offer_type: 
+industry: 
+start_date: 
+end_date: 
+status: intake
+owner: Dominic Reisenbichler
+public_naming_status: unknown
+publish_permission: internal-only
+publishability_target: anonymous-public
+evidence_completeness: missing
+final_url: 
+primary_problem: 
+visible_bottleneck: 
+visible_difference: 
+proof_priority: medium
+best_proof_atoms: []
+allowed_assets: []
+restricted_assets: []
+next_proof_action: capture-before-state
