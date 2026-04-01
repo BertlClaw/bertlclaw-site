@@ -1,3 +1,4 @@
 [2026-04-02 00:14 CEST] Logging directive established: maintain a self-updating operations log for BertlClaw work with CEST timestamps covering what happens and what gets implemented.
 [2026-04-02 00:18 CEST] Reminder system created: BERTLCLAW-REMINDER-SYSTEM.md defines hourly full-hour updates, daily GitHub ticket reminder, log coupling, and required future scheduler/heartbeat implementation.
 [2026-04-02 00:20 CEST] Added reminder-system trigger/scheduler implementation as an active BertlClaw todo item.
+[2026-04-02 00:39 CEST] Added future cookie/consent-trigger tooling checks as a prioritized BertlClaw legal/compliance todo.
