@@ -49,7 +49,7 @@ BertlClaw verbindet klare Kommunikation, digitale Struktur und KI-gestützte Unt
 ## 5) Canonical Links
 
 - **GitHub profile:** https://github.com/BertlClaw
-- **Repository:** https://github.com/BertlClaw/bertlclaw-site
+- **Repository:** https://github.com/BertlClaw/bertlclaw-site-site
 - **Website:** https://bertlclaw.github.io/bertlclaw-site/
 
 ## 6) Asset Canon

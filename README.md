@@ -26,7 +26,7 @@ Damit GitHub, Suchmaschinen und Menschen das Projekt sauber einordnen können, s
 
 - Website: https://bertlclaw.github.io/bertlclaw-site/
 - GitHub-Profil: https://github.com/BertlClaw
-- Repository: https://github.com/BertlClaw/bertlclaw-site
+- Repository: https://github.com/BertlClaw/bertlclaw-site-site
 
 ## Positionierungs-Hinweis
 
