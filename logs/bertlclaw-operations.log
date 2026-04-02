@@ -2,3 +2,7 @@
 [2026-04-02 00:18 CEST] Reminder system created: BERTLCLAW-REMINDER-SYSTEM.md defines hourly full-hour updates, daily GitHub ticket reminder, log coupling, and required future scheduler/heartbeat implementation.
 [2026-04-02 00:20 CEST] Added reminder-system trigger/scheduler implementation as an active BertlClaw todo item.
 [2026-04-02 00:39 CEST] Added future cookie/consent-trigger tooling checks as a prioritized BertlClaw legal/compliance todo.
+2026-04-02 10:30:43 CEST | WS1 website UX/mobile/conversion: homepage improvements shipped: added mobile sticky contact bar (Kontakt + WhatsApp), added 3-step quick-start explainer above form, added post-submit trust/risk-reduction box near contact form, raised chatbot on mobile to avoid overlap with CTA bar.
+2026-04-02 10:30:57 CEST | Workstream 3 | Built stronger proof infrastructure: added publishable proof collection plan, proof-atoms catalog, deliverable-gallery cards, and extended proof.html with homepage/service proof modules plus a practical proof-capture section.
+[2026-04-02 10:33 CEST] WS4 sales/pricing/closing: created `BERTLCLAW-DEAL-DESIGN-AND-QUOTE-ADVISOR.md` and local CLI `bertlclaw-tools/quote-advisor.js` to turn lead quality + scope + delivery friction into recommended offer form, price position, downscope path, upsell path, and closing question. Goal: faster quoting, better margin protection, less manual overhead.
+[2026-04-02 10:32 CEST] Preference recorded: notify immediately whenever any BertlClaw subagent becomes idle or runs out of tasks.
