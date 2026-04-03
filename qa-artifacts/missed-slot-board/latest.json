@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-02 13:47:12 CEST",
+  "status": "FAIL",
+  "audit_window_hours": 8,
+  "missing_hourly_slots_count": 6,
+  "missing_hourly_slots": [
+    "2026-04-02 06:00",
+    "2026-04-02 07:00",
+    "2026-04-02 08:00",
+    "2026-04-02 09:00",
+    "2026-04-02 10:00",
+    "2026-04-02 12:00"
+  ],
+  "minutes_since_last_hourly_update": 0,
+  "headline_status": "needs-human-on-p0",
+  "top_open_pressure": "BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery",
+  "top_next_move": "BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery",
+  "freshest_anchor": "QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourly-draft.js` so \"This hour done\" now prefers slot anchors/evidence befo…",
+  "recovery_queue": [
+    {
+      "priority": 1,
+      "slot": "2026-04-02 12:00",
+      "action": "Publish a catch-up note for 2026-04-02 12:00 using the freshest visible anchor: QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourly-draft.js…",
+      "copy_ready": "[2026-04-02 12:00] Catch-up QA status: missed full-hour slot acknowledged. Best visible anchor now: QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourl… Open pressure: BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery Next: BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery"
+    },
+    {
+      "priority": 2,
+      "slot": "2026-04-02 10:00",
+      "action": "Backfill 2026-04-02 10:00 with a brief evidence-based line, then continue to the next older missed slot",
+      "copy_ready": "[2026-04-02 10:00] Catch-up QA status: missed full-hour slot acknowledged. Best visible anchor now: QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourl… Open pressure: BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery Next: BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery"
+    },
+    {
+      "priority": 3,
+      "slot": "2026-04-02 09:00",
+      "action": "Backfill 2026-04-02 09:00 with a brief evidence-based line, then continue to the next older missed slot",
+      "copy_ready": "[2026-04-02 09:00] Catch-up QA status: missed full-hour slot acknowledged. Best visible anchor now: QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourl… Open pressure: BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery Next: BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery"
+    },
+    {
+      "priority": 4,
+      "slot": "2026-04-02 08:00",
+      "action": "Backfill 2026-04-02 08:00 with a brief evidence-based line, then continue to the next older missed slot",
+      "copy_ready": "[2026-04-02 08:00] Catch-up QA status: missed full-hour slot acknowledged. Best visible anchor now: QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourl… Open pressure: BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery Next: BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery"
+    },
+    {
+      "priority": 5,
+      "slot": "2026-04-02 07:00",
+      "action": "Backfill 2026-04-02 07:00 with a brief evidence-based line, then continue to the next older missed slot",
+      "copy_ready": "[2026-04-02 07:00] Catch-up QA status: missed full-hour slot acknowledged. Best visible anchor now: QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourl… Open pressure: BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery Next: BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery"
+    },
+    {
+      "priority": 6,
+      "slot": "2026-04-02 06:00",
+      "action": "Backfill 2026-04-02 06:00 with a brief evidence-based line, then continue to the next older missed slot",
+      "copy_ready": "[2026-04-02 06:00] Catch-up QA status: missed full-hour slot acknowledged. Best visible anchor now: QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourl… Open pressure: BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery Next: BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery"
+    }
+  ],
+  "recovery_rule": "Clear newest missed slot first so the reporting chain regains a current anchor, then backfill older slots if still needed.",
+  "summary_line": "[2026-04-02 13:47:11 CEST] Missed-slot board FAIL — 6 missing hourly slot(s) in last 8h; oldest=2026-04-02 06:00, newest=2026-04-02 12:00."
+}

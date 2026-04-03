@@ -1,0 +1,1409 @@
+[
+  {
+    "generated_at": "2026-04-02 13:47:31 CEST",
+    "source_artifacts": {
+      "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+      "auditPath": "/home/dominic/.openclaw/workspace/qa-artifacts/reminder-audit/latest.json",
+      "bugsPath": "/home/dominic/.openclaw/workspace/bertlclaw-qa-active-bugs.csv"
+    },
+    "totals": {
+      "bug_count": 6,
+      "by_status": {
+        "blocked_manual_access": 2,
+        "ready_for_retest": 4
+      },
+      "ready_for_retest_count": 4,
+      "blocked_manual_access_count": 2
+    },
+    "proof_of_run": {
+      "reminder_state_last_run_at": "2026-04-02 13:47:31",
+      "reminder_last_hourly_update_at": "2026-04-02 13:47",
+      "reminder_last_daily_github_ticket_reminder_at": "2026-04-02",
+      "reminder_recent_runs": [
+        {
+          "at": "2026-04-02 13:47:31",
+          "emitted": []
+        },
+        {
+          "at": "2026-04-02 13:47:11",
+          "emitted": []
+        },
+        {
+          "at": "2026-04-02 13:47:10",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:43:54",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:40:52",
+          "emitted": [
+            "hourly_update"
+          ]
+        }
+      ],
+      "reminder_audit_status": "fail",
+      "reminder_audit_generated_at": "2026-04-02 13:47:31 CEST",
+      "missing_hourly_slots": [
+        "2026-04-02 08:00",
+        "2026-04-02 09:00",
+        "2026-04-02 10:00",
+        "2026-04-02 12:00"
+      ],
+      "next_expected_hourly_slot": "2026-04-02 14:00"
+    },
+    "action_queues": {
+      "ready_for_retest": [
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling",
+          "retest_after": "after local heartbeat validation"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax",
+          "retest_after": "after schema change"
+        },
+        {
+          "bug_id": "BCQA-005",
+          "severity": "P1",
+          "title": "Proof visibility and evidence prominence are insufficiently proven",
+          "next_action": "Run a visibility-first proof sweep on homepage plus proof.html and produce a ranked list of hidden vs visible proof elements with screenshot evidence",
+          "retest_after": "after proof visibility sweep"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log",
+          "retest_after": "after process implementation"
+        }
+      ],
+      "blocked_manual_access": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "title": "Mobile CTA/chat/contact collision risk still needs real-device confirmation",
+          "next_action": "Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state"
+        }
+      ],
+      "p0_p1_open": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "status": "blocked_manual_access",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "status": "blocked_manual_access",
+          "title": "Mobile CTA/chat/contact collision risk still needs real-device confirmation",
+          "next_action": "Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state"
+        },
+        {
+          "bug_id": "BCQA-005",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Proof visibility and evidence prominence are insufficiently proven",
+          "next_action": "Run a visibility-first proof sweep on homepage plus proof.html and produce a ranked list of hidden vs visible proof elements with screenshot evidence"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log"
+        }
+      ]
+    }
+  },
+  {
+    "generated_at": "2026-04-02 13:47:11 CEST",
+    "source_artifacts": {
+      "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+      "auditPath": "/home/dominic/.openclaw/workspace/qa-artifacts/reminder-audit/latest.json",
+      "bugsPath": "/home/dominic/.openclaw/workspace/bertlclaw-qa-active-bugs.csv"
+    },
+    "totals": {
+      "bug_count": 6,
+      "by_status": {
+        "blocked_manual_access": 2,
+        "ready_for_retest": 4
+      },
+      "ready_for_retest_count": 4,
+      "blocked_manual_access_count": 2
+    },
+    "proof_of_run": {
+      "reminder_state_last_run_at": "2026-04-02 13:47:11",
+      "reminder_last_hourly_update_at": "2026-04-02 13:47",
+      "reminder_last_daily_github_ticket_reminder_at": "2026-04-02",
+      "reminder_recent_runs": [
+        {
+          "at": "2026-04-02 13:47:11",
+          "emitted": []
+        },
+        {
+          "at": "2026-04-02 13:47:10",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:43:54",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:40:52",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:34:15",
+          "emitted": [
+            "hourly_update"
+          ]
+        }
+      ],
+      "reminder_audit_status": "fail",
+      "reminder_audit_generated_at": "2026-04-02 13:47:11 CEST",
+      "missing_hourly_slots": [
+        "2026-04-02 06:00",
+        "2026-04-02 07:00",
+        "2026-04-02 08:00",
+        "2026-04-02 09:00",
+        "2026-04-02 10:00",
+        "2026-04-02 12:00"
+      ],
+      "next_expected_hourly_slot": "2026-04-02 14:00"
+    },
+    "action_queues": {
+      "ready_for_retest": [
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling",
+          "retest_after": "after local heartbeat validation"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax",
+          "retest_after": "after schema change"
+        },
+        {
+          "bug_id": "BCQA-005",
+          "severity": "P1",
+          "title": "Proof visibility and evidence prominence are insufficiently proven",
+          "next_action": "Run a visibility-first proof sweep on homepage plus proof.html and produce a ranked list of hidden vs visible proof elements with screenshot evidence",
+          "retest_after": "after proof visibility sweep"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log",
+          "retest_after": "after process implementation"
+        }
+      ],
+      "blocked_manual_access": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "title": "Mobile CTA/chat/contact collision risk still needs real-device confirmation",
+          "next_action": "Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state"
+        }
+      ],
+      "p0_p1_open": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "status": "blocked_manual_access",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "status": "blocked_manual_access",
+          "title": "Mobile CTA/chat/contact collision risk still needs real-device confirmation",
+          "next_action": "Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state"
+        },
+        {
+          "bug_id": "BCQA-005",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Proof visibility and evidence prominence are insufficiently proven",
+          "next_action": "Run a visibility-first proof sweep on homepage plus proof.html and produce a ranked list of hidden vs visible proof elements with screenshot evidence"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log"
+        }
+      ]
+    }
+  },
+  {
+    "generated_at": "2026-04-02 13:47:11 CEST",
+    "source_artifacts": {
+      "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+      "auditPath": "/home/dominic/.openclaw/workspace/qa-artifacts/reminder-audit/latest.json",
+      "bugsPath": "/home/dominic/.openclaw/workspace/bertlclaw-qa-active-bugs.csv"
+    },
+    "totals": {
+      "bug_count": 6,
+      "by_status": {
+        "blocked_manual_access": 2,
+        "ready_for_retest": 4
+      },
+      "ready_for_retest_count": 4,
+      "blocked_manual_access_count": 2
+    },
+    "proof_of_run": {
+      "reminder_state_last_run_at": "2026-04-02 13:47:10",
+      "reminder_last_hourly_update_at": "2026-04-02 13:47",
+      "reminder_last_daily_github_ticket_reminder_at": "2026-04-02",
+      "reminder_recent_runs": [
+        {
+          "at": "2026-04-02 13:47:10",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:43:54",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:40:52",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:34:15",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:22:23",
+          "emitted": [
+            "hourly_update"
+          ]
+        }
+      ],
+      "reminder_audit_status": "fail",
+      "reminder_audit_generated_at": "2026-04-02 13:47:10 CEST",
+      "missing_hourly_slots": [
+        "2026-04-02 06:00",
+        "2026-04-02 07:00",
+        "2026-04-02 08:00",
+        "2026-04-02 09:00",
+        "2026-04-02 10:00",
+        "2026-04-02 12:00"
+      ],
+      "next_expected_hourly_slot": "2026-04-02 14:00"
+    },
+    "action_queues": {
+      "ready_for_retest": [
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling",
+          "retest_after": "after local heartbeat validation"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax",
+          "retest_after": "after schema change"
+        },
+        {
+          "bug_id": "BCQA-005",
+          "severity": "P1",
+          "title": "Proof visibility and evidence prominence are insufficiently proven",
+          "next_action": "Run a visibility-first proof sweep on homepage plus proof.html and produce a ranked list of hidden vs visible proof elements with screenshot evidence",
+          "retest_after": "after proof visibility sweep"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log",
+          "retest_after": "after process implementation"
+        }
+      ],
+      "blocked_manual_access": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "title": "Mobile CTA/chat/contact collision risk still needs real-device confirmation",
+          "next_action": "Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state"
+        }
+      ],
+      "p0_p1_open": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "status": "blocked_manual_access",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "status": "blocked_manual_access",
+          "title": "Mobile CTA/chat/contact collision risk still needs real-device confirmation",
+          "next_action": "Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state"
+        },
+        {
+          "bug_id": "BCQA-005",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Proof visibility and evidence prominence are insufficiently proven",
+          "next_action": "Run a visibility-first proof sweep on homepage plus proof.html and produce a ranked list of hidden vs visible proof elements with screenshot evidence"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log"
+        }
+      ]
+    }
+  },
+  {
+    "generated_at": "2026-04-02 13:43:54 CEST",
+    "source_artifacts": {
+      "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+      "auditPath": "/home/dominic/.openclaw/workspace/qa-artifacts/reminder-audit/latest.json",
+      "bugsPath": "/home/dominic/.openclaw/workspace/bertlclaw-qa-active-bugs.csv"
+    },
+    "totals": {
+      "bug_count": 6,
+      "by_status": {
+        "blocked_manual_access": 2,
+        "ready_for_retest": 4
+      },
+      "ready_for_retest_count": 4,
+      "blocked_manual_access_count": 2
+    },
+    "proof_of_run": {
+      "reminder_state_last_run_at": "2026-04-02 13:43:54",
+      "reminder_last_hourly_update_at": "2026-04-02 13:43",
+      "reminder_last_daily_github_ticket_reminder_at": "2026-04-02",
+      "reminder_recent_runs": [
+        {
+          "at": "2026-04-02 13:43:54",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:40:52",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:34:15",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:22:23",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 11:23:03",
+          "emitted": [
+            "hourly_update"
+          ]
+        }
+      ],
+      "reminder_audit_status": "fail",
+      "reminder_audit_generated_at": "2026-04-02 13:43:54 CEST",
+      "missing_hourly_slots": [
+        "2026-04-02 06:00",
+        "2026-04-02 07:00",
+        "2026-04-02 08:00",
+        "2026-04-02 09:00",
+        "2026-04-02 10:00",
+        "2026-04-02 12:00"
+      ],
+      "next_expected_hourly_slot": "2026-04-02 14:00"
+    },
+    "action_queues": {
+      "ready_for_retest": [
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling",
+          "retest_after": "after local heartbeat validation"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax",
+          "retest_after": "after schema change"
+        },
+        {
+          "bug_id": "BCQA-005",
+          "severity": "P1",
+          "title": "Proof visibility and evidence prominence are insufficiently proven",
+          "next_action": "Run a visibility-first proof sweep on homepage plus proof.html and produce a ranked list of hidden vs visible proof elements with screenshot evidence",
+          "retest_after": "after proof visibility sweep"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log",
+          "retest_after": "after process implementation"
+        }
+      ],
+      "blocked_manual_access": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "title": "Mobile CTA/chat/contact collision risk still needs real-device confirmation",
+          "next_action": "Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state"
+        }
+      ],
+      "p0_p1_open": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "status": "blocked_manual_access",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "status": "blocked_manual_access",
+          "title": "Mobile CTA/chat/contact collision risk still needs real-device confirmation",
+          "next_action": "Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state"
+        },
+        {
+          "bug_id": "BCQA-005",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Proof visibility and evidence prominence are insufficiently proven",
+          "next_action": "Run a visibility-first proof sweep on homepage plus proof.html and produce a ranked list of hidden vs visible proof elements with screenshot evidence"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log"
+        }
+      ]
+    }
+  },
+  {
+    "generated_at": "2026-04-02 13:40:52 CEST",
+    "source_artifacts": {
+      "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+      "auditPath": "/home/dominic/.openclaw/workspace/qa-artifacts/reminder-audit/latest.json",
+      "bugsPath": "/home/dominic/.openclaw/workspace/bertlclaw-qa-active-bugs.csv"
+    },
+    "totals": {
+      "bug_count": 6,
+      "by_status": {
+        "blocked_manual_access": 2,
+        "ready_for_retest": 4
+      },
+      "ready_for_retest_count": 4,
+      "blocked_manual_access_count": 2
+    },
+    "proof_of_run": {
+      "reminder_state_last_run_at": "2026-04-02 13:40:52",
+      "reminder_last_hourly_update_at": "2026-04-02 13:40",
+      "reminder_last_daily_github_ticket_reminder_at": "2026-04-02",
+      "reminder_recent_runs": [
+        {
+          "at": "2026-04-02 13:40:52",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:34:15",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:22:23",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 11:23:03",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 11:19:59",
+          "emitted": [
+            "hourly_update",
+            "daily_github_ticket_reminder"
+          ]
+        }
+      ],
+      "reminder_audit_status": "fail",
+      "reminder_audit_generated_at": "2026-04-02 13:40:52 CEST",
+      "missing_hourly_slots": [
+        "2026-04-02 08:00",
+        "2026-04-02 09:00",
+        "2026-04-02 10:00",
+        "2026-04-02 12:00"
+      ],
+      "next_expected_hourly_slot": "2026-04-02 14:00"
+    },
+    "action_queues": {
+      "ready_for_retest": [
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling",
+          "retest_after": "after local heartbeat validation"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax",
+          "retest_after": "after schema change"
+        },
+        {
+          "bug_id": "BCQA-005",
+          "severity": "P1",
+          "title": "Proof visibility and evidence prominence are insufficiently proven",
+          "next_action": "Run a visibility-first proof sweep on homepage plus proof.html and produce a ranked list of hidden vs visible proof elements with screenshot evidence",
+          "retest_after": "after proof visibility sweep"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log",
+          "retest_after": "after process implementation"
+        }
+      ],
+      "blocked_manual_access": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "title": "Mobile CTA/chat/contact collision risk still needs real-device confirmation",
+          "next_action": "Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state"
+        }
+      ],
+      "p0_p1_open": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "status": "blocked_manual_access",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "status": "blocked_manual_access",
+          "title": "Mobile CTA/chat/contact collision risk still needs real-device confirmation",
+          "next_action": "Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state"
+        },
+        {
+          "bug_id": "BCQA-005",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Proof visibility and evidence prominence are insufficiently proven",
+          "next_action": "Run a visibility-first proof sweep on homepage plus proof.html and produce a ranked list of hidden vs visible proof elements with screenshot evidence"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log"
+        }
+      ]
+    }
+  },
+  {
+    "generated_at": "2026-04-02 13:34:15 CEST",
+    "source_artifacts": {
+      "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+      "auditPath": "/home/dominic/.openclaw/workspace/qa-artifacts/reminder-audit/latest.json",
+      "bugsPath": "/home/dominic/.openclaw/workspace/bertlclaw-qa-active-bugs.csv"
+    },
+    "totals": {
+      "bug_count": 6,
+      "by_status": {
+        "blocked_manual_access": 1,
+        "ready_for_retest": 4,
+        "new": 1
+      },
+      "ready_for_retest_count": 4,
+      "blocked_manual_access_count": 1
+    },
+    "proof_of_run": {
+      "reminder_state_last_run_at": "2026-04-02 13:34:15",
+      "reminder_last_hourly_update_at": "2026-04-02 13:34",
+      "reminder_last_daily_github_ticket_reminder_at": "2026-04-02",
+      "reminder_recent_runs": [
+        {
+          "at": "2026-04-02 13:34:15",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 13:22:23",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 11:23:03",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 11:19:59",
+          "emitted": [
+            "hourly_update",
+            "daily_github_ticket_reminder"
+          ]
+        }
+      ],
+      "reminder_audit_status": "fail",
+      "reminder_audit_generated_at": "2026-04-02 13:34:15 CEST",
+      "missing_hourly_slots": [
+        "2026-04-02 08:00",
+        "2026-04-02 09:00",
+        "2026-04-02 10:00",
+        "2026-04-02 12:00"
+      ],
+      "next_expected_hourly_slot": "2026-04-02 14:00"
+    },
+    "action_queues": {
+      "ready_for_retest": [
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling",
+          "retest_after": "after local heartbeat validation"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax",
+          "retest_after": "after schema change"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "title": "Underpage chat-to-contact flow needs real UX validation on mobile",
+          "next_action": "Run the packaged mobile retest on services.html landingpage-sprint.html and digital-clarity-setup.html",
+          "retest_after": "after mobile retest"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log",
+          "retest_after": "after process implementation"
+        }
+      ],
+      "blocked_manual_access": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        }
+      ],
+      "p0_p1_open": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "status": "blocked_manual_access",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Underpage chat-to-contact flow needs real UX validation on mobile",
+          "next_action": "Run the packaged mobile retest on services.html landingpage-sprint.html and digital-clarity-setup.html"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log"
+        }
+      ]
+    }
+  },
+  {
+    "generated_at": "2026-04-02 13:22:23 CEST",
+    "source_artifacts": {
+      "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+      "auditPath": "/home/dominic/.openclaw/workspace/qa-artifacts/reminder-audit/latest.json",
+      "bugsPath": "/home/dominic/.openclaw/workspace/bertlclaw-qa-active-bugs.csv"
+    },
+    "totals": {
+      "bug_count": 6,
+      "by_status": {
+        "blocked_manual_access": 1,
+        "ready_for_retest": 4,
+        "new": 1
+      },
+      "ready_for_retest_count": 4,
+      "blocked_manual_access_count": 1
+    },
+    "proof_of_run": {
+      "reminder_state_last_run_at": "2026-04-02 13:22:23",
+      "reminder_last_hourly_update_at": "2026-04-02 13:22",
+      "reminder_last_daily_github_ticket_reminder_at": "2026-04-02",
+      "reminder_recent_runs": [
+        {
+          "at": "2026-04-02 13:22:23",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 11:23:03",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 11:19:59",
+          "emitted": [
+            "hourly_update",
+            "daily_github_ticket_reminder"
+          ]
+        }
+      ],
+      "reminder_audit_status": "fail",
+      "reminder_audit_generated_at": "2026-04-02 13:22:23 CEST",
+      "missing_hourly_slots": [
+        "2026-04-02 08:00",
+        "2026-04-02 09:00",
+        "2026-04-02 10:00",
+        "2026-04-02 12:00"
+      ],
+      "next_expected_hourly_slot": "2026-04-02 14:00"
+    },
+    "action_queues": {
+      "ready_for_retest": [
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling",
+          "retest_after": "after local heartbeat validation"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax",
+          "retest_after": "after schema change"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "title": "Underpage chat-to-contact flow needs real UX validation on mobile",
+          "next_action": "Run the packaged mobile retest on services.html landingpage-sprint.html and digital-clarity-setup.html",
+          "retest_after": "after mobile retest"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log",
+          "retest_after": "after process implementation"
+        }
+      ],
+      "blocked_manual_access": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        }
+      ],
+      "p0_p1_open": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "status": "blocked_manual_access",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Underpage chat-to-contact flow needs real UX validation on mobile",
+          "next_action": "Run the packaged mobile retest on services.html landingpage-sprint.html and digital-clarity-setup.html"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log"
+        }
+      ]
+    }
+  },
+  {
+    "generated_at": "2026-04-02 13:20:04 CEST",
+    "source_artifacts": {
+      "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+      "auditPath": "/home/dominic/.openclaw/workspace/qa-artifacts/reminder-audit/latest.json",
+      "bugsPath": "/home/dominic/.openclaw/workspace/bertlclaw-qa-active-bugs.csv"
+    },
+    "totals": {
+      "bug_count": 6,
+      "by_status": {
+        "blocked_manual_access": 1,
+        "ready_for_retest": 4,
+        "new": 1
+      },
+      "ready_for_retest_count": 4,
+      "blocked_manual_access_count": 1
+    },
+    "proof_of_run": {
+      "reminder_state_last_run_at": "2026-04-02 11:23:03",
+      "reminder_last_hourly_update_at": "2026-04-02 11:23",
+      "reminder_last_daily_github_ticket_reminder_at": "2026-04-02",
+      "reminder_recent_runs": [
+        {
+          "at": "2026-04-02 11:23:03",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 11:19:59",
+          "emitted": [
+            "hourly_update",
+            "daily_github_ticket_reminder"
+          ]
+        }
+      ],
+      "reminder_audit_status": "fail",
+      "reminder_audit_generated_at": "2026-04-02 13:20:04 CEST",
+      "missing_hourly_slots": [
+        "2026-04-02 08:00",
+        "2026-04-02 09:00",
+        "2026-04-02 10:00",
+        "2026-04-02 12:00",
+        "2026-04-02 13:00"
+      ],
+      "next_expected_hourly_slot": "2026-04-02 14:00"
+    },
+    "action_queues": {
+      "ready_for_retest": [
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling",
+          "retest_after": "after local heartbeat validation"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax",
+          "retest_after": "after schema change"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "title": "Underpage chat-to-contact flow needs real UX validation on mobile",
+          "next_action": "Run the packaged mobile retest on services.html landingpage-sprint.html and digital-clarity-setup.html",
+          "retest_after": "after mobile retest"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log",
+          "retest_after": "after process implementation"
+        }
+      ],
+      "blocked_manual_access": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        }
+      ],
+      "p0_p1_open": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "status": "blocked_manual_access",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Underpage chat-to-contact flow needs real UX validation on mobile",
+          "next_action": "Run the packaged mobile retest on services.html landingpage-sprint.html and digital-clarity-setup.html"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log"
+        }
+      ]
+    }
+  },
+  {
+    "generated_at": "2026-04-02 11:24:08 CEST",
+    "source_artifacts": {
+      "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+      "auditPath": "/home/dominic/.openclaw/workspace/qa-artifacts/reminder-audit/latest.json",
+      "bugsPath": "/home/dominic/.openclaw/workspace/bertlclaw-qa-active-bugs.csv"
+    },
+    "totals": {
+      "bug_count": 6,
+      "by_status": {
+        "blocked_manual_access": 1,
+        "ready_for_retest": 4,
+        "new": 1
+      },
+      "ready_for_retest_count": 4,
+      "blocked_manual_access_count": 1
+    },
+    "proof_of_run": {
+      "reminder_state_last_run_at": "2026-04-02 11:23:03",
+      "reminder_last_hourly_update_at": "2026-04-02 11:23",
+      "reminder_last_daily_github_ticket_reminder_at": "2026-04-02",
+      "reminder_recent_runs": [
+        {
+          "at": "2026-04-02 11:23:03",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 11:19:59",
+          "emitted": [
+            "hourly_update",
+            "daily_github_ticket_reminder"
+          ]
+        }
+      ],
+      "reminder_audit_status": "fail",
+      "reminder_audit_generated_at": "2026-04-02 11:23:03 CEST",
+      "missing_hourly_slots": [
+        "2026-04-02 06:00",
+        "2026-04-02 07:00",
+        "2026-04-02 08:00",
+        "2026-04-02 09:00",
+        "2026-04-02 10:00"
+      ],
+      "next_expected_hourly_slot": "2026-04-02 12:00"
+    },
+    "action_queues": {
+      "ready_for_retest": [
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling",
+          "retest_after": "after local heartbeat validation"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax",
+          "retest_after": "after schema change"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "title": "Underpage chat-to-contact flow needs real UX validation on mobile",
+          "next_action": "Run the packaged mobile retest on services.html landingpage-sprint.html and digital-clarity-setup.html",
+          "retest_after": "after mobile retest"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log",
+          "retest_after": "after process implementation"
+        }
+      ],
+      "blocked_manual_access": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        }
+      ],
+      "p0_p1_open": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "status": "blocked_manual_access",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Underpage chat-to-contact flow needs real UX validation on mobile",
+          "next_action": "Run the packaged mobile retest on services.html landingpage-sprint.html and digital-clarity-setup.html"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "Run local audit and confirm missing/full hour visibility against the operations log"
+        }
+      ]
+    }
+  },
+  {
+    "generated_at": "2026-04-02 11:23:03 CEST",
+    "source_artifacts": {
+      "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+      "auditPath": "/home/dominic/.openclaw/workspace/qa-artifacts/reminder-audit/latest.json",
+      "bugsPath": "/home/dominic/.openclaw/workspace/bertlclaw-qa-active-bugs.csv"
+    },
+    "totals": {
+      "bug_count": 6,
+      "by_status": {
+        "blocked_manual_access": 1,
+        "ready_for_retest": 4,
+        "new": 1
+      },
+      "ready_for_retest_count": 4,
+      "blocked_manual_access_count": 1
+    },
+    "proof_of_run": {
+      "reminder_state_last_run_at": "2026-04-02 11:23:03",
+      "reminder_last_hourly_update_at": "2026-04-02 11:23",
+      "reminder_last_daily_github_ticket_reminder_at": "2026-04-02",
+      "reminder_recent_runs": [
+        {
+          "at": "2026-04-02 11:23:03",
+          "emitted": [
+            "hourly_update"
+          ]
+        },
+        {
+          "at": "2026-04-02 11:19:59",
+          "emitted": [
+            "hourly_update",
+            "daily_github_ticket_reminder"
+          ]
+        }
+      ],
+      "reminder_audit_status": "fail",
+      "reminder_audit_generated_at": "2026-04-02 11:23:03 CEST",
+      "missing_hourly_slots": [
+        "2026-04-02 06:00",
+        "2026-04-02 07:00",
+        "2026-04-02 08:00",
+        "2026-04-02 09:00",
+        "2026-04-02 10:00"
+      ],
+      "next_expected_hourly_slot": "2026-04-02 12:00"
+    },
+    "action_queues": {
+      "ready_for_retest": [
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "no",
+          "retest_after": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax",
+          "retest_after": "after schema change"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "title": "Underpage chat-to-contact flow needs real UX validation on mobile",
+          "next_action": "no",
+          "retest_after": "Run the packaged mobile retest on services.html landingpage-sprint.html and digital-clarity-setup.html"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "no",
+          "retest_after": "Run local audit and confirm missing/full hour visibility against the operations log"
+        }
+      ],
+      "blocked_manual_access": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        }
+      ],
+      "p0_p1_open": [
+        {
+          "bug_id": "BCQA-001",
+          "severity": "P0",
+          "status": "blocked_manual_access",
+          "title": "Form submit delivery not yet manually confirmed",
+          "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery"
+        },
+        {
+          "bug_id": "BCQA-002",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Reminder system is policy-defined but not technically scheduled",
+          "next_action": "no"
+        },
+        {
+          "bug_id": "BCQA-003",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+          "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax"
+        },
+        {
+          "bug_id": "BCQA-004",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Underpage chat-to-contact flow needs real UX validation on mobile",
+          "next_action": "no"
+        },
+        {
+          "bug_id": "BCQA-006",
+          "severity": "P1",
+          "status": "ready_for_retest",
+          "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+          "next_action": "no"
+        }
+      ]
+    }
+  }
+]

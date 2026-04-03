@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-04-03 13:15:23 CEST",
+  "audit_window_hours": 6,
+  "expected_hourly_slots": [
+    "2026-04-03 08:00",
+    "2026-04-03 09:00",
+    "2026-04-03 10:00",
+    "2026-04-03 11:00",
+    "2026-04-03 12:00",
+    "2026-04-03 13:00"
+  ],
+  "missing_hourly_slots": [
+    "2026-04-03 08:00",
+    "2026-04-03 09:00",
+    "2026-04-03 10:00",
+    "2026-04-03 11:00",
+    "2026-04-03 12:00"
+  ],
+  "last_daily_slot_seen_in_log": "2026-04-03",
+  "state_snapshot": {
+    "version": 1,
+    "timezone": "Europe/Vienna",
+    "last_hourly_update_at": "2026-04-03 13:15",
+    "last_daily_github_ticket_reminder_at": "2026-04-03",
+    "last_run_at": "2026-04-03 13:15:16",
+    "runs": [
+      {
+        "at": "2026-04-03 13:15:16",
+        "emitted": []
+      },
+      {
+        "at": "2026-04-03 13:15:16",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-03 13:14:07",
+        "emitted": [
+          "hourly_update",
+          "daily_github_ticket_reminder"
+        ]
+      },
+      {
+        "at": "2026-04-02 13:47:31",
+        "emitted": []
+      },
+      {
+        "at": "2026-04-02 13:47:11",
+        "emitted": []
+      },
+      {
+        "at": "2026-04-02 13:47:10",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-02 13:43:54",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-02 13:40:52",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-02 13:34:15",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-02 13:22:23",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-02 11:23:03",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-02 11:19:59",
+        "emitted": [
+          "hourly_update",
+          "daily_github_ticket_reminder"
+        ]
+      }
+    ]
+  },
+  "status": "fail",
+  "next_expected_hourly_slot": "2026-04-03 14:00"
+}

@@ -1,0 +1,275 @@
+{
+  "generated_at": "2026-04-02 13:47:31 CEST",
+  "current_slot": "2026-04-02 13:00 CEST",
+  "previous_completed_slot": "2026-04-02 12:00 CEST",
+  "source_paths": {
+    "logPath": "/home/dominic/.openclaw/workspace/logs/bertlclaw-operations.log",
+    "bugsPath": "/home/dominic/.openclaw/workspace/bertlclaw-qa-active-bugs.csv",
+    "streamPath": "/home/dominic/.openclaw/workspace/qa-artifacts/stream-status/latest.json",
+    "priorityPath": "/home/dominic/.openclaw/workspace/qa-artifacts/priority-board/latest.json",
+    "opsPath": "/home/dominic/.openclaw/workspace/qa-artifacts/ops-control/latest.json"
+  },
+  "slot_snapshot": {
+    "captured_at": "2026-04-02 13:47:31 CEST",
+    "slot": "2026-04-02 13:00 CEST",
+    "headline_status": "needs-human-on-p0",
+    "ready_for_retest_count": 4,
+    "manual_blockers_count": 2,
+    "missing_hourly_slots_count": 4,
+    "active_bug_map": {
+      "BCQA-001": {
+        "status": "blocked_manual_access",
+        "severity": "P0",
+        "title": "Form submit delivery not yet manually confirmed",
+        "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery",
+        "needs_manual_access": "yes"
+      },
+      "BCQA-002": {
+        "status": "ready_for_retest",
+        "severity": "P1",
+        "title": "Reminder system is policy-defined but not technically scheduled",
+        "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling",
+        "needs_manual_access": "no"
+      },
+      "BCQA-003": {
+        "status": "ready_for_retest",
+        "severity": "P1",
+        "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+        "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax",
+        "needs_manual_access": "no"
+      },
+      "BCQA-004": {
+        "status": "blocked_manual_access",
+        "severity": "P1",
+        "title": "Mobile CTA/chat/contact collision risk still needs real-device confirmation",
+        "next_action": "Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state",
+        "needs_manual_access": "yes"
+      },
+      "BCQA-005": {
+        "status": "ready_for_retest",
+        "severity": "P1",
+        "title": "Proof visibility and evidence prominence are insufficiently proven",
+        "next_action": "Run a visibility-first proof sweep on homepage plus proof.html and produce a ranked list of hidden vs visible proof elements with screenshot evidence",
+        "needs_manual_access": "no"
+      },
+      "BCQA-006": {
+        "status": "ready_for_retest",
+        "severity": "P1",
+        "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+        "next_action": "Run local audit and confirm missing/full hour visibility against the operations log",
+        "needs_manual_access": "no"
+      }
+    },
+    "log_evidence_count": 15
+  },
+  "previous_snapshot": null,
+  "queue_delta_vs_previous_snapshot": null,
+  "bug_status_changes_vs_previous_snapshot": [],
+  "current_slot_evidence": [
+    {
+      "raw": "[2026-04-02 13:20 CEST] QA ops control improvement added: created bertlclaw-tools/qa-ops-control.js plus qa-artifacts/ops-control/latest.{json,md} and BERTLCLAW-QA-OPS-CONTROL-CHECKLIST-2026-04-02.md to turn stale-stream/full-hour risk into a compact PASS/WATCH/FAIL operator checklist with explicit recovery moves.",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 20,
+      "message": "QA ops control improvement added: created bertlclaw-tools/qa-ops-control.js plus qa-artifacts/ops-control/latest.{json,md} and BERTLCLAW-QA-OPS-CONTROL-CHECKLIST-2026-04-02.md to turn stale-stream/full-hour risk into a compact PASS/WATCH/FAIL operator checklist with explicit recovery moves.",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:20 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:20:00.000Z"
+    },
+    {
+      "raw": "[2026-04-02 13:22 CEST] QA execution asset added after the control-tower layer: created BERTLCLAW-QA-TESTER-WORKSHEET-2026-04-02.md as a compact operator worksheet for manual runs covering contact flow, mobile chat→contact UX, proof/trust checks, evidence capture, and copy-ready reporting snippets.",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 22,
+      "message": "QA execution asset added after the control-tower layer: created BERTLCLAW-QA-TESTER-WORKSHEET-2026-04-02.md as a compact operator worksheet for manual runs covering contact flow, mobile chat→contact UX, proof/trust checks, evidence capture, and copy-ready reporting snippets.",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:22 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:22:00.000Z"
+    },
+    {
+      "raw": "[2026-04-02 13:22 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-02 13:22)",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 22,
+      "message": "hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-02 13:22)",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:22 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:22:00.000Z"
+    },
+    {
+      "raw": "[2026-04-02 13:28 CEST] QA handoff acceleration layer added: created bertlclaw-tools/qa-priority-board.js plus qa-artifacts/priority-board/latest.{json,md} and BERTLCLAW-QA-RETEST-TO-FIX-HANDOFF-2026-04-02.md; updated QA daily rhythm to use the compact Top-5 priority board and copy-ready retest→fix handoff format for faster builder pickup.",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 28,
+      "message": "QA handoff acceleration layer added: created bertlclaw-tools/qa-priority-board.js plus qa-artifacts/priority-board/latest.{json,md} and BERTLCLAW-QA-RETEST-TO-FIX-HANDOFF-2026-04-02.md; updated QA daily rhythm to use the compact Top-5 priority board and copy-ready retest→fix handoff format for faster builder pickup.",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:28 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:28:00.000Z"
+    },
+    {
+      "raw": "[2026-04-02 13:34 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-02 13:34)",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 34,
+      "message": "hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-02 13:34)",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:34 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:34:00.000Z"
+    },
+    {
+      "raw": "[2026-04-02 13:37 CEST] QA hour-slot evidence bridge added: created bertlclaw-tools/qa-hour-slot-bridge.js plus qa-artifacts/hour-slot-bridge/latest.{json,md} and BERTLCLAW-QA-HOUR-SLOT-BRIDGE-2026-04-02.md to tie hourly narration to real per-slot operations-log evidence and reduce drift in full-hour updates.",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 37,
+      "message": "QA hour-slot evidence bridge added: created bertlclaw-tools/qa-hour-slot-bridge.js plus qa-artifacts/hour-slot-bridge/latest.{json,md} and BERTLCLAW-QA-HOUR-SLOT-BRIDGE-2026-04-02.md to tie hourly narration to real per-slot operations-log evidence and reduce drift in full-hour updates.",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:37 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:37:00.000Z"
+    },
+    {
+      "raw": "[2026-04-02 13:36 CEST] Legal/compliance growth-safe proof layer added: created `BERTLCLAW-PROOF-PUBLICATION-RELEASE-CHECK-2026-04-02.md` as the concrete publication release gate for testimonials/references/cases/logos/URLs/screenshots/outcome-claims. It adds BertlClaw-specific release tiers, red flags, allowed-element matrix, claim discipline, and a copy-ready Proof Publication Release Record so proof expansion can scale without sloppy approvals.",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 36,
+      "message": "Legal/compliance growth-safe proof layer added: created `BERTLCLAW-PROOF-PUBLICATION-RELEASE-CHECK-2026-04-02.md` as the concrete publication release gate for testimonials/references/cases/logos/URLs/screenshots/outcome-claims. It adds BertlClaw-specific release tiers, red flags, allowed-element matrix, claim discipline, and a copy-ready Proof Publication Release Record so proof expansion can scale without sloppy approvals.",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:36 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:36:00.000Z"
+    },
+    {
+      "raw": "[2026-04-02 13:40 CEST] Legal/compliance proof approval operations layer added: created `bertlclaw-proof/library/approvals/PROOF-APPROVAL-REGISTER.md`, `bertlclaw-proof/library/approvals/proof-approval-register.csv`, and `bertlclaw-proof/library/approvals/PROOF-APPROVAL-ROW-TEMPLATE.md` as the compact searchable tracker for each testimonial/reference/case/logo/screenshot/public-proof item. It captures approval status, release tier, allowed surfaces, identity scope, publication limits, claim limits, review needs, and asset location so BertlClaw can search what is website-safe, proposal-only, anonymous-only, conditional, expired, or still internal.",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 40,
+      "message": "Legal/compliance proof approval operations layer added: created `bertlclaw-proof/library/approvals/PROOF-APPROVAL-REGISTER.md`, `bertlclaw-proof/library/approvals/proof-approval-register.csv`, and `bertlclaw-proof/library/approvals/PROOF-APPROVAL-ROW-TEMPLATE.md` as the compact searchable tracker for each testimonial/reference/case/logo/screenshot/public-proof item. It captures approval status, release tier, allowed surfaces, identity scope, publication limits, claim limits, review needs, and asset location so BertlClaw can search what is website-safe, proposal-only, anonymous-only, conditional, expired, or still internal.",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:40 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:40:00.000Z"
+    },
+    {
+      "raw": "[2026-04-02 13:40 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-02 13:40)",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 40,
+      "message": "hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-02 13:40)",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:40 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:40:00.000Z"
+    },
+    {
+      "raw": "[2026-04-02 13:41 CEST] QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourly-draft.js` so \"This hour done\" now prefers slot anchors/evidence before queue heuristics, and created `bertlclaw-tools/qa-hourly-status.js` plus `qa-artifacts/hourly-status/latest.{json,md,txt}` and `BERTLCLAW-QA-HOURLY-STATUS-LAYER-2026-04-02.md` as the tiny one-command full-hour reporting helper.",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 41,
+      "message": "QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourly-draft.js` so \"This hour done\" now prefers slot anchors/evidence before queue heuristics, and created `bertlclaw-tools/qa-hourly-status.js` plus `qa-artifacts/hourly-status/latest.{json,md,txt}` and `BERTLCLAW-QA-HOURLY-STATUS-LAYER-2026-04-02.md` as the tiny one-command full-hour reporting helper.",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:41 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:41:00.000Z"
+    },
+    {
+      "raw": "[2026-04-02 13:43 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-02 13:43)",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 43,
+      "message": "hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-02 13:43)",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:43 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:43:00.000Z"
+    },
+    {
+      "raw": "[2026-04-02 13:44 CEST] QA missed-slot recovery asset added: created bertlclaw-tools/qa-missed-slot-board.js plus qa-artifacts/missed-slot-board/latest.{json,md,txt} and BERTLCLAW-QA-MISSED-SLOT-BOARD-2026-04-02.md; QA daily rhythm now calls the missed-slot board when full-hour gaps appear, turning missing hourly updates into an explicit recovery queue with copy-ready catch-up lines.",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 44,
+      "message": "QA missed-slot recovery asset added: created bertlclaw-tools/qa-missed-slot-board.js plus qa-artifacts/missed-slot-board/latest.{json,md,txt} and BERTLCLAW-QA-MISSED-SLOT-BOARD-2026-04-02.md; QA daily rhythm now calls the missed-slot board when full-hour gaps appear, turning missing hourly updates into an explicit recovery queue with copy-ready catch-up lines.",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:44 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:44:00.000Z"
+    },
+    {
+      "raw": "[2026-04-02 13:43 CEST] Legal/compliance page-zone publishing layer added: created `BERTLCLAW-HOMEPAGE-SERVICES-PROOF-PLACEMENT-POLICY-2026-04-02.md` as the concrete homepage/services/proof zone matrix for allowed claim levels, proof types, red flags, and copy patterns. It turns the approval register + claim checklist into a direct placement decision rule for public BertlClaw pages.",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 43,
+      "message": "Legal/compliance page-zone publishing layer added: created `BERTLCLAW-HOMEPAGE-SERVICES-PROOF-PLACEMENT-POLICY-2026-04-02.md` as the concrete homepage/services/proof zone matrix for allowed claim levels, proof types, red flags, and copy patterns. It turns the approval register + claim checklist into a direct placement decision rule for public BertlClaw pages.",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:43 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:43:00.000Z"
+    },
+    {
+      "raw": "[2026-04-02 13:47 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-02 13:47)",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 47,
+      "message": "hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-02 13:47)",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:47 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:47:00.000Z"
+    },
+    {
+      "raw": "[2026-04-02 13:47 CEST] QA catch-up runner added after the missed-slot board: created bertlclaw-tools/qa-catchup-runner.js plus qa-artifacts/catchup-runner/latest.{json,md,txt} and BERTLCLAW-QA-CATCHUP-RUNNER-2026-04-02.md to turn missing hourly slots into per-slot catch-up text, evidence-vs-ack mode, and a clear-after-send verification workflow.",
+      "year": 2026,
+      "month": 4,
+      "day": 2,
+      "hour": 13,
+      "minute": 47,
+      "message": "QA catch-up runner added after the missed-slot board: created bertlclaw-tools/qa-catchup-runner.js plus qa-artifacts/catchup-runner/latest.{json,md,txt} and BERTLCLAW-QA-CATCHUP-RUNNER-2026-04-02.md to turn missing hourly slots into per-slot catch-up text, evidence-vs-ack mode, and a clear-after-send verification workflow.",
+      "date": "2026-04-02",
+      "stamp": "2026-04-02 13:47 CEST",
+      "slot": "2026-04-02 13:00 CEST",
+      "dateObj": "2026-04-02T11:47:00.000Z"
+    }
+  ],
+  "previous_completed_slot_evidence": [],
+  "narration_anchors": [
+    "QA missed-slot recovery asset added: created bertlclaw-tools/qa-missed-slot-board.js plus qa-artifacts/missed-slot-board/latest.{json,md,txt} and BERTLCLAW-QA-MISSED-SLOT-BOARD-20…",
+    "Legal/compliance page-zone publishing layer added: created `BERTLCLAW-HOMEPAGE-SERVICES-PROOF-PLACEMENT-POLICY-2026-04-02.md` as the concrete homepage/services/proof zone matrix f…",
+    "QA catch-up runner added after the missed-slot board: created bertlclaw-tools/qa-catchup-runner.js plus qa-artifacts/catchup-runner/latest.{json,md,txt} and BERTLCLAW-QA-CATCHUP-R…"
+  ],
+  "drift_signals": [
+    "4 missing hourly slot(s) still visible in the audit chain."
+  ],
+  "operator_hint": "Use current_slot_evidence and narration_anchors first when filling \"This hour done\"."
+}

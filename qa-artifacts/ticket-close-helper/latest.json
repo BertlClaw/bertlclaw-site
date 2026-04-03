@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-04-02 13:47:32 CEST",
+  "slot": "2026-04-02 13:00 CEST",
+  "selected_bug_ids": [
+    "BCQA-001",
+    "BCQA-004",
+    "BCQA-002"
+  ],
+  "hourly_status": {
+    "slot": "2026-04-02 13:00 CEST",
+    "summary_line": "[2026-04-02 13:00 CEST] QA hourly status ready — status=needs-human-on-p0, queue=4, blockers=2, top_done=QA missed-slot recovery asset added: created bertlclaw-tools/qa-missed-slot-board.js plus qa-artifacts/missed-slot-board/latest.{json,md,txt} and BERTLCLAW-QA-MISSED-SLO…, top_open=BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery, next=BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery"
+  },
+  "close_candidates": [
+    {
+      "bug_id": "BCQA-001",
+      "title": "Form submit delivery not yet manually confirmed",
+      "severity": "P0",
+      "status": "blocked_manual_access",
+      "lane": "manual-blocker",
+      "page_or_flow": "index.html -> Formspree -> danke.html",
+      "environment": "Desktop+Mobile",
+      "needs_manual_access": "yes",
+      "worksheet": "Use BERTLCLAW-QA-PROOF-MOBILE-FORM-SCORECARD-2026-04-02.md",
+      "current_actual": "Frontend path exists but real receipt is not yet confirmed from current workspace-only QA",
+      "current_evidence": "Static code shows fetch POST to Formspree endpoint and redirect to danke.html; no mailbox/Formspree confirmation available locally",
+      "current_next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery",
+      "csv_status_options": "blocked_manual_access or retested_pass",
+      "hourly_anchor": "[2026-04-02 13:00 CEST] QA hourly status ready — status=needs-human-on-p0, queue=4, blockers=2, top_done=QA missed-slot recovery asset added: created bertlclaw-tools/qa-missed-slot-board.js plus qa-artifacts/missed-slot-board/latest.{json,md,txt} and BERTLCLAW-QA-MISSED-SLO…, top_open=BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery, next=BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery"
+    },
+    {
+      "bug_id": "BCQA-004",
+      "title": "Mobile CTA/chat/contact collision risk still needs real-device confirmation",
+      "severity": "P1",
+      "status": "blocked_manual_access",
+      "lane": "manual-blocker",
+      "page_or_flow": "services.html and offer pages -> chat / sticky CTA / contact handoff",
+      "environment": "Mobile real-device",
+      "needs_manual_access": "yes",
+      "worksheet": "Use BERTLCLAW-QA-PROOF-MOBILE-FORM-SCORECARD-2026-04-02.md",
+      "current_actual": "Manual feedback indicates the remaining uncertainty is no longer generic mobile UX but real-device collision/overlap verification between chat CTA bars and the contact area; workspace QA cannot close this from static inspection alone",
+      "current_evidence": "Local CSS improvements exist for mobile spacing/safe-area handling, but no evidence yet from a real handset run with screenshots/video proving that no important UI is covered during the handoff",
+      "current_next_action": "Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state",
+      "csv_status_options": "blocked_manual_access or retested_pass",
+      "hourly_anchor": "[2026-04-02 13:00 CEST] QA hourly status ready — status=needs-human-on-p0, queue=4, blockers=2, top_done=QA missed-slot recovery asset added: created bertlclaw-tools/qa-missed-slot-board.js plus qa-artifacts/missed-slot-board/latest.{json,md,txt} and BERTLCLAW-QA-MISSED-SLO…, top_open=BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery, next=BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery"
+    },
+    {
+      "bug_id": "BCQA-002",
+      "title": "Reminder system is policy-defined but not technically scheduled",
+      "severity": "P1",
+      "status": "ready_for_retest",
+      "lane": "retest-close",
+      "page_or_flow": "BERTLCLAW-REMINDER-SYSTEM.md / operations reporting",
+      "environment": "System",
+      "needs_manual_access": "no",
+      "worksheet": "Use BERTLCLAW-QA-TOP5-FIX-VERIFICATION-WORKSHEET-2026-04-02.md",
+      "current_actual": "Local technical basis now exists via heartbeat/state/log wiring, but external scheduling is still not yet attached",
+      "current_evidence": "Added bertlclaw-tools/reminder-heartbeat.js plus state/bertlclaw-reminders.json and updated reminder doc to reflect locally executable trigger basis",
+      "current_next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling",
+      "csv_status_options": "retested_pass / partial / retested_fail",
+      "hourly_anchor": "[2026-04-02 13:00 CEST] QA hourly status ready — status=needs-human-on-p0, queue=4, blockers=2, top_done=QA missed-slot recovery asset added: created bertlclaw-tools/qa-missed-slot-board.js plus qa-artifacts/missed-slot-board/latest.{json,md,txt} and BERTLCLAW-QA-MISSED-SLO…, top_open=BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery, next=BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery"
+    }
+  ]
+}

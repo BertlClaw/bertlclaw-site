@@ -1,0 +1,12 @@
+[2026-04-02 13:47:11 CEST] Missed-slot board FAIL — 6 missing hourly slot(s) in last 8h; oldest=2026-04-02 06:00, newest=2026-04-02 12:00.
+Freshest anchor: QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourly-draft.js` so "This hour done" now prefers slot anchors/evidence befo…
+Top open: BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery
+Top next: BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery
+
+Recovery queue:
+1. 2026-04-02 12:00 -> Publish a catch-up note for 2026-04-02 12:00 using the freshest visible anchor: QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourly-draft.js…
+2. 2026-04-02 10:00 -> Backfill 2026-04-02 10:00 with a brief evidence-based line, then continue to the next older missed slot
+3. 2026-04-02 09:00 -> Backfill 2026-04-02 09:00 with a brief evidence-based line, then continue to the next older missed slot
+4. 2026-04-02 08:00 -> Backfill 2026-04-02 08:00 with a brief evidence-based line, then continue to the next older missed slot
+5. 2026-04-02 07:00 -> Backfill 2026-04-02 07:00 with a brief evidence-based line, then continue to the next older missed slot
+6. 2026-04-02 06:00 -> Backfill 2026-04-02 06:00 with a brief evidence-based line, then continue to the next older missed slot

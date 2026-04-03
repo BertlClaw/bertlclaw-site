@@ -1,0 +1,2 @@
+created_at,lead_id,status,score,name,company,email,phone,preferred_contact,topic,message,source_channel,source_detail,landing_page,referrer,utm_source,utm_medium,utm_campaign,utm_content,kernangebot,problem_clarity,offer_fit,material_readiness,timing,decision_readiness,lead_entry,next_step,next_followup_date,last_contact_at,price_status,proposal_sent_at,reason_lost,owner,notes
+2026-03-31T00:00:00+02:00,BC-2026-0001,Neu,B,,,,,,,Website-Formular,index.html kontaktformular,/index.html,,,,,,noch offen,low,unknown,unknown,unknown,unknown,form_submit,send_ack_and_qualify,,,,,,,

@@ -1,0 +1,2 @@
+bug_id,created_at,title,type,severity,status,page_or_flow,environment,steps_to_reproduce,expected,actual,evidence,owner,needs_manual_access,next_action,retest_after,closed_at,notes
+QA-001,,,,new,,,,,,,,,,,,

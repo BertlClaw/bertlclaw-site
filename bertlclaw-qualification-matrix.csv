@@ -1,0 +1,11 @@
+stage,condition,problem_clarity,offer_fit,material,timing,decision_readiness,score,next_action,status_template,notes
+new_inbound,Anfrage eingegangen aber noch kaum Infos,low,unknown,unknown,unknown,unknown,B,send_ack_and_qualify,Neu,Erste Antwort mit 3-5 Fragen
+clear_landingpage,Website oder Landingpage klar als Thema genannt,medium_or_high,high,medium_or_high,medium_or_high,medium_or_high,A,offer_call_or_entry_scope,Qualifiziert,Zu Landingpage Sprint routen
+clear_copy,Texte oder Positionierung klar als Problem genannt,medium_or_high,high,medium_or_high,medium_or_high,medium_or_high,A,offer_call_or_entry_scope,Qualifiziert,Zu Positionierung & Website-Texte routen
+clear_structure,Chaos Ordnung Prioritäten Doku als Problem genannt,medium_or_high,high,medium_or_high,medium_or_high,medium_or_high,A,offer_call_or_entry_scope,Qualifiziert,Zu Digitale Ordnung & Klarheit routen
+good_but_unclear,Interessant aber Scope noch unscharf,medium,medium_or_high,low_or_medium,medium,medium,B,ask_3_to_5_questions,Wartet auf Antwort Kunde,Mini-Scoping statt Vollangebot
+warm_but_early,Fit grundsätzlich da aber später relevant,medium,medium_or_high,low_or_medium,low,medium,B,park_with_revisit_date,Wartet auf Antwort Kunde,Wiedervorlage in 30-90 Tagen
+no_fit,Anfrage passt nicht zu Kernangeboten,any,low,any,any,any,C,close_politely,Verloren / nicht passend,Grund dokumentieren
+no_reply_after_qualify,Keine Antwort nach Qualifizierungsfragen,unknown,medium_or_high,unknown,unknown,unknown,C,final_followup_then_pause,Verloren / nicht passend,Nach 2 Touches pausieren
+proposal_sent,Einordnung oder Angebot verschickt,high,high,high_or_medium,medium_or_high,medium_or_high,A,followup_3_to_5_days,Angebot offen,Versanddatum pflegen
+won,Lead zugesagt oder Auftrag fixiert,high,high,high,high,high,A,start_project,Gewonnen,Startdatum und Inputs erfassen

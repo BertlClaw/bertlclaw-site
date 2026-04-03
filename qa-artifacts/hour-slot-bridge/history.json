@@ -1,0 +1,55 @@
+[
+  {
+    "captured_at": "2026-04-02 13:47:31 CEST",
+    "slot": "2026-04-02 13:00 CEST",
+    "headline_status": "needs-human-on-p0",
+    "ready_for_retest_count": 4,
+    "manual_blockers_count": 2,
+    "missing_hourly_slots_count": 4,
+    "active_bug_map": {
+      "BCQA-001": {
+        "status": "blocked_manual_access",
+        "severity": "P0",
+        "title": "Form submit delivery not yet manually confirmed",
+        "next_action": "Run real end-to-end submit and verify Formspree/mailbox delivery",
+        "needs_manual_access": "yes"
+      },
+      "BCQA-002": {
+        "status": "ready_for_retest",
+        "severity": "P1",
+        "title": "Reminder system is policy-defined but not technically scheduled",
+        "next_action": "Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling",
+        "needs_manual_access": "no"
+      },
+      "BCQA-003": {
+        "status": "ready_for_retest",
+        "severity": "P1",
+        "title": "Startpage JSON-LD SearchAction likely does not match a real site search",
+        "next_action": "Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax",
+        "needs_manual_access": "no"
+      },
+      "BCQA-004": {
+        "status": "blocked_manual_access",
+        "severity": "P1",
+        "title": "Mobile CTA/chat/contact collision risk still needs real-device confirmation",
+        "next_action": "Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state",
+        "needs_manual_access": "yes"
+      },
+      "BCQA-005": {
+        "status": "ready_for_retest",
+        "severity": "P1",
+        "title": "Proof visibility and evidence prominence are insufficiently proven",
+        "next_action": "Run a visibility-first proof sweep on homepage plus proof.html and produce a ranked list of hidden vs visible proof elements with screenshot evidence",
+        "needs_manual_access": "no"
+      },
+      "BCQA-006": {
+        "status": "ready_for_retest",
+        "severity": "P1",
+        "title": "Hourly reporting reliability not yet proven by repeatable check routine",
+        "next_action": "Run local audit and confirm missing/full hour visibility against the operations log",
+        "needs_manual_access": "no"
+      }
+    },
+    "log_evidence_count": 15
+  }
+]

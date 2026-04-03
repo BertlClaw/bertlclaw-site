@@ -1,0 +1,6 @@
+1. 2026-04-02 12:00 [ACK_ONLY] -> QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourly-draft.js` so "This hour done" now prefers slot anchors/evidence befo…
+2. 2026-04-02 10:00 [EVIDENCE_READY] -> WS4 sales/pricing/closing: created `BERTLCLAW-DEAL-DESIGN-AND-QUOTE-ADVISOR.md` and local CLI `bertlclaw-tools/quote-advisor.js` to turn lead quality + scope +…
+3. 2026-04-02 09:00 [ACK_ONLY] -> No slot-specific evidence line found in the operations log.
+4. 2026-04-02 08:00 [ACK_ONLY] -> No slot-specific evidence line found in the operations log.
+5. 2026-04-02 07:00 [ACK_ONLY] -> No slot-specific evidence line found in the operations log.
+6. 2026-04-02 06:00 [ACK_ONLY] -> No slot-specific evidence line found in the operations log.

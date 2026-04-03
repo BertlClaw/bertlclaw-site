@@ -1,0 +1,44 @@
+# BertlClaw QA Hourly Status
+
+Generated: 2026-04-02 13:47:32 CEST
+Slot: 2026-04-02 13:00 CEST
+
+## One-line status
+- [2026-04-02 13:00 CEST] QA hourly status ready — status=needs-human-on-p0, queue=4, blockers=2, top_done=QA missed-slot recovery asset added: created bertlclaw-tools/qa-missed-slot-board.js plus qa-artifacts/missed-slot-board/latest.{json,md,txt} and BERTLCLAW-QA-MISSED-SLO…, top_open=BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery, next=BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery
+
+## Copy-ready hourly update
+
+```text
+[2026-04-02 13:00 CEST] QA hourly update
+
+Stream:
+- Status: needs-human-on-p0
+- Freshness: last run 0 min ago, last hourly update 1 min ago
+- Retest queue: 4
+- Manual blockers: 2
+
+This hour done:
+- QA missed-slot recovery asset added: created bertlclaw-tools/qa-missed-slot-board.js plus qa-artifacts/missed-slot-board/latest.{json,md,txt} and BERTLCLAW-QA-MISSED-SLO…
+- Legal/compliance page-zone publishing layer added: created `BERTLCLAW-HOMEPAGE-SERVICES-PROOF-PLACEMENT-POLICY-2026-04-02.md` as the concrete homepage/services/proof zon…
+- QA control artifacts -> DONE — control tower=ATTENTION, ops=FAIL, priority=2026-04-02 13:47:31 CEST
+
+Open pressure now:
+- BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery
+- Retest queue pressure: 4 item(s) ready for retest (BCQA-002, BCQA-003, BCQA-005, BCQA-006)
+- Reporting reliability pressure: 4 missing hourly slot(s); ops status=FAIL
+
+Next before next full hour:
+1. BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery
+2. BCQA-004: Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state
+3. BCQA-002: Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling
+
+Ask / dependency:
+- BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery
+```
+
+## Compact version
+
+```text
+[13:00 CEST] QA: status=needs-human-on-p0, queue=4, blockers=2. Done: QA missed-slot recovery asset added: created bertlclaw-tools/qa-missed-slot-board.js plus…, Legal/compliance page-zone publishing layer added: created `BERTLCLAW-HOMEPAGE-SERVICES-P…. Open: BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox …. Next: BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery. Need human: BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery.
+```
+

@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-04-02 13:47:31 CEST",
+  "hours_window": 6,
+  "run_mode": "full-sequence",
+  "overall_status": "ATTENTION",
+  "failed_step": null,
+  "steps": [
+    {
+      "name": "reminder-heartbeat",
+      "ok": true,
+      "seconds": 0.09,
+      "output_preview": "{\n  \"ok\": true,\n  \"now\": {\n    \"date\": \"2026-04-02\",\n    \"time\": \"13:47:31\",\n    \"hourMinute\": \"13:47\",\n    \"stamp\": \"2026-04-02 13:47 CEST\",\n    \"fullStamp\": \"2026-04-02 13:47:31 CEST\"\n  },\n  \"emitted\": [],\n  \"statePath\": \"/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json\",\n  \"logPath\": \"/home/dominic/.openclaw/workspace/logs/bertlclaw-operations.log\""
+    },
+    {
+      "name": "reminder-audit",
+      "ok": true,
+      "seconds": 0.1,
+      "output_preview": "{\n  \"generated_at\": \"2026-04-02 13:47:31 CEST\",\n  \"audit_window_hours\": 6,\n  \"expected_hourly_slots\": [\n    \"2026-04-02 08:00\",\n    \"2026-04-02 09:00\",\n    \"2026-04-02 10:00\",\n    \"2026-04-02 11:00\",\n    \"2026-04-02 12:00\",\n    \"2026-04-02 13:00\"\n  ],\n  \"missing_hourly_slots\": ["
+    },
+    {
+      "name": "qa-proof-of-run",
+      "ok": true,
+      "seconds": 0.09,
+      "output_preview": "{\n  \"generated_at\": \"2026-04-02 13:47:31 CEST\",\n  \"source_artifacts\": {\n    \"statePath\": \"/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json\",\n    \"auditPath\": \"/home/dominic/.openclaw/workspace/qa-artifacts/reminder-audit/latest.json\",\n    \"bugsPath\": \"/home/dominic/.openclaw/workspace/bertlclaw-qa-active-bugs.csv\"\n  },\n  \"totals\": {\n    \"bug_count\": 6,\n    \"by_status\": {\n      \"blocked_manual_access\": 2,\n      \"ready_for_retest\": 4"
+    },
+    {
+      "name": "qa-stream-status",
+      "ok": true,
+      "seconds": 0.09,
+      "output_preview": "{\n  \"generated_at\": \"2026-04-02 13:47:31 CEST\",\n  \"stream_generated_at\": \"2026-04-02 13:47:31 CEST\",\n  \"headline_status\": \"needs-human-on-p0\",\n  \"counters\": {\n    \"bug_count\": 6,\n    \"by_status\": {\n      \"blocked_manual_access\": 2,\n      \"ready_for_retest\": 4\n    },\n    \"ready_for_retest_count\": 4,\n    \"blocked_manual_access_count\": 2"
+    },
+    {
+      "name": "qa-ops-control",
+      "ok": true,
+      "seconds": 0.1,
+      "output_preview": "{\n  \"generated_at\": \"2026-04-02 13:47:31 CEST\",\n  \"source_stream_generated_at\": \"2026-04-02 13:47:31 CEST\",\n  \"source_proof_generated_at\": \"2026-04-02 13:47:31 CEST\",\n  \"overall_status\": \"FAIL\",\n  \"stale_stream_detected\": true,\n  \"missing_hourly_slots\": [\n    \"2026-04-02 08:00\",\n    \"2026-04-02 09:00\",\n    \"2026-04-02 10:00\",\n    \"2026-04-02 12:00\"\n  ],"
+    }
+  ],
+  "signals": {
+    "stale_stream_detected": true,
+    "missing_hourly_slots": [
+      "2026-04-02 08:00",
+      "2026-04-02 09:00",
+      "2026-04-02 10:00",
+      "2026-04-02 12:00"
+    ],
+    "next_expected_hourly_slot": "2026-04-02 14:00",
+    "ready_for_retest_count": 4,
+    "blocked_manual_access_count": 2,
+    "p0_blocked_count": 1,
+    "headline_status": "needs-human-on-p0",
+    "ops_control_status": "FAIL"
+  },
+  "next_moves": [
+    "Treat stream freshness as broken until the next full-hour update is visible in both state and log artifacts.",
+    "Recover missed slots or annotate why they were missed: 2026-04-02 08:00, 2026-04-02 09:00, 2026-04-02 10:00, 2026-04-02 12:00.",
+    "Escalate human blocker: BCQA-001.",
+    "Burn down retest queue before new exploratory work: BCQA-002, BCQA-003, BCQA-005, BCQA-006."
+  ],
+  "artifact_paths": {
+    "auditPath": "/home/dominic/.openclaw/workspace/qa-artifacts/reminder-audit/latest.json",
+    "proofPath": "/home/dominic/.openclaw/workspace/qa-artifacts/proof-of-run/latest.json",
+    "streamPath": "/home/dominic/.openclaw/workspace/qa-artifacts/stream-status/latest.json",
+    "opsPath": "/home/dominic/.openclaw/workspace/qa-artifacts/ops-control/latest.json",
+    "outJson": "/home/dominic/.openclaw/workspace/qa-artifacts/control-tower/latest.json",
+    "outMd": "/home/dominic/.openclaw/workspace/qa-artifacts/control-tower/latest.md"
+  }
+}

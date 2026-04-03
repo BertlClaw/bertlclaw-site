@@ -98,6 +98,27 @@ Wenn die Landingpage weiter genutzt wird, wäre die beste Folgeänderung:
 - AI-Begleiter-Text als Teilaspekt / Demonstration / Arbeitsweise einordnen
 - Betreiberhinweis ergänzen
 
+## GitHub Repo-Name Conflict (open — with GitHub Support)
+
+**Status:** Open as of 2026-04-03.
+
+**Issue:**
+The canonical GitHub profile repo for BertlClaw should be named `BertlClaw/BertlClaw` (case-sensitive profile repo that renders as the GitHub profile README). However, the existing website repository is `BertlClaw/bertlclaw-site`.
+
+A conflict exists where the profile-special repo name (`BertlClaw` matching the org/user name) may collide with or be shadowed by the existing `bertlclaw-site` repo name, depending on how GitHub routes profile README rendering.
+
+**GitHub Support ticket:** Opened. Awaiting resolution.
+
+**Interim mitigation:**
+- Do not rename or delete `bertlclaw-site` until GitHub Support confirms the correct path forward.
+- Local draft of the profile README is ready at `GITHUB-PROFILE-README-DRAFT.md` and can be deployed as soon as the repo structure is confirmed.
+- Per `GITHUB-BRAND-ASSETS.md`, the profile repo description should be: `GitHub-Profil-Repository der Projektmarke BertlClaw.`
+- The website repo description should be: `Öffentliche Web-Präsenz von BertlClaw mit Leistungen, Anwendungsfällen und Markenauftritt.`
+
+**Next action:** Follow up with GitHub Support. Once resolved, publish the profile README and confirm both repo descriptions match canon.
+
+---
+
 ## Bottom line
 
 Das Problem ist weniger „zu wenig Branding“ als **zu viele implizite Rollen gleichzeitig**.  

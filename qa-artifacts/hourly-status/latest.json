@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-04-02 13:47:32 CEST",
+  "slot": "2026-04-02 13:00 CEST",
+  "summary_line": "[2026-04-02 13:00 CEST] QA hourly status ready — status=needs-human-on-p0, queue=4, blockers=2, top_done=QA missed-slot recovery asset added: created bertlclaw-tools/qa-missed-slot-board.js plus qa-artifacts/missed-slot-board/latest.{json,md,txt} and BERTLCLAW-QA-MISSED-SLO…, top_open=BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery, next=BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery",
+  "draft_path": "/home/dominic/.openclaw/workspace/qa-artifacts/hourly-update-draft/latest.json",
+  "draft": {
+    "generated_at": "2026-04-02 13:47:32 CEST",
+    "slot": "2026-04-02 13:00 CEST",
+    "source_artifacts": {
+      "streamPath": "/home/dominic/.openclaw/workspace/qa-artifacts/stream-status/latest.json",
+      "controlTowerPath": "/home/dominic/.openclaw/workspace/qa-artifacts/control-tower/latest.json",
+      "priorityPath": "/home/dominic/.openclaw/workspace/qa-artifacts/priority-board/latest.json",
+      "opsPath": "/home/dominic/.openclaw/workspace/qa-artifacts/ops-control/latest.json",
+      "bridgePath": "/home/dominic/.openclaw/workspace/qa-artifacts/hour-slot-bridge/latest.json",
+      "bugsPath": "/home/dominic/.openclaw/workspace/bertlclaw-qa-active-bugs.csv"
+    },
+    "source_generated_at": {
+      "stream": "2026-04-02 13:47:31 CEST",
+      "control_tower": "2026-04-02 13:47:31 CEST",
+      "priority": "2026-04-02 13:47:31 CEST",
+      "ops": "2026-04-02 13:47:31 CEST",
+      "bridge": "2026-04-02 13:47:31 CEST"
+    },
+    "stream": {
+      "status": "needs-human-on-p0",
+      "last_run_minutes": 0,
+      "last_hourly_update_minutes": 1,
+      "retest_queue": 4,
+      "manual_blockers": 2
+    },
+    "this_hour_done": [
+      "QA missed-slot recovery asset added: created bertlclaw-tools/qa-missed-slot-board.js plus qa-artifacts/missed-slot-board/latest.{json,md,txt} and BERTLCLAW-QA-MISSED-SLO…",
+      "Legal/compliance page-zone publishing layer added: created `BERTLCLAW-HOMEPAGE-SERVICES-PROOF-PLACEMENT-POLICY-2026-04-02.md` as the concrete homepage/services/proof zon…",
+      "QA control artifacts -> DONE — control tower=ATTENTION, ops=FAIL, priority=2026-04-02 13:47:31 CEST"
+    ],
+    "open_pressure": [
+      "BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery",
+      "Retest queue pressure: 4 item(s) ready for retest (BCQA-002, BCQA-003, BCQA-005, BCQA-006)",
+      "Reporting reliability pressure: 4 missing hourly slot(s); ops status=FAIL"
+    ],
+    "next_moves": [
+      "BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery",
+      "BCQA-004: Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state",
+      "BCQA-002: Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling"
+    ],
+    "dependency": "BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery",
+    "draft_text": "[2026-04-02 13:00 CEST] QA hourly update\n\nStream:\n- Status: needs-human-on-p0\n- Freshness: last run 0 min ago, last hourly update 1 min ago\n- Retest queue: 4\n- Manual blockers: 2\n\nThis hour done:\n- QA missed-slot recovery asset added: created bertlclaw-tools/qa-missed-slot-board.js plus qa-artifacts/missed-slot-board/latest.{json,md,txt} and BERTLCLAW-QA-MISSED-SLO…\n- Legal/compliance page-zone publishing layer added: created `BERTLCLAW-HOMEPAGE-SERVICES-PROOF-PLACEMENT-POLICY-2026-04-02.md` as the concrete homepage/services/proof zon…\n- QA control artifacts -> DONE — control tower=ATTENTION, ops=FAIL, priority=2026-04-02 13:47:31 CEST\n\nOpen pressure now:\n- BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery\n- Retest queue pressure: 4 item(s) ready for retest (BCQA-002, BCQA-003, BCQA-005, BCQA-006)\n- Reporting reliability pressure: 4 missing hourly slot(s); ops status=FAIL\n\nNext before next full hour:\n1. BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery\n2. BCQA-004: Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state\n3. BCQA-002: Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling\n\nAsk / dependency:\n- BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery",
+    "compact_text": "[13:00 CEST] QA: status=needs-human-on-p0, queue=4, blockers=2. Done: QA missed-slot recovery asset added: created bertlclaw-tools/qa-missed-slot-board.js plus…, Legal/compliance page-zone publishing layer added: created `BERTLCLAW-HOMEPAGE-SERVICES-P…. Open: BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox …. Next: BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery. Need human: BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery.",
+    "notes": [
+      "This helper now prefers hour-slot bridge anchors/evidence for the \"This hour done\" section before falling back to queue state.",
+      "This helper drafts the update from current artifact state; it does not reconstruct precise per-hour change history.",
+      "For the hardest hourly truth-check, run --refresh so control/priority/bridge artifacts are regenerated together."
+    ]
+  }
+}

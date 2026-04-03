@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-04-02 13:47:12 CEST",
+  "status": "ACTION_REQUIRED",
+  "audit_window_hours": 8,
+  "missing_slots_seen": [
+    "2026-04-02 06:00",
+    "2026-04-02 07:00",
+    "2026-04-02 08:00",
+    "2026-04-02 09:00",
+    "2026-04-02 10:00",
+    "2026-04-02 12:00"
+  ],
+  "handled_slots": [
+    "2026-04-02 12:00",
+    "2026-04-02 10:00",
+    "2026-04-02 09:00",
+    "2026-04-02 08:00",
+    "2026-04-02 07:00",
+    "2026-04-02 06:00"
+  ],
+  "handled_limit": 6,
+  "stream_status": "needs-human-on-p0",
+  "top_open_pressure": "BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery",
+  "top_next_move": "BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery",
+  "freshest_anchor": "QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourly-draft.js` so \"This hour done\" now prefers slot anchors/evidence befo…",
+  "runner_rule": "Work newest missing slot first. Use evidence-based text when a slot has real log lines; otherwise send acknowledgement-only text and keep the slot explicitly open until the audit chain clears.",
+  "runs": [
+    {
+      "priority": 1,
+      "slot": "2026-04-02 12:00",
+      "mode": "ACK_ONLY",
+      "evidence_count": 0,
+      "evidence_lines": [],
+      "freshest_line": "QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourly-draft.js` so \"This hour done\" now prefers slot anchors/evidence befo…",
+      "operator_risk": "HIGH",
+      "clear_after_send_check": [
+        "1. Send/use the catch-up text for 2026-04-02 12:00.",
+        "2. Re-run: node bertlclaw-tools/qa-missed-slot-board.js --refresh --hours=8",
+        "3. If 2026-04-02 12:00 still appears in qa-artifacts/missed-slot-board/latest.json, keep it OPEN and do not mark cleared."
+      ],
+      "catchup_text": "[2026-04-02 12:00 CEST] QA catch-up update\n\nStream:\n- Status: needs-human-on-p0\n- Backfill mode: acknowledgement-only (no slot-specific evidence visible yet)\n\nThis hour done:\n- Missed full-hour slot acknowledged; no reliable slot-specific completion line is visible in the operations log yet\n- Freshest visible anchor right now: QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourly-draft.js` so \"This hour done\" now pref…\n- Do not overclaim this slot until a real evidence line exists\n\nOpen pressure now:\n- BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery\n\nNext after catch-up send:\n1. BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery\n2. Add/locate real slot evidence if this hour should contain a concrete completion\n3. Refresh missed-slot board and keep this slot open until the audit chain clears"
+    },
+    {
+      "priority": 2,
+      "slot": "2026-04-02 10:00",
+      "mode": "EVIDENCE_READY",
+      "evidence_count": 3,
+      "evidence_lines": [
+        "WS4 sales/pricing/closing: created `BERTLCLAW-DEAL-DESIGN-AND-QUOTE-ADVISOR.md` and local CLI `bertlclaw-tools/quote-advisor.js` to turn lead quality + scope +…",
+        "Preference recorded: notify immediately whenever any BertlClaw subagent becomes idle or runs out of tasks.",
+        "QA workstream advanced: created BERTLCLAW-QA-ACTIVE-TEST-PLAN.md, BERTLCLAW-REPEATABLE-QA-CHECKS.md, and bertlclaw-qa-active-bugs.csv covering website/mobile/c…"
+      ],
+      "freshest_line": "WS4 sales/pricing/closing: created `BERTLCLAW-DEAL-DESIGN-AND-QUOTE-ADVISOR.md` and local CLI `bertlclaw-tools/quote-advisor.js` to turn lead quality + scope +…",
+      "operator_risk": "LOW",
+      "clear_after_send_check": [
+        "1. Send/use the catch-up text for 2026-04-02 10:00.",
+        "2. Re-run: node bertlclaw-tools/qa-missed-slot-board.js --refresh --hours=8",
+        "3. If 2026-04-02 10:00 still appears in qa-artifacts/missed-slot-board/latest.json, keep it OPEN and do not mark cleared."
+      ],
+      "catchup_text": "[2026-04-02 10:00 CEST] QA catch-up update\n\nStream:\n- Status: needs-human-on-p0\n- Backfill mode: evidence-based catch-up\n\nThis hour done:\n- WS4 sales/pricing/closing: created `BERTLCLAW-DEAL-DESIGN-AND-QUOTE-ADVISOR.md` and local CLI `bertlclaw-tools/quote-advisor.js` to turn lead quality + scope +…\n- Preference recorded: notify immediately whenever any BertlClaw subagent becomes idle or runs out of tasks.\n- QA workstream advanced: created BERTLCLAW-QA-ACTIVE-TEST-PLAN.md, BERTLCLAW-REPEATABLE-QA-CHECKS.md, and bertlclaw-qa-active-bugs.csv covering website/mobile/c…\n\nOpen pressure now:\n- BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery\n\nNext after catch-up send:\n1. BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery\n2. Refresh missed-slot board and verify whether 2026-04-02 10:00 is still missing\n3. If still missing, keep slot open and note the backlog explicitly"
+    },
+    {
+      "priority": 3,
+      "slot": "2026-04-02 09:00",
+      "mode": "ACK_ONLY",
+      "evidence_count": 0,
+      "evidence_lines": [],
+      "freshest_line": "No slot-specific evidence line found in the operations log.",
+      "operator_risk": "HIGH",
+      "clear_after_send_check": [
+        "1. Send/use the catch-up text for 2026-04-02 09:00.",
+        "2. Re-run: node bertlclaw-tools/qa-missed-slot-board.js --refresh --hours=8",
+        "3. If 2026-04-02 09:00 still appears in qa-artifacts/missed-slot-board/latest.json, keep it OPEN and do not mark cleared."
+      ],
+      "catchup_text": "[2026-04-02 09:00 CEST] QA catch-up update\n\nStream:\n- Status: needs-human-on-p0\n- Backfill mode: acknowledgement-only (no slot-specific evidence visible yet)\n\nThis hour done:\n- Missed full-hour slot acknowledged; no reliable slot-specific completion line is visible in the operations log yet\n- Freshest visible anchor right now: QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourly-draft.js` so \"This hour done\" now pref…\n- Do not overclaim this slot until a real evidence line exists\n\nOpen pressure now:\n- BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery\n\nNext after catch-up send:\n1. BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery\n2. Add/locate real slot evidence if this hour should contain a concrete completion\n3. Refresh missed-slot board and keep this slot open until the audit chain clears"
+    },
+    {
+      "priority": 4,
+      "slot": "2026-04-02 08:00",
+      "mode": "ACK_ONLY",
+      "evidence_count": 0,
+      "evidence_lines": [],
+      "freshest_line": "No slot-specific evidence line found in the operations log.",
+      "operator_risk": "HIGH",
+      "clear_after_send_check": [
+        "1. Send/use the catch-up text for 2026-04-02 08:00.",
+        "2. Re-run: node bertlclaw-tools/qa-missed-slot-board.js --refresh --hours=8",
+        "3. If 2026-04-02 08:00 still appears in qa-artifacts/missed-slot-board/latest.json, keep it OPEN and do not mark cleared."
+      ],
+      "catchup_text": "[2026-04-02 08:00 CEST] QA catch-up update\n\nStream:\n- Status: needs-human-on-p0\n- Backfill mode: acknowledgement-only (no slot-specific evidence visible yet)\n\nThis hour done:\n- Missed full-hour slot acknowledged; no reliable slot-specific completion line is visible in the operations log yet\n- Freshest visible anchor right now: QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourly-draft.js` so \"This hour done\" now pref…\n- Do not overclaim this slot until a real evidence line exists\n\nOpen pressure now:\n- BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery\n\nNext after catch-up send:\n1. BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery\n2. Add/locate real slot evidence if this hour should contain a concrete completion\n3. Refresh missed-slot board and keep this slot open until the audit chain clears"
+    },
+    {
+      "priority": 5,
+      "slot": "2026-04-02 07:00",
+      "mode": "ACK_ONLY",
+      "evidence_count": 0,
+      "evidence_lines": [],
+      "freshest_line": "No slot-specific evidence line found in the operations log.",
+      "operator_risk": "HIGH",
+      "clear_after_send_check": [
+        "1. Send/use the catch-up text for 2026-04-02 07:00.",
+        "2. Re-run: node bertlclaw-tools/qa-missed-slot-board.js --refresh --hours=8",
+        "3. If 2026-04-02 07:00 still appears in qa-artifacts/missed-slot-board/latest.json, keep it OPEN and do not mark cleared."
+      ],
+      "catchup_text": "[2026-04-02 07:00 CEST] QA catch-up update\n\nStream:\n- Status: needs-human-on-p0\n- Backfill mode: acknowledgement-only (no slot-specific evidence visible yet)\n\nThis hour done:\n- Missed full-hour slot acknowledged; no reliable slot-specific completion line is visible in the operations log yet\n- Freshest visible anchor right now: QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourly-draft.js` so \"This hour done\" now pref…\n- Do not overclaim this slot until a real evidence line exists\n\nOpen pressure now:\n- BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery\n\nNext after catch-up send:\n1. BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery\n2. Add/locate real slot evidence if this hour should contain a concrete completion\n3. Refresh missed-slot board and keep this slot open until the audit chain clears"
+    },
+    {
+      "priority": 6,
+      "slot": "2026-04-02 06:00",
+      "mode": "ACK_ONLY",
+      "evidence_count": 0,
+      "evidence_lines": [],
+      "freshest_line": "No slot-specific evidence line found in the operations log.",
+      "operator_risk": "HIGH",
+      "clear_after_send_check": [
+        "1. Send/use the catch-up text for 2026-04-02 06:00.",
+        "2. Re-run: node bertlclaw-tools/qa-missed-slot-board.js --refresh --hours=8",
+        "3. If 2026-04-02 06:00 still appears in qa-artifacts/missed-slot-board/latest.json, keep it OPEN and do not mark cleared."
+      ],
+      "catchup_text": "[2026-04-02 06:00 CEST] QA catch-up update\n\nStream:\n- Status: needs-human-on-p0\n- Backfill mode: acknowledgement-only (no slot-specific evidence visible yet)\n\nThis hour done:\n- Missed full-hour slot acknowledged; no reliable slot-specific completion line is visible in the operations log yet\n- Freshest visible anchor right now: QA hourly status reliability layer added: integrated hour-slot bridge evidence into `bertlclaw-tools/qa-hourly-draft.js` so \"This hour done\" now pref…\n- Do not overclaim this slot until a real evidence line exists\n\nOpen pressure now:\n- BCQA-001 remains the top business blocker: Run real end-to-end submit and verify Formspree/mailbox delivery\n\nNext after catch-up send:\n1. BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery\n2. Add/locate real slot evidence if this hour should contain a concrete completion\n3. Refresh missed-slot board and keep this slot open until the audit chain clears"
+    }
+  ],
+  "clearance_workflow": [
+    "Generate/refresh the runner.",
+    "Send the newest catch-up text first.",
+    "Refresh the missed-slot board.",
+    "Only treat a slot as cleared when it disappears from the missed-slot board after refresh."
+  ]
+}

@@ -9,7 +9,7 @@ Ziel dieses Dokuments: eine **kanonische lokale Referenz**, damit README, GitHub
 - **Case-sensitive brand form:** `BertlClaw`
 - **Language:** de
 - **Entity type (pragmatisch):** Brand / project brand / personal business brand
-- **Associated person / operator:** Dominic Reisenbichler
+- **Associated person / operator:** Dominic Reisenbichler, MSc.
 - **Primary platform:** GitHub Pages + GitHub profile
 
 ## 2) Canonical Positioning
@@ -18,7 +18,7 @@ Ziel dieses Dokuments: eine **kanonische lokale Referenz**, damit README, GitHub
 BertlClaw ist eine deutschsprachige Marke für Landingpages, Website-Texte, Positionierung, digitale Struktur und KI-gestützte Unterstützung.
 
 **Etwas länger:**
-BertlClaw ist die Projekt- und Markenidentität von Dominic Reisenbichler für digitale Angebote rund um Landingpages, Website-Texte, Positionierung, Struktur, Dokumentation und praktische KI-Unterstützung.
+BertlClaw ist die Projekt- und Markenidentität von Dominic Reisenbichler, MSc. für digitale Angebote rund um Landingpages, Website-Texte, Positionierung, Struktur, Dokumentation und praktische KI-Unterstützung.
 
 ## 3) Avoided Ambiguities
 
@@ -32,7 +32,7 @@ Diese Punkte sollten nicht unkommentiert vermischt werden:
 Empfohlene Auflösung:
 
 - **Marke:** BertlClaw
-- **Betreiber:** Dominic Reisenbichler
+- **Betreiber:** Dominic Reisenbichler, MSc.
 - **Mögliche Ausprägungen unter der Marke:** Website, Inhalte, KI-gestützte Unterstützung, digitale Services, Projektseiten
 
 ## 4) Canonical One-Liners
@@ -49,7 +49,7 @@ BertlClaw verbindet klare Kommunikation, digitale Struktur und KI-gestützte Unt
 ## 5) Canonical Links
 
 - **GitHub profile:** https://github.com/BertlClaw
-- **Repository:** https://github.com/BertlClaw/bertlclaw-site-site
+- **Repository:** https://github.com/BertlClaw/bertlclaw-site
 - **Website:** https://bertlclaw.github.io/bertlclaw-site/
 
 ## 6) Asset Canon
@@ -104,4 +104,4 @@ Problematisch wäre:
 
 Am saubersten für jetzt:
 
-> BertlClaw ist die Projektmarke von Dominic Reisenbichler für Landingpages, Website-Texte, Positionierung, digitale Struktur und KI-gestützte Unterstützung.
+> BertlClaw ist die Projektmarke von Dominic Reisenbichler, MSc. für Landingpages, Website-Texte, Positionierung, digitale Struktur und KI-gestützte Unterstützung.

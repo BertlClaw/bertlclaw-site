@@ -9,9 +9,11 @@ Use this directory to ensure every real project creates reusable business proof:
 - `projects/` — one folder per project
 - `library/proof-atoms/` — small reusable proof elements extracted from projects
 - `library/deliverable-gallery/` — showcaseable examples of concrete outputs
+- `library/internal-examples/` — internal demonstrators that make the proof system concrete before more real approved cases exist
 - `library/claims/` — safe claim language and publication phrasing
-- `library/approvals/` — approval wording and permission patterns
-- `templates/` — starter files for new projects
+- `library/approvals/` — approval wording, permission patterns, and the proof approval register/tracker
+- `library/publication/` — scorecards, deployment maps, and publication-quality checks
+- `templates/` — starter files for new projects, publication conversion, proposals, and follow-up reuse
 
 ## New project rule
 
@@ -30,3 +32,6 @@ See:
 - `/home/dominic/.openclaw/workspace/BERTLCLAW-PROOF-SYSTEM.md`
 - `/home/dominic/.openclaw/workspace/BERTLCLAW-PROOF-OPS-CHECKLIST.md`
 - `/home/dominic/.openclaw/workspace/BERTLCLAW-CASE-EVIDENCE-OPERATING-SYSTEM.md`
+- `/home/dominic/.openclaw/workspace/bertlclaw-proof/library/publication/PROOF-DEPLOYMENT-MAP.md`
+- `/home/dominic/.openclaw/workspace/bertlclaw-proof/templates/PROPOSAL-PROOF-BLOCK-TEMPLATE.md`
+- `/home/dominic/.openclaw/workspace/bertlclaw-proof/templates/FOLLOW-UP-PROOF-SNIPPETS.md`

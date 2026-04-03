@@ -39,20 +39,58 @@
     .case-flow{display:grid;gap:10px;margin-top:16px}
     .case-step{padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--muted);line-height:1.65}
     .case-step strong{color:var(--text);display:block;margin-bottom:4px}
+    .proof-shell{display:grid;gap:14px;margin-top:18px}
+    .proof-row{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .artifact-card,.compare-card,.excerpt-card,.micro-cta{padding:14px 16px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+    .artifact-card strong,.compare-card strong,.excerpt-card strong,.micro-cta strong{color:var(--text);display:block;margin-bottom:6px}
+    .artifact-card span,.compare-card span,.excerpt-card span,.micro-cta span{display:block;color:var(--muted);line-height:1.65}
+    .evidence-stage{display:grid;gap:14px;margin-top:18px}
+    .evidence-stage-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:14px}
+    .evidence-frame{position:relative;min-height:220px;padding:18px;border-radius:22px;border:1px solid rgba(124,156,255,.2);background:linear-gradient(180deg, rgba(16,24,43,.92), rgba(9,14,26,.84));overflow:hidden}
+    .evidence-frame::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg, rgba(124,156,255,.12), transparent 45%, rgba(89,225,191,.08) 100%);pointer-events:none}
+    .evidence-frame::after{content:"";position:absolute;inset:14px;border-radius:16px;border:1px dashed rgba(223,231,255,.18);pointer-events:none}
+    .evidence-window{position:relative;z-index:1;height:100%;min-height:184px;border-radius:16px;border:1px solid rgba(255,255,255,.08);background:repeating-linear-gradient(135deg, rgba(124,156,255,.07), rgba(124,156,255,.07) 14px, rgba(255,255,255,.02) 14px, rgba(255,255,255,.02) 28px);display:grid;align-content:space-between;padding:16px}
+    .evidence-topline{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+    .evidence-chip{display:inline-flex;padding:6px 10px;border-radius:999px;border:1px solid rgba(124,156,255,.22);background:rgba(124,156,255,.12);font-size:.76rem;color:#e4ebff}
+    .evidence-chip.pending{border-color:rgba(255,214,122,.24);background:rgba(255,214,122,.10);color:#ffe9ad}
+    .evidence-window strong{display:block;color:var(--text);font-size:1.04rem;max-width:24ch}
+    .evidence-window p{margin:8px 0 0;max-width:44ch}
+    .evidence-meta{display:grid;gap:8px}
+    .evidence-meta div{padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:rgba(4,7,18,.34);color:var(--muted);line-height:1.55}
+    .evidence-meta strong{color:var(--text)}
+    .media-pattern{display:grid;gap:12px}
+    .media-slot{padding:16px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+    .media-slot strong{display:block;color:var(--text);margin-bottom:6px}
+    .media-slot small{display:block;color:#d8e2ff;margin-top:8px}
+    .slot-kinds{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .slot-kinds span{padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.03);font-size:.82rem;color:var(--muted)}
+    .artifact-label{display:inline-flex;padding:6px 10px;border-radius:999px;border:1px solid rgba(124,156,255,.22);background:rgba(124,156,255,.10);font-size:.76rem;color:#dfe7ff;margin-bottom:10px}
+    .compare-card.before{border-color:rgba(255,139,139,.18);background:rgba(255,139,139,.05)}
+    .compare-card.after{border-color:rgba(89,225,191,.18);background:rgba(89,225,191,.06)}
+    .compare-card code,.excerpt-card code{display:block;margin-top:8px;padding:10px 12px;border-radius:12px;background:rgba(4,7,18,.54);border:1px solid rgba(255,255,255,.08);color:#e8eeff;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9rem;white-space:pre-wrap}
+    .artifact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
     .artifact-list{list-style:none;padding-left:0;margin:16px 0 0;display:grid;gap:10px}
     .artifact-list li{padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--muted);line-height:1.65}
     .artifact-list li strong{color:var(--text)}
+    .blueprint-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+    .blueprint-card{padding:18px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+    .blueprint-card strong{display:block;color:var(--text);margin-bottom:8px}
+    .blueprint-card code{display:block;margin-top:10px;padding:10px 12px;border-radius:12px;background:rgba(4,7,18,.54);border:1px solid rgba(255,255,255,.08);color:#e8eeff;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88rem;white-space:pre-wrap}
+    .approval-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .approval-strip span{padding:9px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);color:#dce5ff;font-size:.83rem}
+    .micro-cta{display:grid;gap:8px;background:linear-gradient(135deg, rgba(124,156,255,.08), rgba(89,225,191,.06)), rgba(255,255,255,.03)}
+    .micro-cta a{font-weight:700;color:#dcfff4}
     .cta-band{padding:24px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(135deg, rgba(124,156,255,.10), rgba(89,225,191,.08)),linear-gradient(180deg, rgba(18,28,51,.92), rgba(10,15,28,.88));margin-top:18px}
+    @media (max-width:980px){.grid-2,.grid-3,.proof-grid,.proof-row,.artifact-grid,.evidence-stage-grid{grid-template-columns:1fr}.section-head{display:block}}
     .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.btn{padding:14px 18px;border-radius:14px;font-weight:700;border:1px solid transparent;display:inline-flex;align-items:center;justify-content:center}.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#08111f}.secondary{background:rgba(255,255,255,.03);border-color:var(--line);color:var(--text)}
     .footer{padding:38px 0 60px;text-align:center;color:var(--muted)}
-    @media (max-width:980px){.grid-2,.grid-3,.proof-grid{grid-template-columns:1fr}.section-head{display:block}}
   </style>
 </head>
 <body>
   <nav class="nav">
     <div class="wrap nav-inner">
       <div class="brand"><div class="mark"><img src="bertlclaw-assets/logo-main.jpg" alt="BertlClaw Logo" /></div><div>BertlClaw</div></div>
-      <div><a href="index.html">← Startseite</a> · <a href="services.html">Leistungen</a> · <a href="use-cases.html">Anwendungsfälle</a></div>
+      <div><a href="index.html">← Startseite</a> · <a href="ueber-bertlclaw.html">Über BertlClaw</a> · <a href="services.html">Leistungen</a> · <a href="use-cases.html">Anwendungsfälle</a></div>
     </div>
   </nav>
 
@@ -61,14 +99,31 @@
       <div class="eyebrow">Proof · Deliverables · freigegebene Beispiele</div>
       <h1>Ehrlicher Proof statt lauter Behauptungen</h1>
       <p class="lead">BertlClaw zeigt lieber sichtbare Unterschiede, greifbare Deliverables und freigegebene Ausschnitte als erfundene Testimonials oder Fantasie-Zahlen. Wenn etwas öffentlich gezeigt wird, dann so, dass man den Unterschied wirklich nachvollziehen kann.</p>
-      <div class="note"><strong>Proof-Regel:</strong> Jeder veröffentlichbare Fall braucht fünf Dinge: klare Ausgangslage, konkreten Eingriff, benannte Artefakte, sichtbaren Unterschied und eine saubere Freigabe. Ohne diese Kette bleibt es internes Material, nicht Website-Proof.</div>
+      <div class="grid-3" style="margin:22px 0 0;">
+        <div class="card" style="padding:20px;">
+          <div class="compare-card before" style="margin-bottom:10px;"><div class="artifact-label">Vorher</div><code style="font-size:.85rem;">"Wir unterstützen Unternehmen digital."</code></div>
+          <div class="compare-card after"><div class="artifact-label">Nachher</div><code style="font-size:.85rem;">"Klare Landingpages – damit Angebot, Nutzen und Anfrageweg sofort greifen."</code></div>
+          <p style="margin:12px 0 0;font-size:.9rem;">Hero-Rewrite: Angebot schneller erfassbar, Leseführung sauber gesetzt.</p>
+        </div>
+        <div class="card" style="padding:20px;">
+          <div class="compare-card before" style="margin-bottom:10px;"><div class="artifact-label">Vorher</div><code style="font-size:.85rem;">Notizen, lose Links, doppelte Dateien, offene To-dos</code></div>
+          <div class="compare-card after"><div class="artifact-label">Nachher</div><code style="font-size:.85rem;">Cluster A → zuerst · Cluster B → warten · SOP → dokumentiert</code></div>
+          <p style="margin:12px 0 0;font-size:.9rem;">Digitale Ordnung: verteiltes Material in eine arbeitsfähige Struktur überführt.</p>
+        </div>
+        <div class="card" style="padding:20px;">
+          <div class="compare-card before" style="margin-bottom:10px;"><div class="artifact-label">Text alt</div><code style="font-size:.85rem;">"Wir bieten individuelle Lösungen mit hoher Qualität."</code></div>
+          <div class="compare-card after"><div class="artifact-label">Text neu</div><code style="font-size:.85rem;">"Websites, die Angebote klar benennbar und anschlussfähig machen."</code></div>
+          <p style="margin:12px 0 0;font-size:.9rem;">Copy-Verdichtung: Nutzen und Positionierung sind direkter greifbar.</p>
+        </div>
+      </div>
+      <div class="note" style="margin-top:18px;"><strong>Proof-Regel:</strong> Jeder veröffentlichbare Fall braucht fünf Dinge: klare Ausgangslage, konkreten Eingriff, benannte Artefakte, sichtbaren Unterschied und eine saubere Freigabe. Ohne diese Kette bleibt es internes Material, nicht Website-Proof.</div>
     </section>
   </header>
 
   <main class="wrap">
-    <section class="section">
+    <section class="section" id="proof-logic">
       <div class="proof-grid">
-        <div class="visual"><img src="bertlclaw-assets/system-map.jpg" alt="BertlClaw System und Struktur" /><div class="caption"><strong>Woran BertlClaw Wirkung festmacht</strong><br />Ausgangslage, Eingriff, Deliverable, sichtbarer Unterschied, Evidenz</div></div>
+        <div class="visual"><img loading="lazy" src="bertlclaw-assets/system-map.jpg" alt="BertlClaw System und Struktur" /><div class="caption"><strong>Woran BertlClaw Wirkung festmacht</strong><br />Ausgangslage, Eingriff, Deliverable, sichtbarer Unterschied, Evidenz</div></div>
         <div class="card">
           <h2>Die Proof-Logik</h2>
           <ul class="list">
@@ -110,8 +165,8 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-head"><div><h2>Website-taugliche Mini-Cases</h2></div><p>Kompakt, ehrlich und belastbar. Jeder Mini-Case folgt derselben Struktur: Ausgangslage, Eingriff, Deliverables, sichtbarer Unterschied und Belegform. So wird der Proof konkret statt dekorativ.</p></div>
+    <section class="section" id="proof-mini-cases">
+      <div class="section-head"><div><h2>Website-taugliche Mini-Cases</h2></div><p>Kompakt, ehrlich und belastbar. Jeder Mini-Case zeigt nicht nur die Logik, sondern auch die Form des späteren Proofs: Vergleichsblöcke, benannte Artefakte, exemplarische Ausschnitte und einen klaren nächsten Schritt – jeweils nur im Rahmen der tatsächlichen Freigabe.</p></div>
       <div class="grid-3">
         <article class="mini-case">
           <h3>Mini-Case: Dienstleistungs-Landingpage geschärft</h3>
@@ -121,6 +176,34 @@
             <div class="case-step"><strong>Deliverables</strong>Hero-Text, neue Abschnittslogik, FAQ-/CTA-Block, umsetzungsreife Struktur.</div>
             <div class="case-step"><strong>Sichtbarer Unterschied</strong>Angebot, Relevanz und nächster Schritt werden in den ersten Sekunden klarer erfasst.</div>
             <div class="case-step"><strong>Belegform</strong>Vorher/Nachher-Hero, Seitenstruktur-Screenshot, freigegebener FAQ-/CTA-Ausschnitt.</div>
+          </div>
+          <div class="proof-shell">
+            <div class="proof-row">
+              <div class="compare-card before"><div class="artifact-label">Vorher</div><strong>Hero wirkt zu breit</strong><span>Die Seite sagt ungefähr, was gemacht wird – aber nicht schnell genug, für wen und mit welchem nächsten Schritt.</span><code>"Wir unterstützen Unternehmen digital."</code></div>
+              <div class="compare-card after"><div class="artifact-label">Nachher</div><strong>Hero führt klarer</strong><span>Leistung, Relevanz und Handlungsoption werden dichter zusammengeführt und schneller erfassbar gemacht.</span><code>"Klare Landingpages für Dienstleistungen – damit Angebot, Nutzen und Anfrageweg sofort greifen."</code></div>
+            </div>
+            <div class="artifact-grid">
+              <div class="artifact-card"><div class="artifact-label">Artefakt</div><strong>Hero-Rewrite</strong><span>freigebbarer Headline-/Subheadline-Block</span></div>
+              <div class="artifact-card"><div class="artifact-label">Artefakt</div><strong>Seitenlogik</strong><span>Abschnittsreihenfolge als Screenshot oder Wireframe</span></div>
+              <div class="artifact-card"><div class="artifact-label">Artefakt</div><strong>FAQ + CTA</strong><span>finaler Ausschnitt mit nächstem Schritt</span></div>
+            </div>
+            <div class="excerpt-card"><div class="artifact-label">Freigegebener Ausschnitt</div><strong>Beispiel für einen veröffentlichbaren Deliverable-Block</strong><span>Kein Behauptungs-Beweis, sondern ein sichtbarer Teil des gelieferten Materials.</span><code>FAQ: "Wie schnell kann man starten?" → "Sobald Link, Ziel und vorhandener Stand da sind, wird die Seite in eine klare Leserführung übersetzt."</code></div>
+            <div class="evidence-frame" aria-label="Vorbereiteter Media-Slot für späteren Landingpage-Beleg">
+              <div class="evidence-window">
+                <div class="evidence-topline">
+                  <span class="evidence-chip">Späterer Case-Slot</span>
+                  <span class="evidence-chip pending">für freigegebenen Screenshot oder Crop</span>
+                </div>
+                <div>
+                  <strong>Hier kann später der konkrete Seiten-Screenshot oder Thumbnail des freigegebenen Falls liegen</strong>
+                  <p>Damit wird aus dem textlichen Mini-Case ohne Umbau ein echter visuell belegter Fall – z. B. mit Hero-Vergleich, FAQ-Crop oder finalem CTA-Block.</p>
+                </div>
+                <div class="evidence-meta">
+                  <div><strong>Einsetzbar:</strong> anonymisierter Screenshot, Ausschnitt eines Wireframes, mobiler Crop oder finales Modulbild</div>
+                </div>
+              </div>
+            </div>
+            <div class="micro-cta"><strong>Wenn du so einen Proof-Fall brauchst</strong><span>Ideal, wenn deine Seite schon Substanz hat, aber online noch nicht sauber führt. Dann kann aus dem Ist-Zustand ein klarer Vorher/Nachher-Fall mit echten Artefakten werden.</span><a href="landingpage-sprint.html">Zum Landingpage Sprint →</a></div>
           </div>
           <ul class="artifact-list">
             <li><strong>Artefakt 1:</strong> Vorher/Nachher-Hero mit neuer Kernbotschaft</li>
@@ -137,6 +220,35 @@
             <div class="case-step"><strong>Sichtbarer Unterschied</strong>Das Angebot wirkt markanter, verständlicher und braucht weniger Nach-Erklärung im Gespräch.</div>
             <div class="case-step"><strong>Belegform</strong>Textvergleich alt/neu, Headline-Varianten, freigegebene Copy-Ausschnitte.</div>
           </div>
+          <div class="proof-shell">
+            <div class="proof-row">
+              <div class="compare-card before"><div class="artifact-label">Text alt</div><strong>Formal richtig, aber austauschbar</strong><span>Die Formulierung bleibt im Ungefähren und zeigt den Unterschied nicht sauber genug.</span><code>"Wir bieten individuelle Lösungen mit hoher Qualität."</code></div>
+              <div class="compare-card after"><div class="artifact-label">Text neu</div><strong>Nutzen und Profil sind verdichtet</strong><span>Die Aussage wird spezifischer, verständlicher und näher an der tatsächlichen Positionierung geführt.</span><code>"Websites, Landingpages und digitale Struktur, die Angebote endlich klar benennbar und anschlussfähig machen."</code></div>
+            </div>
+            <div class="artifact-grid">
+              <div class="artifact-card"><div class="artifact-label">Deliverable</div><strong>Headline-Set</strong><span>Varianten für Hero, Leistung und CTA-Kontext</span></div>
+              <div class="artifact-card"><div class="artifact-label">Deliverable</div><strong>Textvergleich</strong><span>alt/neu nebeneinander für Kernpassagen</span></div>
+              <div class="artifact-card"><div class="artifact-label">Deliverable</div><strong>Copy-Dokument</strong><span>FAQ-, Einwand- und Leistungsbausteine</span></div>
+            </div>
+            <div class="excerpt-card"><div class="artifact-label">Deliverable-Excerpt</div><strong>So kann ein freigegebener Copy-Ausschnitt aussehen</strong><span>Kurze Exzerpte zeigen eher Arbeitsqualität als große Versprechen.</span><code>Einwandtext: "Noch nicht ganz klar, was genau enthalten ist?" → "Du bekommst keine diffuse Beratung, sondern benennbare Bausteine: Struktur, Copy und umsetzungsreife nächste Schritte."</code></div>
+            <div class="evidence-frame" aria-label="Vorbereiteter Media-Slot für späteren Positionierungs- oder Copy-Beleg">
+              <div class="evidence-window">
+                <div class="evidence-topline">
+                  <span class="evidence-chip">Späterer Case-Slot</span>
+                  <span class="evidence-chip pending">für freigegebenen Copy-Crop oder Textvergleich</span>
+                </div>
+                <div>
+                  <strong>Hier kann später ein freigegebener Headline-, FAQ- oder Einwand-Ausschnitt aus einem realen Fall liegen</strong>
+                  <p>Ohne Layout-Umbau kann dieser Mini-Case später mit einem konkreten Text-Crop, einem Alt/Neu-Screenshot oder einem kleinen Deliverable-Thumbnail sichtbar nachgeschärft werden.</p>
+                </div>
+                <div class="evidence-meta">
+                  <div><strong>Einsetzbar:</strong> Headline-Vergleich, FAQ-Crop, Leistungsblock-Ausschnitt oder anonymisierte Copy-Kachel</div>
+                  <div><strong>Claim-Niveau:</strong> sichtbar verdichtet, klarer benannt, sprachlich präziser – keine Conversion- oder Umsatzbehauptung ohne zusätzlichen Nachweis</div>
+                </div>
+              </div>
+            </div>
+            <div class="micro-cta"><strong>Relevant, wenn deine Texte korrekt klingen – aber nicht sitzen</strong><span>Aus genau solchen Fällen lassen sich saubere Textvergleiche und freigegebene Copy-Auszüge ableiten, ohne etwas aufzublasen.</span><a href="positionierung-website-texte.html">Zu Positionierung & Website-Texten →</a></div>
+          </div>
           <ul class="artifact-list">
             <li><strong>Artefakt 1:</strong> Headline-Set mit Varianten für Hero und Leistungsseiten</li>
             <li><strong>Artefakt 2:</strong> Textvergleich alt/neu für zentrale Angebotsblöcke</li>
@@ -152,12 +264,173 @@
             <div class="case-step"><strong>Sichtbarer Unterschied</strong>Aus verteiltem Material wurde ein arbeitsfähiger Zustand mit klarer Reihenfolge und weniger Reibung.</div>
             <div class="case-step"><strong>Belegform</strong>Cluster-Übersicht, Board-Screenshot, freigegebene Prioritätenliste oder SOP-Ausschnitt.</div>
           </div>
+          <div class="proof-shell">
+            <div class="proof-row">
+              <div class="compare-card before"><div class="artifact-label">Vorher</div><strong>Material ohne klare Reihenfolge</strong><span>Ideen, Dateien und Aufgaben sind da – aber nicht in einer Form, mit der man sinnvoll weiterarbeiten kann.</span><code>Notizen, lose Links, doppelte Dateien, offene To-dos</code></div>
+              <div class="compare-card after"><div class="artifact-label">Nachher</div><strong>Arbeitslogik statt Sammelzustand</strong><span>Es gibt Cluster, Prioritäten und dokumentierte nächste Schritte – also einen Zustand, der tatsächlich benutzbar ist.</span><code>Cluster A → zuerst, Cluster B → warten, SOP → dokumentiert</code></div>
+            </div>
+            <div class="artifact-grid">
+              <div class="artifact-card"><div class="artifact-label">Struktur</div><strong>Cluster-Übersicht</strong><span>Themen sauber gebündelt und priorisiert</span></div>
+              <div class="artifact-card"><div class="artifact-label">Struktur</div><strong>Prioritätenliste</strong><span>nächste Schritte in belastbarer Reihenfolge</span></div>
+              <div class="artifact-card"><div class="artifact-label">Struktur</div><strong>SOP / Doku</strong><span>wiederholbare Logik statt Einzelaktion</span></div>
+            </div>
+            <div class="excerpt-card"><div class="artifact-label">Veröffentlichbarer Ausschnitt</div><strong>Beispiel für einen sauberen Struktur-Excerpt</strong><span>Solche Ausschnitte zeigen Arbeitsfähigkeit, ohne interne Details preiszugeben.</span><code>Priorität 1: Angebotsseiten finalisieren
+Priorität 2: Kontaktlogik vereinheitlichen
+Priorität 3: interne Doku nur für Team sichtbar halten</code></div>
+            <div class="evidence-frame" aria-label="Vorbereiteter Media-Slot für späteren Struktur- oder System-Beleg">
+              <div class="evidence-window">
+                <div class="evidence-topline">
+                  <span class="evidence-chip">Späterer Case-Slot</span>
+                  <span class="evidence-chip pending">für freigegebenen Board-, SOP- oder Cluster-Crop</span>
+                </div>
+                <div>
+                  <strong>Hier kann später ein freigegebener Ausschnitt der neuen Arbeitslogik oder Priorisierung gezeigt werden</strong>
+                  <p>Damit bekommt auch dieser eher systemische Fall eine schnelle visuelle Lesbarkeit – etwa über einen Board-Crop, einen SOP-Screenshot oder eine anonymisierte Cluster-Ansicht.</p>
+                </div>
+                <div class="evidence-meta">
+                  <div><strong>Einsetzbar:</strong> Board-Ausschnitt, Cluster-Matrix, Prioritätenliste, SOP-Snippet oder Dokumentationslogik-Crop</div>
+                  <div><strong>Claim-Niveau:</strong> sichtbar geordnet, priorisiert, dokumentiert und arbeitsfähiger – keine Effizienz- oder Zeitersparnis-Behauptung ohne belastbaren Nachweis</div>
+                </div>
+              </div>
+            </div>
+            <div class="micro-cta"><strong>Passend, wenn zu viele lose Baustellen gleichzeitig offen sind</strong><span>Dann ist der eigentliche Proof oft kein Marketing-Satz, sondern eine sichtbare Arbeitsstruktur, die vorher schlicht nicht da war.</span><a href="digitale-struktur-systeme.html">Zu digitaler Struktur & Systemen →</a></div>
+          </div>
           <ul class="artifact-list">
             <li><strong>Artefakt 1:</strong> Projektübersicht mit priorisierten Clustern</li>
             <li><strong>Artefakt 2:</strong> nächste Schritte als belastbare Prioritätenliste</li>
             <li><strong>Artefakt 3:</strong> Dokumentationslogik oder Board-Screenshot als Nachweis</li>
           </ul>
         </article>
+      </div>
+    </section>
+
+    <section class="section" id="proof-media-readiness">
+      <div class="section-head"><div><h2>Bereit für echte Screenshots, Ausschnitte und Asset-Slots</h2></div><p>Diese Fläche ist bewusst schon so gebaut, dass spätere freigegebene Artefakte direkt einrasten können: ohne Redesign, ohne improvisierte Screenshot-Wände und ohne so zu tun, als wäre internes Material schon öffentlich nutzbar.</p></div>
+      <div class="evidence-stage-grid">
+        <article class="card evidence-stage">
+          <div class="evidence-frame" aria-label="Beispiel für eine spätere Beweisfläche mit Screenshot- oder Thumbnail-Slot">
+            <div class="evidence-window">
+              <div class="evidence-topline">
+                <span class="evidence-chip">Media Slot · 16:10 / mobile crop möglich</span>
+                <span class="evidence-chip pending">Noch nicht öffentlich – erst nach Freigabe</span>
+              </div>
+              <div>
+                <strong>Hier kann später ein freigegebener Hero-Screenshot, Wireframe-Thumbnail oder Detail-Crop liegen</strong>
+                <p>Aktuell ist das bewusst nur ein Platzhalter-Frame. Wenn ein Fall freigegeben ist, kann hier direkt ein echtes Vorher-/Nachher-Bild oder ein sauber gecroppter Deliverable-Ausschnitt eingesetzt werden.</p>
+              </div>
+              <div class="evidence-meta">
+                <div><strong>Typische Inhalte:</strong> Startscreen, Abschnitts-Vergleich, Board-Ausschnitt, freigegebene Copy-Kachel</div>
+                <div><strong>Pflicht davor:</strong> Approval-Status prüfen, sensible Details entfernen, Re-Identifizierungsrisiko bewerten</div>
+              </div>
+            </div>
+          </div>
+          <div class="note"><strong>Warum das zählt:</strong> Gute Proof-Seiten scheitern oft nicht an fehlender Arbeit, sondern daran, dass echte Artefakte später nirgends sauber hineinpassen. Dieser Layer löst genau das vorab.</div>
+        </article>
+        <article class="card media-pattern">
+          <h3>Wiederverwendbares Mini-Case-Media-Muster</h3>
+          <div class="media-slot">
+            <strong>Slot A · Screenshot / Thumbnail</strong>
+            <span>Für den schnellsten visuellen Unterschied: Hero, Seitenstruktur, Wireframe oder finaler Block.</span>
+            <small>Ideal für: Homepage-Teaser, Proof-Seite, Angebots-PDF</small>
+          </div>
+          <div class="media-slot">
+            <strong>Slot B · Cropped Excerpt</strong>
+            <span>Für freigegebene Text- oder Struktur-Details, wenn ein kompletter Screenshot zu viel preisgeben würde.</span>
+            <small>Ideal für: FAQ-Ausschnitt, CTA-Block, SOP-Teil, Copy-Snippet</small>
+          </div>
+          <div class="media-slot">
+            <strong>Slot C · Approval-/Freigabe-Hinweis</strong>
+            <span>Kurze Kennzeichnung, was gezeigt werden darf: anonym, teil-offen, proposal-only oder voll öffentlich.</span>
+            <small>Hilft gegen übergriffige oder missverständliche Veröffentlichung</small>
+          </div>
+          <div class="slot-kinds">
+            <span>desktop crop</span>
+            <span>mobile crop</span>
+            <span>before / after</span>
+            <span>excerpt tile</span>
+            <span>deliverable preview</span>
+            <span>approval badge</span>
+          </div>
+        </article>
+      </div>
+      <div class="grid-3" style="margin-top:18px;">
+        <article class="card"><h3>Conversion-Nutzen</h3><p>Ein echter Screenshot oder freigegebener Ausschnitt macht Mini-Cases schneller glaubwürdig als noch mehr Erklärungstext. Sichtbare Artefakte senken Interpretationsarbeit.</p></article>
+        <article class="card"><h3>Sauberkeits-Nutzen</h3><p>Die Seite bleibt ehrlich: Solange nichts freigegeben ist, bleibt es als Slot markiert. Sobald etwas freigegeben ist, passt es exakt in ein vorbereitetes Muster.</p></article>
+        <article class="card"><h3>Skalierungs-Nutzen</h3><p>Neue Fälle können später mit denselben Bild- und Excerpt-Rahmen ergänzt werden. Das spart Umbau, hält die Proof-Logik konsistent und macht künftige Upgrades schneller.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="proof-blueprint">
+      <div class="section-head"><div><h2>So wird aus Freigabe direkt ein sichtbarer Proof-Block</h2></div><p>Damit spätere echte Fälle nicht wieder improvisiert eingebaut werden müssen, gibt es dafür schon eine feste Einsetzlogik: ein visual-first Muster, das Freigabe, sichtbaren Unterschied und Angebotsbezug in einem Block zusammenhält.</p></div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Die 4 Teile eines sauberen Einbaus</h3>
+          <ul class="list">
+            <li><strong>1. Ein primärer Visual-Beleg</strong><br />Screenshot, Crop oder Thumbnail – klein genug für Sicherheit, stark genug für Glaubwürdigkeit.</li>
+            <li><strong>2. Benannte Deliverables</strong><br />Nicht nur „wir haben geholfen“, sondern konkret: Hero-Rewrite, FAQ-Block, Strukturboard, SOP oder Seitenlogik.</li>
+            <li><strong>3. Sichere Ergebnis-Sprache</strong><br />Öffentlich bleibt BertlClaw standardmäßig bei sichtbaren Unterschieden statt wackligen Outcome-Versprechen.</li>
+            <li><strong>4. Freigabe-Hinweis</strong><br />Die Seite zeigt nicht nur etwas, sondern macht implizit klar, in welchem Rahmen es überhaupt gezeigt werden darf.</li>
+          </ul>
+          <div class="approval-strip">
+            <span>anonyme Website-Nutzung</span>
+            <span>gecroppter Ausschnitt</span>
+            <span>Proof-Seite + Proposal</span>
+            <span>keine Name-/Logo-/URL-Nennung</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Das bringt nicht nur Sauberkeit, sondern Conversion-Nutzen</h3>
+          <div class="artifact-list">
+            <li><strong>Weniger Erklärlast:</strong> Ein echter Ausschnitt beantwortet schneller, ob die Arbeit Substanz hat.</li>
+            <li><strong>Mehr Vertrauensdichte:</strong> Besucher sehen Deliverables, nicht nur Leistungsbehauptungen.</li>
+            <li><strong>Schnellere Upgrades:</strong> Neue freigegebene Fälle können in bestehende Slots einrasten statt neue Layouts zu erzwingen.</li>
+            <li><strong>Bessere Angebotsbrücke:</strong> Jeder Proof-Block zeigt zugleich, zu welchem BertlClaw-Angebot der Fall gehört.</li>
+          </div>
+          <div class="note" style="margin-top:16px;"><strong>Praxisregel:</strong> Lieber ein kleiner freigegebener Screenshot mit sauberer Kontextzeile als ein großer Pseudo-Case mit schwammigen Erfolgsbehauptungen.</div>
+        </article>
+      </div>
+      <div class="blueprint-grid">
+        <article class="blueprint-card">
+          <div class="artifact-label">Insert-Muster · Landingpage</div>
+          <strong>Wenn Hero, CTA oder Leserführung freigegeben sind</strong>
+          <span>Primärbild: Hero- oder CTA-Crop. Dazu 2–3 Deliverables und ein Satz zum sichtbaren Unterschied.</span>
+          <code>Freigegebener Hero-/CTA-Ausschnitt: sichtbar ist, wie Angebot, Nutzen und nächster Schritt dichter zusammengeführt wurden.</code>
+        </article>
+        <article class="blueprint-card">
+          <div class="artifact-label">Insert-Muster · Copy</div>
+          <strong>Wenn ein kompletter Screenshot zu viel verraten würde</strong>
+          <span>Dann reicht oft ein gecroppter FAQ-, Headline- oder Einwand-Ausschnitt plus Textvergleich alt/neu.</span>
+          <code>Freigegebener Textausschnitt: sichtbar ist die sprachliche Verdichtung, nicht ein unbewiesenes Ergebnisversprechen.</code>
+        </article>
+        <article class="blueprint-card">
+          <div class="artifact-label">Insert-Muster · Struktur</div>
+          <strong>Wenn Arbeitslogik der eigentliche Beleg ist</strong>
+          <span>Board-, Cluster- oder SOP-Crops funktionieren hier oft stärker als klassische Marketing-Screenshots.</span>
+          <code>Freigegebener Struktur-Ausschnitt: sichtbar ist die neue Arbeitslogik mit Prioritäten und klaren nächsten Schritten.</code>
+        </article>
+      </div>
+      <div class="cta-band">
+        <h3>Einfacher Einsatz-Standard für künftige reale Fälle</h3>
+        <p>Sobald ein Fall für Website oder Proof-Seite freigegeben ist, sollte BertlClaw standardmäßig genau fünf Dinge ergänzen: einen Visual-Slot, einen freigegebenen Excerpt, drei benannte Deliverables, einen knappen Freigabehinweis und die passende Service-CTA. So wird aus Approval ohne Umweg eine sichtbare Vertrauensfläche.</p>
+        <p style="margin:14px 0 0;color:var(--muted);font-size:.96rem;line-height:1.7;">Die dazugehörigen Operator-Snippets liegen intern bereits bereit und können direkt als Einbauvorlage für neue freigegebene Cases genutzt werden.</p>
+      </div>
+    </section>
+
+    <section class="section" id="proof-modules">
+      <div class="section-head"><div><h2>Proof-Module für Startseite, Leistungen & Angebote</h2></div><p>Aus echter Arbeit sollten wiederverwendbare Proof-Bausteine entstehen. So wachsen Website, Angebotsunterlagen und Sales-Gespräche nicht aus Behauptungen, sondern aus belastbaren Artefakten.</p></div>
+      <div class="grid-3">
+        <article class="card"><h3>Vorher/Nachher-Modul</h3><p><strong>Zeigt:</strong> Was vorher unklar war und was danach schneller erfassbar wurde.</p><p><strong>Ideal für:</strong> Startseite, Proof-Seite, Angebots-PDFs.</p></article>
+        <article class="card"><h3>Deliverable-Modul</h3><p><strong>Zeigt:</strong> konkrete Outputs wie Hero-Rewrite, FAQ-Block, Seitenstruktur oder HTML-Entwurf.</p><p><strong>Ideal für:</strong> Leistungsseiten und Angebotsargumentation.</p></article>
+        <article class="card"><h3>System-/Struktur-Modul</h3><p><strong>Zeigt:</strong> wie verteiltes Material in Prioritäten, Ordnung und arbeitsfähige nächste Schritte übersetzt wurde.</p><p><strong>Ideal für:</strong> Use-Cases, Struktur-Angebote und Vertrauensaufbau.</p></article>
+      </div>
+      <div class="note" style="margin-top:18px;"><strong>Praxisregel:</strong> Aus jedem sauberen Projekt sollte mindestens ein wiederverwendbarer Proof-Atom und ein Deliverable-Gallery-Kandidat entstehen. Dann baut BertlClaw nicht nur Projekte ab, sondern auch ein glaubwürdiges Proof-Archiv auf.</div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div><h2>Wie publizierbarer Proof eingesammelt wird</h2></div><p>Die besten Belege gehen meist nicht in der Ausführung verloren, sondern davor oder direkt danach. Deshalb wird Proof früh eingesammelt statt später erraten.</p></div>
+      <div class="grid-2">
+        <article class="card"><h3>Schon zu Beginn sichern</h3><ul><li>aktueller Link oder Ist-Zustand</li><li>2–4 Screenshots der relevanten Stellen</li><li>alte Headline- / Leistungsblöcke als Text</li><li>vorhandene Notizen, Docs, PDFs oder Boards</li><li>erste Einschätzung zur anonymen Veröffentlichbarkeit</li></ul></article>
+        <article class="card"><h3>Nach Abschluss ableiten</h3><ul><li>Mini-Case in 90–140 Wörtern</li><li>1–3 benennbare Artefakte</li><li>sichtbarer Unterschied in sicherer Sprache</li><li>Freigabestatus und erlaubte Nutzung</li><li>mindestens ein Proof-Atom für Website oder Proposal</li></ul></article>
       </div>
     </section>
 
@@ -174,11 +447,12 @@
       <div class="cta-band">
         <h3>Lieber nachvollziehbare Arbeit als künstlich aufgepumpte Referenzen</h3>
         <p>Wenn du sehen willst, wie BertlClaw dein Angebot, deine Website-Texte oder deine digitale Struktur greifbar verbessern kann, reicht eine kurze Beschreibung deiner Ausgangslage. Danach lässt sich sauber einordnen, welches Angebot passt und welche Deliverables daraus entstehen. Wer lieber mobil startet, kann auch einfach per WhatsApp einen Link, Screenshot oder kurzen Kontext schicken.</p>
-        <div class="cta"><a class="btn primary" href="mailto:dominic.reisenbichler@gmx.at?subject=BertlClaw%20Anfrage">Projekt anfragen</a><a class="btn secondary" href="https://wa.me/436781299919" target="_blank" rel="noopener">WhatsApp öffnen</a><a class="btn secondary" href="services.html">Leistungen ansehen</a><a class="btn secondary" href="index.html#kontakt">Zur Kontaktsektion</a></div>
+        <div class="cta"><a class="btn primary" href="mailto:dominic.reisenbichler@gmx.at?subject=BertlClaw%20Anfrage">Projekt anfragen</a><a class="btn secondary" href="services.html">Leistungen ansehen</a><a class="btn secondary" href="index.html#kontakt">Zur Kontaktsektion</a></div>
+        <p style="margin:14px 0 0;color:var(--muted);font-size:.96rem;line-height:1.7;">Wenn du mobil lieber kurz statt ausführlich startest, kannst du <a href="https://wa.me/436781299919" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px;">WhatsApp als Nebenweg öffnen</a>.</p>
       </div>
     </section>
   </main>
 
-  <footer class="footer wrap"><div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:14px;font-size:.92rem;"><a href="index.html">Startseite</a><a href="services.html">Leistungen</a><a href="use-cases.html">Anwendungsfälle</a><a href="proof.html">Proof</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>BertlClaw · ehrlicher Proof, sichtbare Deliverables und freigegebene Beispiele.</footer>
+  <footer class="footer wrap"><div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:14px;font-size:.92rem;"><a href="index.html">Startseite</a><a href="services.html">Leistungen</a><a href="use-cases.html">Anwendungsfälle</a><a href="proof.html">Proof</a><a href="ueber-bertlclaw.html">Über BertlClaw</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>BertlClaw · ehrlicher Proof, sichtbare Deliverables und freigegebene Beispiele.</footer>
 </body>
 </html>

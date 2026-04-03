@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-04-02 13:47:31 CEST",
+  "stream_generated_at": "2026-04-03 13:14:15 CEST",
+  "headline_status": "needs-human-on-p0",
+  "counters": {
+    "bug_count": 6,
+    "by_status": {
+      "blocked_manual_access": 2,
+      "ready_for_retest": 4
+    },
+    "ready_for_retest_count": 4,
+    "blocked_manual_access_count": 2
+  },
+  "proof_of_run": {
+    "reminder_state_last_run_at": "2026-04-02 13:47:31",
+    "reminder_last_hourly_update_at": "2026-04-02 13:47",
+    "reminder_last_daily_github_ticket_reminder_at": "2026-04-02",
+    "reminder_recent_runs": [
+      {
+        "at": "2026-04-02 13:47:31",
+        "emitted": []
+      },
+      {
+        "at": "2026-04-02 13:47:11",
+        "emitted": []
+      },
+      {
+        "at": "2026-04-02 13:47:10",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-02 13:43:54",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-02 13:40:52",
+        "emitted": [
+          "hourly_update"
+        ]
+      }
+    ],
+    "reminder_audit_status": "fail",
+    "reminder_audit_generated_at": "2026-04-02 13:47:31 CEST",
+    "missing_hourly_slots": [
+      "2026-04-02 08:00",
+      "2026-04-02 09:00",
+      "2026-04-02 10:00",
+      "2026-04-02 12:00"
+    ],
+    "next_expected_hourly_slot": "2026-04-02 14:00"
+  },
+  "stream_health": {
+    "now": "2026-04-03 13:14:15 CEST",
+    "minutes_since_last_run": 1407,
+    "minutes_since_last_hourly_update": 1407,
+    "last_run_freshness": "critical",
+    "last_hourly_update_freshness": "critical",
+    "missing_hourly_slots_count": 4,
+    "longest_consecutive_missing_hourly_gap": 3,
+    "stale_stream_detected": true
+  },
+  "operator_summary": {
+    "immediate_attention": [
+      "P0 human blocker present: manual access still required to close the top issue.",
+      "Stream appears CRITICAL/stale: last hourly update 1407 min ago, last run 1407 min ago.",
+      "Hourly reporting gaps detected: 4 missing slot(s), longest visible gap 3 hour(s).",
+      "Retest queue active: 4 item(s) ready for retest before new exploratory work."
+    ],
+    "next_best_moves": [
+      "BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery",
+      "BCQA-002: Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling",
+      "BCQA-003: Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax",
+      "BCQA-004: Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state",
+      "BCQA-005: Run a visibility-first proof sweep on homepage plus proof.html and produce a ranked list of hidden vs visible proof elements with screenshot evidence"
+    ]
+  },
+  "top_actions": [
+    "BCQA-001: Run real end-to-end submit and verify Formspree/mailbox delivery",
+    "BCQA-002: Run local heartbeat and verify state/log update; then wire real cron/heartbeat scheduling",
+    "BCQA-003: Retest homepage JSON-LD and confirm SearchAction is absent with valid syntax",
+    "BCQA-004: Run a real-phone test on at least iPhone-size and Android-size devices and capture screenshot/video proof of the handoff state",
+    "BCQA-005: Run a visibility-first proof sweep on homepage plus proof.html and produce a ranked list of hidden vs visible proof elements with screenshot evidence"
+  ]
+}
