@@ -162,3 +162,35 @@
   "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
   "logPath": "/home/dominic/.openclaw/workspace/logs/bertlclaw-operations.log"
 }
+[2026-04-04 09:03 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-04 09:03)
+{
+  "ok": true,
+  "now": {
+    "date": "2026-04-04",
+    "time": "09:03:38",
+    "hourMinute": "09:03",
+    "stamp": "2026-04-04 09:03 CEST",
+    "fullStamp": "2026-04-04 09:03:38 CEST"
+  },
+  "emitted": [
+    "hourly_update"
+  ],
+  "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+  "logPath": "/home/dominic/.openclaw/workspace/logs/bertlclaw-operations.log"
+}
+[2026-04-04 10:03 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-04 10:03)
+{
+  "ok": true,
+  "now": {
+    "date": "2026-04-04",
+    "time": "10:03:50",
+    "hourMinute": "10:03",
+    "stamp": "2026-04-04 10:03 CEST",
+    "fullStamp": "2026-04-04 10:03:50 CEST"
+  },
+  "emitted": [
+    "hourly_update"
+  ],
+  "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+  "logPath": "/home/dominic/.openclaw/workspace/logs/bertlclaw-operations.log"
+}
