@@ -171,3 +171,67 @@ See: `BERTLCLAW-GITHUB-ORG-MIGRATION-PLAN.md`
 - `BERTLCLAW-ENTITY-DOMINANCE-ROADMAP.md` — SEO/entity recognition strategy
 - `LEAD-WORKFLOW.md` — lead handling SOP
 - `bertlclaw-leads-template.csv` — lead list template
+
+---
+
+## Update 2026-04-04 — Tagesfortschritt
+
+### Website & Technik
+- Domain bertlclaw.at live (DNS konfiguriert, GitHub Pages Custom Domain gesetzt)
+- bertlclaw.com registriert, Redirect vorbereitet
+- Alle Canonical URLs auf bertlclaw.at korrigiert
+- GoatCounter Analytics auf 16+ Seiten installiert
+- Form Attribution (UTM + page_path) eingebaut
+- hreflang auf allen Seiten
+- JSON-LD verbessert (contactPoint, areaServed, sameAs)
+- Sitemap aktualisiert
+
+### Neue Seiten (live auf bertlclaw.at)
+- faq.html (FAQPage Schema, 8 Fragen)
+- arbeitsweise.html
+- kontakt.html (prio 0.9)
+- erstgespraech.html (prio 0.8)
+- website-optimierung.html
+- angebot-kommunizieren.html
+
+### Bestehende Seiten verbessert
+- danke.html komplett neu gebaut
+- proof.html: 2 Case-Beispiele
+- services.html: Pricing Badges (ab €390/490/590)
+- use-cases.html: 4 konkrete Cases + CTA
+- index.html: Trust Band, Persona-Sektion, Nav-Konsistenz
+- Alle 3 Service-Detailseiten: Prozess, Deliverables, FAQ, Cross-Links
+
+### Sales & Operations
+- Alle 3 Angebots-Templates (Landingpage Sprint, Positionierung, Digitale Ordnung)
+- Kickoff-Fragebogen
+- Client Onboarding-Checkliste
+- Rechnungs-Template (inkl. Kleinunternehmerregelung)
+- Execution-Checklisten (3 Angebote)
+- Pricing Quick Reference
+- 30-Tage Akquisitionsplan
+- Google Sheets Lead-Liste Setup-Guide
+- E-Mail Templates (5 Situationen)
+- Client Management Guide
+
+### Content & Presence
+- 10 LinkedIn-Posts (kopierbereit)
+- 4-Wochen Content-Kalender
+- Referral-Script (WhatsApp/LinkedIn/E-Mail)
+- Press Kit (DE + EN)
+- LinkedIn-Profil-Text
+- WKO Eintrag vorbereitet
+
+### Infrastruktur
+- GitHub Org Migration Plan dokumentiert
+- bertlclaw.com Redirect-Anleitung
+- SEO Status Dokument
+
+### Nächste Prioritäten
+1. GoatCounter E-Mail bestätigen
+2. Google Search Console: bertlclaw.at claimen + Sitemap einreichen
+3. LinkedIn-Profil aktualisieren
+4. GitHub Org Migration durchführen
+5. DNS-Propagation abwarten → HTTPS aktivieren
+6. WKO Eintrag einreichen
+7. 30-Tage Akquisitionsplan starten
