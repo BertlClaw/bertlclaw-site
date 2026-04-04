@@ -138,4 +138,16 @@
     <priority>0.4</priority>
     <changefreq>yearly</changefreq>
   </url>
+  <url>
+    <loc>https://bertlclaw.at/freelancer-positionierung.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://bertlclaw.at/agb.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
 </urlset>
