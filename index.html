@@ -202,6 +202,24 @@
     @media (max-width:860px){.nav-inner{align-items:flex-start}.nav-links{display:none}.nav-actions{gap:8px}.hero-grid{padding:24px;min-height:auto}.hero-card{min-height:auto}.hero-metrics,.trust-strip{grid-template-columns:1fr}.pill-row{display:none}h1{max-width:100%}.mobile-nav-row{display:flex;gap:10px;overflow:auto;padding:0 0 12px}.mobile-nav-row a{white-space:nowrap;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text);font-size:.92rem}}
     @media (max-width:640px){.nav{position:fixed;top:0;left:0;right:0;padding-top:env(safe-area-inset-top,0)}body{padding-top:118px}.nav-inner{display:grid;grid-template-columns:1fr;gap:12px}.nav-actions{justify-content:flex-start}.nav-actions .mini-btn:nth-child(2){display:none}.brand{min-width:0}.brand div:last-child{font-size:1rem}.mobile-nav-row{gap:8px;padding:0 0 10px}.mobile-nav-row a{font-size:.9rem;padding:9px 11px}.cta .btn{width:100%}.proof-teaser-shell{padding:18px}.mobile-contact-bar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom, 0px));z-index:9998;display:grid;grid-template-columns:1fr auto;gap:8px;padding:8px;border-radius:18px;border:1px solid rgba(124,156,255,.18);background:rgba(6,10,22,.90);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.30)}.mobile-contact-bar a{min-height:48px;padding:10px 12px;border-radius:14px;font-weight:800;display:flex;align-items:center;justify-content:center;text-align:center}.mobile-contact-bar .btn{width:100%}.mobile-contact-bar .btn-secondary{width:auto;padding-inline:14px;font-weight:700;opacity:.88}}
   
+    /* Trust Band */
+    .top-trust-band{padding:14px 0;border-bottom:1px solid var(--line);background:rgba(4,7,18,.60);backdrop-filter:blur(8px)}
+    .top-trust-band-inner{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:center;align-items:center}
+    .trust-signal{display:inline-flex;align-items:center;gap:8px;color:var(--muted2);font-size:.85rem;line-height:1.4}
+    .trust-signal .ts-icon{font-size:1rem;flex:0 0 auto}
+    @media(max-width:860px){.top-trust-band-inner{gap:8px 14px}.trust-signal{font-size:.82rem}}
+    @media(max-width:580px){.top-trust-band{display:none}}
+
+    /* Persona / Target Audience Cards */
+    .persona-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .persona-card{padding:26px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(18,26,47,.84), rgba(10,15,28,.76));box-shadow:var(--shadow);position:relative;overflow:hidden;transition:.2s ease}
+    .persona-card:hover{border-color:var(--line-strong);transform:translateY(-2px)}
+    .persona-card::before{content:"";position:absolute;inset:auto auto 0 0;width:100%;height:3px;background:linear-gradient(90deg,var(--accent3),var(--accent));opacity:.7}
+    .persona-icon{font-size:2rem;margin-bottom:14px;display:block}
+    .persona-card h3{margin-bottom:10px;font-size:1.12rem;color:var(--text)}
+    .persona-card p{color:var(--muted);line-height:1.74;margin:0;font-size:.97rem}
+    @media(max-width:1080px){.persona-grid{grid-template-columns:1fr}}
+
     .chatbot-toggle{position:fixed;right:22px;bottom:22px;z-index:9999;border:none;border-radius:999px;padding:15px 18px;font:inherit;font-weight:800;cursor:pointer;color:#08111f;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 20px 44px rgba(0,0,0,.34);display:inline-flex;align-items:center;gap:10px;min-height:56px}.chatbot-dot{width:12px;height:12px;border-radius:999px;background:#08111f;box-shadow:0 0 0 4px rgba(8,17,31,.12)}
     .chatbot-panel{position:fixed;right:22px;bottom:88px;z-index:9999;width:min(420px,calc(100vw - 28px));max-height:min(72vh,680px);display:none;flex-direction:column;border:1px solid var(--line);border-radius:24px;background:linear-gradient(180deg, rgba(18,26,47,.97), rgba(10,15,28,.96));box-shadow:0 28px 80px rgba(0,0,0,.40);overflow:hidden}
     .chatbot-panel.open{display:flex}
@@ -345,7 +363,7 @@
         <a href="#usecases">Anwendungsfälle</a>
         <a href="proof.html">Proof</a>
         <a href="ueber-bertlclaw.html">Über BertlClaw</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="kontakt.html">Kontakt</a>
       </div>
       <div class="nav-actions">
         <a class="mini-btn" href="landingpages.html">Landingpages</a>
@@ -356,9 +374,19 @@
       <a href="use-cases.html">Anwendungsfälle</a>
       <a href="proof.html">Proof</a>
       <a href="ueber-bertlclaw.html">Über</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="kontakt.html">Kontakt</a>
     </div>
   </nav>
+
+  <!-- Trust Band -->
+  <div class="top-trust-band" aria-label="Vertrauenssignale">
+    <div class="wrap top-trust-band-inner">
+      <span class="trust-signal"><span class="ts-icon">🇦🇹</span><span>Österreichisches Impressum &amp; Datenschutz</span></span>
+      <span class="trust-signal"><span class="ts-icon">👤</span><span>Persönlich — du arbeitest direkt mit Dominic Reisenbichler, MSc.</span></span>
+      <span class="trust-signal"><span class="ts-icon">💬</span><span>Ehrliche Einschätzung — auch wenn BertlClaw nicht passt</span></span>
+      <span class="trust-signal"><span class="ts-icon">⏱️</span><span>Antwort innerhalb 24–48 Stunden</span></span>
+    </div>
+  </div>
 
   <header class="hero wrap">
     <div class="hero-card">
@@ -689,6 +717,40 @@
           <a class="btn btn-secondary" href="services.html">Leistungen ansehen</a>
         </div>
         <div class="cta-helper">Wenn du lieber mobil kurz starten willst: <a href="https://wa.me/436781299919" target="_blank" rel="noopener">WhatsApp öffnen</a>.</div>
+      </div>
+    </section>
+
+    <section class="section" id="fuer-wen" aria-labelledby="fuer-wen-heading">
+      <div class="section-head">
+        <div>
+          <div class="micro-label">Zielgruppe</div>
+          <h2 id="fuer-wen-heading">Für wen ist BertlClaw?</h2>
+        </div>
+        <p>BertlClaw ist kein Angebot für alle. Aber für diese drei Gruppen passt es sehr gut.</p>
+      </div>
+      <div class="persona-grid">
+        <article class="persona-card">
+          <span class="persona-icon">🧑‍💻</span>
+          <h3>Selbstständige &amp; Freelancer</h3>
+          <p>Du hast ein gutes Angebot, aber deine Website kommuniziert das noch nicht klar genug. Du brauchst keine große Agentur — sondern jemanden, der schnell versteht, was du tust, und es verständlicher macht.</p>
+        </article>
+        <article class="persona-card">
+          <span class="persona-icon">🤝</span>
+          <h3>Dienstleister &amp; Berater</h3>
+          <p>Du bekommst Anfragen über Empfehlungen, aber deine Website hält dem Vergleich nicht stand. Interessenten schauen rein — und springen ab, weil das Angebot zu unklar oder zu generisch wirkt.</p>
+        </article>
+        <article class="persona-card">
+          <span class="persona-icon">🚀</span>
+          <h3>Gründer &amp; Projektmacher</h3>
+          <p>Du hast eine Idee oder ein Angebot, das du online sichtbar machen willst. Du brauchst einen klaren Start — ohne monatelangen Agenturprozess und ohne leere Buzzwords.</p>
+        </article>
+      </div>
+      <div class="cta-band" style="margin-top:18px;">
+        <p>Erkennst du dich in einer dieser Situationen? Dann ist BertlClaw wahrscheinlich der richtige nächste Schritt.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#kontakt">Projekt anfragen</a>
+          <a class="btn btn-secondary" href="services.html">Leistungen ansehen</a>
+        </div>
       </div>
     </section>
 
