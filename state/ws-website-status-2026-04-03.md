@@ -48,16 +48,16 @@
 
 ### HIGH PRIORITY
 1. **Google Search Console property verification**
-   - Add `https://bertlclaw.github.io/bertlclaw-site/` as URL-prefix property
+   - Add `https://bertlclaw.at/` as URL-prefix property
    - Verify ownership (Google HTML tag method or file — `google636adb67c640fe50.html` already present in repo, may already be done)
-   - Submit sitemap URL: `https://bertlclaw.github.io/bertlclaw-site/sitemap.xml`
+   - Submit sitemap URL: `https://bertlclaw.at/sitemap.xml`
    - Request indexing for: `/`, `/services.html`, `/use-cases.html`, `/landingpages.html`, `/ueber-bertlclaw.html`
    - See: `GOOGLE-SEARCH-CONSOLE-SETUP.md`
 
 2. **GitHub profile setup** (see `GITHUB-LIVE-CHECKLIST.md`):
    - Set GitHub display name to `BertlClaw`
    - Set GitHub bio to canon copy
-   - Set GitHub website field to `https://bertlclaw.github.io/bertlclaw-site/`
+   - Set GitHub website field to `https://bertlclaw.at/`
    - Create/update `BertlClaw/BertlClaw` profile README repo
    - Pin correct repos
    - Resolve repo-name conflict (bertlclaw vs bertlclaw-site) — noted in BRAND-MITIGATION-NOTES.md
@@ -68,7 +68,7 @@
 
 ### MEDIUM PRIORITY
 4. **Index monitoring** (see `INDEX-MONITORING-PLAN.md`):
-   - Check daily for 3–7 days: `site:bertlclaw.github.io/bertlclaw-site` in Google/Bing
+   - Check daily for 3–7 days: `site:bertlclaw.at` in Google/Bing
    - Monitor Search Console impressions once property is verified
    - Brand query: `BertlClaw` should appear once indexed
 

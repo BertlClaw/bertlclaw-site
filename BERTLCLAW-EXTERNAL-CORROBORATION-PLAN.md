@@ -18,7 +18,7 @@ Jede externe Quelle soll möglichst dieselben fünf Kerndaten bestätigen:
 
 - **Name:** BertlClaw
 - **Betreiber:** Dominic Reisenbichler, MSc.
-- **URL:** https://bertlclaw.github.io/bertlclaw-site/
+- **URL:** https://bertlclaw.at/
 - **Region:** Austria / Österreich
 - **Beschreibung:** BertlClaw ist die Projektmarke von Dominic Reisenbichler, MSc. für Landingpages, Website-Texte, Positionierung, digitale Struktur und KI-Unterstützung.
 
@@ -28,7 +28,7 @@ Jede externe Quelle soll möglichst dieselben fünf Kerndaten bestätigen:
 
 **Display name:** BertlClaw  
 **Bio:** BertlClaw ist die Projektmarke von Dominic Reisenbichler, MSc. für Landingpages, Website-Texte, Positionierung, digitale Struktur und KI-Unterstützung.  
-**Website field:** https://bertlclaw.github.io/bertlclaw-site/  
+**Website field:** https://bertlclaw.at/  
 **Location:** Austria
 
 ### B. GitHub profile README

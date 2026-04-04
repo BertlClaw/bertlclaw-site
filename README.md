@@ -24,7 +24,7 @@ Damit GitHub, Suchmaschinen und Menschen das Projekt sauber einordnen können, s
 
 ## Wichtige Links
 
-- Website: https://bertlclaw.github.io/bertlclaw-site/
+- Website: https://bertlclaw.at/
 - GitHub-Profil: https://github.com/BertlClaw
 - Repository: https://github.com/BertlClaw/bertlclaw-site
 

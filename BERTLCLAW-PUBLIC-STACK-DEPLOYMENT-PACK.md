@@ -24,7 +24,7 @@ Dieses Dokument ist absichtlich direkt umsetzbar. Copy hier rausnehmen, live set
 
 ### GitHub website field
 
-`https://bertlclaw.github.io/bertlclaw-site/`
+`https://bertlclaw.at/`
 
 ### GitHub location
 
@@ -41,9 +41,9 @@ BertlClaw ist die Projektmarke von Dominic Reisenbichler, MSc. für Landingpages
 
 BertlClaw ist keine gesichtslose Agenturhülle und nicht einfach nur ein AI-Label. Es ist eine klar zugeordnete Projektmarke mit erkennbarem Betreiber, praktischer Arbeitsweise und sauberer öffentlicher Einordnung.
 
-- Website: https://bertlclaw.github.io/bertlclaw-site/
-- Über BertlClaw: https://bertlclaw.github.io/bertlclaw-site/ueber-bertlclaw.html
-- Impressum: https://bertlclaw.github.io/bertlclaw-site/impressum.html
+- Website: https://bertlclaw.at/
+- Über BertlClaw: https://bertlclaw.at/ueber-bertlclaw.html
+- Impressum: https://bertlclaw.at/impressum.html
 ```
 
 ### GitHub pinned repos
@@ -63,7 +63,7 @@ BertlClaw ist keine gesichtslose Agenturhülle und nicht einfach nur ein AI-Labe
 
 ### Featured link URL
 
-`https://bertlclaw.github.io/bertlclaw-site/`
+`https://bertlclaw.at/`
 
 ### Featured link description
 
@@ -75,7 +75,7 @@ BertlClaw ist keine gesichtslose Agenturhülle und nicht einfach nur ein AI-Labe
 
 **Name:** `Dominic Reisenbichler`  
 **Display / about line:** `Operator von BertlClaw`  
-**Website:** `https://bertlclaw.github.io/bertlclaw-site/`
+**Website:** `https://bertlclaw.at/`
 
 ### Suggested about text
 
@@ -89,9 +89,9 @@ Diesen Block auf Homepage, Services, Use Cases, Proof und ggf. Footer wiederverw
 
 ## 6. Public links that should repeat across the stack
 
-- Website: https://bertlclaw.github.io/bertlclaw-site/
-- About: https://bertlclaw.github.io/bertlclaw-site/ueber-bertlclaw.html
-- Impressum: https://bertlclaw.github.io/bertlclaw-site/impressum.html
+- Website: https://bertlclaw.at/
+- About: https://bertlclaw.at/ueber-bertlclaw.html
+- Impressum: https://bertlclaw.at/impressum.html
 - GitHub: https://github.com/BertlClaw
 - Repo: https://github.com/BertlClaw/bertlclaw-site
 

@@ -27,7 +27,7 @@ BertlClaw ist die Projektmarke von Dominic Reisenbichler, MSc. für Landingpages
 
 - **Display name:** `BertlClaw`
 - **Bio:** `Projektmarke von Dominic Reisenbichler, MSc. für Landingpages, Website-Texte, Positionierung, digitale Struktur und KI-Unterstützung.`
-- **Website:** `https://bertlclaw.github.io/bertlclaw-site/`
+- **Website:** `https://bertlclaw.at/`
 - **Location:** `Austria`
 
 ## Public-facing proof lines

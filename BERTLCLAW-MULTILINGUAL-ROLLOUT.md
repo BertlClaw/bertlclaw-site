@@ -1,6 +1,6 @@
 # BertlClaw Multilingual Rollout Plan
 
-Practical multilingual strategy for the current GitHub Pages setup (`https://bertlclaw.github.io/bertlclaw-site/`).
+Practical multilingual strategy for the current GitHub Pages setup (`https://bertlclaw.at/`).
 
 ## 1) Recommendation in one sentence
 
@@ -22,7 +22,7 @@ For BertlClaw, the near-term market is clearly **Austria / Germany / German-spea
 - a diluted brand voice
 
 Right now, the site is already positioned strongly in German and indexed from a **repo-based GitHub Pages path**:
-- root: `https://bertlclaw.github.io/bertlclaw-site/`
+- root: `https://bertlclaw.at/`
 - current pages are static `.html` files in the repo root
 - sitemap is manually maintained
 - no visible build pipeline / i18n framework is in place
@@ -268,20 +268,20 @@ Each language page should have:
 ## Example for current German homepage
 
 Current German homepage:
-- canonical: `https://bertlclaw.github.io/bertlclaw-site/`
+- canonical: `https://bertlclaw.at/`
 
 Later add:
-- `hreflang="de"` -> `https://bertlclaw.github.io/bertlclaw-site/`
-- `hreflang="en"` -> `https://bertlclaw.github.io/bertlclaw-site/en/`
-- `hreflang="x-default"` -> `https://bertlclaw.github.io/bertlclaw-site/`
+- `hreflang="de"` -> `https://bertlclaw.at/`
+- `hreflang="en"` -> `https://bertlclaw.at/en/`
+- `hreflang="x-default"` -> `https://bertlclaw.at/`
 
 ## Example head tags
 
 ```html
-<link rel="canonical" href="https://bertlclaw.github.io/bertlclaw-site/" />
-<link rel="alternate" hreflang="de" href="https://bertlclaw.github.io/bertlclaw-site/" />
-<link rel="alternate" hreflang="en" href="https://bertlclaw.github.io/bertlclaw-site/en/" />
-<link rel="alternate" hreflang="x-default" href="https://bertlclaw.github.io/bertlclaw-site/" />
+<link rel="canonical" href="https://bertlclaw.at/" />
+<link rel="alternate" hreflang="de" href="https://bertlclaw.at/" />
+<link rel="alternate" hreflang="en" href="https://bertlclaw.at/en/" />
+<link rel="alternate" hreflang="x-default" href="https://bertlclaw.at/" />
 ```
 
 ## For inner pages
@@ -313,10 +313,10 @@ Use one sitemap containing all live URLs:
 - later English URLs under `/en/`
 
 Example entries after English launch:
-- `https://bertlclaw.github.io/bertlclaw-site/`
-- `https://bertlclaw.github.io/bertlclaw-site/services.html`
-- `https://bertlclaw.github.io/bertlclaw-site/en/`
-- `https://bertlclaw.github.io/bertlclaw-site/en/services.html`
+- `https://bertlclaw.at/`
+- `https://bertlclaw.at/services.html`
+- `https://bertlclaw.at/en/`
+- `https://bertlclaw.at/en/services.html`
 
 If the site grows, split into:
 - `sitemap-de.xml`

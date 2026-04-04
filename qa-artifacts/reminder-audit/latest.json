@@ -1,28 +1,126 @@
 {
-  "generated_at": "2026-04-03 14:05:06 CEST",
+  "generated_at": "2026-04-04 08:03:29 CEST",
   "audit_window_hours": 6,
   "expected_hourly_slots": [
-    "2026-04-03 09:00",
-    "2026-04-03 10:00",
-    "2026-04-03 11:00",
-    "2026-04-03 12:00",
-    "2026-04-03 13:00",
-    "2026-04-03 14:00"
+    "2026-04-04 03:00",
+    "2026-04-04 04:00",
+    "2026-04-04 05:00",
+    "2026-04-04 06:00",
+    "2026-04-04 07:00",
+    "2026-04-04 08:00"
   ],
-  "missing_hourly_slots": [
-    "2026-04-03 09:00",
-    "2026-04-03 10:00",
-    "2026-04-03 11:00",
-    "2026-04-03 12:00"
-  ],
-  "last_daily_slot_seen_in_log": "2026-04-03",
+  "missing_hourly_slots": [],
+  "last_daily_slot_seen_in_log": "2026-04-04",
   "state_snapshot": {
     "version": 1,
     "timezone": "Europe/Vienna",
-    "last_hourly_update_at": "2026-04-03 14:05",
-    "last_daily_github_ticket_reminder_at": "2026-04-03",
-    "last_run_at": "2026-04-03 14:05:06",
+    "last_hourly_update_at": "2026-04-04 08:03",
+    "last_daily_github_ticket_reminder_at": "2026-04-04",
+    "last_run_at": "2026-04-04 08:03:29",
     "runs": [
+      {
+        "at": "2026-04-04 08:03:29",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-04 07:03:51",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-04 06:04:15",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-04 05:05:09",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-04 04:03:08",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-04 03:07:47",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-04 02:08:59",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-04 01:06:28",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-04 00:03:35",
+        "emitted": [
+          "hourly_update",
+          "daily_github_ticket_reminder"
+        ]
+      },
+      {
+        "at": "2026-04-03 23:02:46",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-03 22:10:50",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-03 21:10:36",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-03 19:03:04",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-03 18:09:32",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-03 17:01:47",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-03 16:09:39",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
+      {
+        "at": "2026-04-03 15:05:34",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
       {
         "at": "2026-04-03 14:05:06",
         "emitted": [
@@ -105,6 +203,6 @@
       }
     ]
   },
-  "status": "fail",
-  "next_expected_hourly_slot": "2026-04-03 15:00"
+  "status": "pass",
+  "next_expected_hourly_slot": "2026-04-04 09:00"
 }

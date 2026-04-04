@@ -50,7 +50,7 @@ BertlClaw verbindet klare Kommunikation, digitale Struktur und KI-gestützte Unt
 
 - **GitHub profile:** https://github.com/BertlClaw
 - **Repository:** https://github.com/BertlClaw/bertlclaw-site
-- **Website:** https://bertlclaw.github.io/bertlclaw-site/
+- **Website:** https://bertlclaw.at/
 
 ## 6) Asset Canon
 

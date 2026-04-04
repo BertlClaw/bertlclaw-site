@@ -52,3 +52,113 @@
 [2026-04-03 13:26 CEST] SALES: Sales-Quickref reviewed, structure confirmed solid. No changes needed.
 [2026-04-03 13:26 CEST] OPS: All 7 workstreams completed April 3rd sweep. Brand, Legal, Proof, Website, Sales, Ops all updated.
 [2026-04-03 14:05 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-03 14:05)
+[2026-04-03 15:05 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-03 15:05)
+[2026-04-03T13:58:47Z] [domain-prep] CNAME created (bertlclaw.at). robots.txt Sitemap updated to https://bertlclaw.at/sitemap.xml. Switch script created at bertlclaw-tools/switch-to-custom-domain.sh. Dry-run: 17 files, 97 replacements. Preview at state/domain-switch-preview.md.
+
+[2026-04-03] BCQA-005 / Mini-Case erstellt: BertlClaw als eigenes erstes Projekt
+  - Interner Draft: bertlclaw-proof/library/internal-examples/mini-case-bertlclaw-self.md
+  - Website-Version: bertlclaw-proof/library/publication/mini-case-bertlclaw-self-publishable.md
+  - Scorecard: 29/30 — Publishable now
+  - Placement: proof.html #proof-mini-cases — erste Karte im Abschnitt
+  - HTML-Block bereit zum Einbau in publication/mini-case-bertlclaw-self-publishable.md
+
+---
+[2026-04-03 15:57 GMT+2] Brand/GitHub update — subagent run
+- GITHUB-PROFILE-README-DRAFT.md: replaced all bertlclaw.github.io/bertlclaw-site/ URLs with bertlclaw.at/
+- index.html: added LinkedIn sameAs placeholder comment in Organization JSON-LD block
+- BERTLCLAW-PUBLIC-ENTITY-CONSISTENCY-CHECKLIST.md: updated Primary URL to bertlclaw.at/; marked completed items (URL consistency, structured data relationships, Über page, operator block, README draft ready)
+- ueber-bertlclaw.html: updated all canonical/OG/JSON-LD URLs from GitHub Pages to bertlclaw.at/; content reviewed — strong and on-brand, no substantive changes needed
+- state/ws-brand-status-2026-04-03b.md: written
+[2026-04-03 16:09:36] [SALES-SIM] Sales simulation completed for lead Maria K. | Grade: B→A (Small-Scope) | Offer: Positionierung & Website-Texte | Price: EUR 500 | Gate: 2→3 (versandfertig) | Follow-up: +3d, +10d | 6 system gaps identified | Full doc: state/sales-simulation-maria-k.md
+[2026-04-03 16:09 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-03 16:09)
+[2026-04-03 17:01 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-03 17:01)
+[2026-04-03 18:09 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-03 18:09)
+[2026-04-03 19:03 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-03 19:03)
+[2026-04-03 21:10 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-03 21:10)
+[2026-04-03 22:10 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-03 22:10)
+[2026-04-03 23:02 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-03 23:02)
+[2026-04-04 00:03 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-04 00:03)
+[2026-04-04 00:03 CEST] daily ticket reminder due/recorded by reminder-heartbeat.js (audit day 2026-04-04)
+[2026-04-04 01:06 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-04 01:06)
+[2026-04-04 02:08 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-04 02:08)
+[2026-04-04 03:07 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-04 03:07)
+[2026-04-04 04:03 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-04 04:03)
+{
+  "ok": true,
+  "now": {
+    "date": "2026-04-04",
+    "time": "04:03:08",
+    "hourMinute": "04:03",
+    "stamp": "2026-04-04 04:03 CEST",
+    "fullStamp": "2026-04-04 04:03:08 CEST"
+  },
+  "emitted": [
+    "hourly_update"
+  ],
+  "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+  "logPath": "/home/dominic/.openclaw/workspace/logs/bertlclaw-operations.log"
+}
+[2026-04-04 05:05 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-04 05:05)
+{
+  "ok": true,
+  "now": {
+    "date": "2026-04-04",
+    "time": "05:05:09",
+    "hourMinute": "05:05",
+    "stamp": "2026-04-04 05:05 CEST",
+    "fullStamp": "2026-04-04 05:05:09 CEST"
+  },
+  "emitted": [
+    "hourly_update"
+  ],
+  "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+  "logPath": "/home/dominic/.openclaw/workspace/logs/bertlclaw-operations.log"
+}
+[2026-04-04 06:04 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-04 06:04)
+{
+  "ok": true,
+  "now": {
+    "date": "2026-04-04",
+    "time": "06:04:15",
+    "hourMinute": "06:04",
+    "stamp": "2026-04-04 06:04 CEST",
+    "fullStamp": "2026-04-04 06:04:15 CEST"
+  },
+  "emitted": [
+    "hourly_update"
+  ],
+  "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+  "logPath": "/home/dominic/.openclaw/workspace/logs/bertlclaw-operations.log"
+}
+[2026-04-04 07:03 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-04 07:03)
+{
+  "ok": true,
+  "now": {
+    "date": "2026-04-04",
+    "time": "07:03:51",
+    "hourMinute": "07:03",
+    "stamp": "2026-04-04 07:03 CEST",
+    "fullStamp": "2026-04-04 07:03:51 CEST"
+  },
+  "emitted": [
+    "hourly_update"
+  ],
+  "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+  "logPath": "/home/dominic/.openclaw/workspace/logs/bertlclaw-operations.log"
+}
+[2026-04-04 08:03 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-04 08:03)
+{
+  "ok": true,
+  "now": {
+    "date": "2026-04-04",
+    "time": "08:03:29",
+    "hourMinute": "08:03",
+    "stamp": "2026-04-04 08:03 CEST",
+    "fullStamp": "2026-04-04 08:03:29 CEST"
+  },
+  "emitted": [
+    "hourly_update"
+  ],
+  "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+  "logPath": "/home/dominic/.openclaw/workspace/logs/bertlclaw-operations.log"
+}

@@ -6,7 +6,7 @@ Use this before publishing any public BertlClaw surface.
 
 - **Brand name:** BertlClaw
 - **Operator:** Dominic Reisenbichler, MSc.
-- **Primary URL:** https://bertlclaw.github.io/bertlclaw-site/
+- **Primary URL:** https://bertlclaw.at/ _(updated 2026-04-03, domain migration in progress)_
 - **Country:** Austria
 - **Primary description:** BertlClaw ist die Projektmarke von Dominic Reisenbichler, MSc. für Landingpages, Website-Texte, Positionierung, digitale Struktur und KI-Unterstützung.
 
@@ -28,9 +28,9 @@ Use this before publishing any public BertlClaw surface.
 - [ ] AI is framed as part of the work, not the only identity
 
 ### 4. URL consistency
-- [ ] website URL matches the live GitHub Pages URL
-- [ ] repo URL is correct and typo-free
-- [ ] internal docs do not contain obsolete repo names
+- [x] website URL updated to https://bertlclaw.at/ (domain migration 2026-04-03)
+- [x] repo URL is correct and typo-free
+- [ ] internal docs do not contain obsolete repo names (partial — GitHub Pages URLs remain in HTML files pending domain switch)
 
 ### 5. Visual consistency
 - [ ] same logo on GitHub and website
@@ -38,9 +38,10 @@ Use this before publishing any public BertlClaw surface.
 - [ ] OG image still reflects the same brand
 
 ### 6. Structured data
-- [ ] Organization / Person relationship is present
-- [ ] GitHub profile and repo are in `sameAs` if relevant
-- [ ] homepage structured data matches public copy
+- [x] Organization / Person relationship is present (index.html + ueber-bertlclaw.html)
+- [x] GitHub profile and repo are in `sameAs` (index.html)
+- [ ] LinkedIn sameAs pending (placeholder added to index.html 2026-04-03)
+- [ ] homepage structured data URLs still reference GitHub Pages (pending domain migration)
 
 ### 7. Trust signals
 - [ ] Impressum present
@@ -51,7 +52,7 @@ Use this before publishing any public BertlClaw surface.
 ## Highest-priority manual checks right now
 
 - [ ] GitHub profile bio set live
-- [ ] GitHub profile README published
+- [x] GitHub profile README draft updated for bertlclaw.at (2026-04-03) — ready to publish
 - [ ] website repo description updated live
-- [ ] About / Über BertlClaw page created
-- [ ] operator block visible on homepage and services page
+- [x] About / Über BertlClaw page created (ueber-bertlclaw.html — reviewed and on-brand 2026-04-03)
+- [x] operator block visible on homepage and services page

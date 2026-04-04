@@ -54,7 +54,7 @@ Case-Logik und Proof-Ansätze sind lokal dokumentiert, aber noch nicht als saube
 ### 1. Publish GitHub profile stack
 - GitHub display name: `BertlClaw`
 - GitHub bio: Canon-Version aus `GITHUB-BRAND-ASSETS.md`
-- Website field: `https://bertlclaw.github.io/bertlclaw-site/`
+- Website field: `https://bertlclaw.at/`
 - Location: `Austria`
 - Profile image: `bertlclaw-assets/logo-512.png`
 - Profile README: aus `GITHUB-PROFILE-README-DRAFT.md`

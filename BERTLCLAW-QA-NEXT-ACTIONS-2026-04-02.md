@@ -112,7 +112,7 @@ Das Ops-Log enthält Einträge, aber keinen klaren Audit-Mechanismus, der die st
 
 ### Verifikationsergebnis aus aktuellem Sweep
 - `index.html` enthält im `WebSite`-JSON-LD eine `SearchAction`
-- Ziel: `https://bertlclaw.github.io/bertlclaw-site/?q={search_term_string}`
+- Ziel: `https://bertlclaw.at/?q={search_term_string}`
 - im sichtbaren Workspace gibt es **keine echte Site Search UI** und keinen belegten Search-Flow
 - damit ist der derzeitige Stand **wahrscheinlich nicht realitätskonform**
 

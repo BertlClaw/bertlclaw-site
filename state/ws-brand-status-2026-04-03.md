@@ -44,7 +44,7 @@ Added a new section: **"GitHub Repo-Name Conflict (open — with GitHub Support)
 |---|---|
 | Brand name spelling (`BertlClaw`) | ✅ Consistent across all reviewed files |
 | Operator name (`Dominic Reisenbichler, MSc.`) | ✅ Consistent after today's METADATA fix |
-| Primary URL (`https://bertlclaw.github.io/bertlclaw-site/`) | ✅ Consistent |
+| Primary URL (`https://bertlclaw.at/`) | ✅ Consistent |
 | Repo URL (`https://github.com/BertlClaw/bertlclaw-site`) | ✅ Consistent |
 | GitHub profile URL (`https://github.com/BertlClaw`) | ✅ Consistent |
 | Short description logic | ✅ Consistent — "Projektmarke von Dominic Reisenbichler, MSc. für Landingpages..." |
