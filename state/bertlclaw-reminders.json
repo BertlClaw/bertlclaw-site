@@ -1,10 +1,16 @@
 {
   "version": 1,
   "timezone": "Europe/Vienna",
-  "last_hourly_update_at": "2026-04-04 10:03",
+  "last_hourly_update_at": "2026-04-04 11:04",
   "last_daily_github_ticket_reminder_at": "2026-04-04",
-  "last_run_at": "2026-04-04 10:03:50",
+  "last_run_at": "2026-04-04 11:04:04",
   "runs": [
+    {
+      "at": "2026-04-04 11:04:04",
+      "emitted": [
+        "hourly_update"
+      ]
+    },
     {
       "at": "2026-04-04 10:03:50",
       "emitted": [
