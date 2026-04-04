@@ -150,4 +150,28 @@
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
+  <url>
+    <loc>https://bertlclaw.at/selbststaendige-website.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://bertlclaw.at/berater-website.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://bertlclaw.at/website-texte-schreiben.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://bertlclaw.at/landingpage-erstellen.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
