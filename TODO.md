@@ -27,3 +27,12 @@
 
 ## Operations
 - [ ] Create Google Sheet lead list (template: `bertlclaw-leads-template.csv`)
+
+## Sales & Outreach
+- [x] Create outreach message templates (`BERTLCLAW-OUTREACH-TEMPLATES.md`)
+- [x] Create discovery call script (`BERTLCLAW-DISCOVERY-CALL-SCRIPT.md`)
+- [x] Create partnership outreach templates (`BERTLCLAW-PARTNERSHIP-OUTREACH.md`)
+- [ ] Send first 5 warm outreach messages (WhatsApp / LinkedIn)
+- [ ] Identify 3–5 potential referral partners and reach out
+- [ ] Update LinkedIn profile with new positioning text
+- [ ] Book first discovery call
