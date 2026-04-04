@@ -85,6 +85,24 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://bertlclaw.at/website-optimierung.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://bertlclaw.at/angebot-kommunizieren.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://bertlclaw.at/erstgespraech.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://bertlclaw.at/impressum.html</loc>
     <lastmod>2026-04-04</lastmod>
     <priority>0.4</priority>
