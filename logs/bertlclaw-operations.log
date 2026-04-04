@@ -210,3 +210,19 @@
   "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
   "logPath": "/home/dominic/.openclaw/workspace/logs/bertlclaw-operations.log"
 }
+[2026-04-04 16:09 CEST] hourly update due/recorded by reminder-heartbeat.js (audit slot 2026-04-04 16:09)
+{
+  "ok": true,
+  "now": {
+    "date": "2026-04-04",
+    "time": "16:09:43",
+    "hourMinute": "16:09",
+    "stamp": "2026-04-04 16:09 CEST",
+    "fullStamp": "2026-04-04 16:09:43 CEST"
+  },
+  "emitted": [
+    "hourly_update"
+  ],
+  "statePath": "/home/dominic/.openclaw/workspace/state/bertlclaw-reminders.json",
+  "logPath": "/home/dominic/.openclaw/workspace/logs/bertlclaw-operations.log"
+}

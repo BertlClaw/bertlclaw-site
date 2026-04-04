@@ -1,23 +1,34 @@
 {
-  "generated_at": "2026-04-04 11:04:04 CEST",
+  "generated_at": "2026-04-04 16:09:50 CEST",
   "audit_window_hours": 6,
   "expected_hourly_slots": [
-    "2026-04-04 06:00",
-    "2026-04-04 07:00",
-    "2026-04-04 08:00",
-    "2026-04-04 09:00",
-    "2026-04-04 10:00",
-    "2026-04-04 11:00"
+    "2026-04-04 11:00",
+    "2026-04-04 12:00",
+    "2026-04-04 13:00",
+    "2026-04-04 14:00",
+    "2026-04-04 15:00",
+    "2026-04-04 16:00"
   ],
-  "missing_hourly_slots": [],
+  "missing_hourly_slots": [
+    "2026-04-04 12:00",
+    "2026-04-04 13:00",
+    "2026-04-04 14:00",
+    "2026-04-04 15:00"
+  ],
   "last_daily_slot_seen_in_log": "2026-04-04",
   "state_snapshot": {
     "version": 1,
     "timezone": "Europe/Vienna",
-    "last_hourly_update_at": "2026-04-04 11:04",
+    "last_hourly_update_at": "2026-04-04 16:09",
     "last_daily_github_ticket_reminder_at": "2026-04-04",
-    "last_run_at": "2026-04-04 11:04:04",
+    "last_run_at": "2026-04-04 16:09:43",
     "runs": [
+      {
+        "at": "2026-04-04 16:09:43",
+        "emitted": [
+          "hourly_update"
+        ]
+      },
       {
         "at": "2026-04-04 11:04:04",
         "emitted": [
@@ -221,6 +232,6 @@
       }
     ]
   },
-  "status": "pass",
-  "next_expected_hourly_slot": "2026-04-04 12:00"
+  "status": "fail",
+  "next_expected_hourly_slot": "2026-04-04 17:00"
 }
