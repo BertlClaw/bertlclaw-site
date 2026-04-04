@@ -322,6 +322,7 @@
     ]
   }
   </script>
+  <script defer data-domain="bertlclaw.at" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
   <nav class="nav">
@@ -859,6 +860,13 @@
               </div>
               <input type="hidden" name="_subject" value="Neue BertlClaw Anfrage" />
               <input type="hidden" name="_language" value="de" />
+              <input type="hidden" name="page_path" id="hdn_page_path" value="" />
+              <input type="hidden" name="page_title" id="hdn_page_title" value="" />
+              <input type="hidden" name="referrer" id="hdn_referrer" value="" />
+              <input type="hidden" name="utm_source" id="hdn_utm_source" value="" />
+              <input type="hidden" name="utm_medium" id="hdn_utm_medium" value="" />
+              <input type="hidden" name="utm_campaign" id="hdn_utm_campaign" value="" />
+              <input type="hidden" name="lead_entry" id="hdn_lead_entry" value="direct" />
               <div class="field full">
                 <label for="topic">Thema</label>
                 <select id="topic" name="topic">
@@ -977,6 +985,21 @@
       const input=document.getElementById('chatbotMessage');
       const ask=document.getElementById('chatbotAsk');
       const toForm=document.getElementById('chatbotToForm');
+      (function(){
+        var p = document.getElementById('hdn_page_path');
+        var t = document.getElementById('hdn_page_title');
+        var r = document.getElementById('hdn_referrer');
+        var us = document.getElementById('hdn_utm_source');
+        var um = document.getElementById('hdn_utm_medium');
+        var uc = document.getElementById('hdn_utm_campaign');
+        if(p) p.value = window.location.pathname;
+        if(t) t.value = document.title;
+        if(r) r.value = document.referrer || '';
+        var params = new URLSearchParams(window.location.search);
+        if(us) us.value = params.get('utm_source') || '';
+        if(um) um.value = params.get('utm_medium') || '';
+        if(uc) uc.value = params.get('utm_campaign') || '';
+      })();
       const contactForm=document.getElementById('contactForm');
       const contactFormStatus=document.getElementById('contactFormStatus');
       const params=new URLSearchParams(window.location.search);
