@@ -16,3 +16,9 @@
 - **Hauptberuf:** ERP Project Manager (angestellt)
   - Systeme: XALAX, proALPHA, Softline, Energy Services
   - Besonders wertvoll für LinkedIn/Positionierung: **Red Bull Ring** als Referenzprojekt
+
+## Subagent-Verhalten (Anweisung von Dominic)
+
+- **Immer prüfen ob Subagents Arbeit haben.** Wenn keine aktiven Subagents → sofort neue sinnstiftende Tasks für BertlClaw vergeben.
+- **Hängende Subagents erkennen und neu starten.** Wenn ein Subagent >30 Min. läuft ohne Fortschritt → killen und neu starten mit klarerem Task.
+- Ziel: Subagent-Kapazität (max. 5 parallel) möglichst immer ausgelastet halten für BertlClaw-Wachstum.
