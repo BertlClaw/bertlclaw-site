@@ -33,7 +33,9 @@ Ich arbeite mit Freelancern, Dienstleistern und kleinen Unternehmen, die eine kl
 
 Das läuft bei BertlClaw pragmatisch ab. Kein Agenturtheater, keine aufgeblähten Prozesse, keine anonymen Teams im Hintergrund. Du bekommst eine ehrliche Einschätzung, was Sinn macht und was nicht – und dann setzen wir es gemeinsam um.
 
-Ich bin Dominic Reisenbichler, MSc. – Inhaber und Projektleiter von BertlClaw. Jedes Projekt läuft persönlich über mich. Du weißt immer, mit wem du arbeitest.
+Ich bin Dominic Reisenbichler, MSc. – Inhaber und Projektleiter von BertlClaw. Im Hauptberuf leite ich ERP-Projekte für Unternehmen unterschiedlicher Größe und Branchen, darunter auch den Red Bull Ring. Das bedeutet: Ich weiß, wie komplexe Systeme und Prozesse wirklich funktionieren – und warum die meisten Probleme in der Kommunikation entstehen, nicht in der Technik.
+
+Jedes Projekt bei BertlClaw läuft persönlich über mich. Du weißt immer, mit wem du arbeitest.
 
 Was ich konkret mache:
 → Landingpages (Konzept, Text, Umsetzung)
@@ -45,7 +47,7 @@ Was ich konkret mache:
 Wenn du das Gefühl hast, dass deine Website oder dein Angebot online nicht das widerspiegeln, was du eigentlich kannst – dann schau dir bertlclaw.at an oder schreib mir direkt.
 ```
 
-> **Zeichenanzahl-Hinweis:** Die Zusammenfassung umfasst ca. 1.550 Zeichen – innerhalb des LinkedIn-Limits von 2.600 Zeichen. Gut lesbar als "Klappentext", ohne zu lang zu werden.
+> **Zeichenanzahl-Hinweis:** Die Zusammenfassung umfasst ca. 1.750 Zeichen – innerhalb des LinkedIn-Limits von 2.600 Zeichen. Gut lesbar als "Klappentext", ohne zu lang zu werden.
 
 ---
 
@@ -59,6 +61,23 @@ Wenn du das Gefühl hast, dass deine Website oder dein Angebot online nicht das 
 ```
 BertlClaw unterstützt Selbstständige, Freelancer und kleine Unternehmen dabei, ihr Angebot online klar und überzeugend zu kommunizieren. Das Leistungsangebot umfasst Landingpages, Website-Texte, Positionierungsarbeit und digitale Struktur – pragmatisch und ohne Agenturaufwand. Jedes Projekt wird persönlich betreut: direkte Kommunikation, ehrliche Einschätzung, klare Ergebnisse. Mehr unter: bertlclaw.at
 ```
+
+---
+
+## Erfahrung / Hauptberuf (ERP-Position)
+
+**Titel:** ERP Project Manager
+**Unternehmen:** [Aktueller Arbeitgeber]
+**Zeitraum:** [Von – heute]
+
+**Beschreibung (Vorschlag):**
+```
+Leitung und Koordination von ERP-Projekten mit Fokus auf XALAX, proALPHA, Softline und Energy Services. Projektverantwortung über den gesamten Zyklus – von der Anforderungsanalyse über Implementierung und Testing bis zum Go-live.
+
+Referenzprojekte umfassen u.a. die Projektarbeit für den Red Bull Ring. Schwerpunkte: Prozessanalyse, Systemintegration, Stakeholder-Kommunikation und Schulung der Anwender.
+```
+
+> **Hinweis:** Formulierung anpassen, falls Arbeitgeber oder Details nicht öffentlich kommunizierbar sind. Red Bull Ring nur nennen, wenn vertraglich zulässig.
 
 ---
 

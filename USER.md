@@ -1,17 +1,22 @@
 # USER.md - About Your Human
 
-_Learn about the person you're helping. Update this as you go._
-
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+- **Name:** Dominic Reisenbichler
+- **What to call them:** Dominic
+- **Timezone:** Europe/Vienna (CEST)
 
 ## Context
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+### Job / Background
+- **Hauptjob:** ERP Project Manager (angestellt)
+  - Systeme: XALAX, proALPHA, Softline, Energy Services
+  - Besondere Erfahrung: **Red Bull Ring** — am wertvollsten für LinkedIn / Positionierung
+- **BertlClaw:** Selbstständigkeit als langfristiges Ziel (nicht nur Nebeneinkommen)
 
----
+### BertlClaw — Strategie & Entscheidungen
+- Ziel: Vollzeit-Selbstständigkeit langfristig
+- Positionierung: Web, Positioning, Landingpages für Selbstständige im DACH-Raum
+- **XALAX-Nebentätigkeitsgenehmigung:** Erst beantragen, wenn erster Auftrag gesichert — nicht vorher
+- LinkedIn-Profil soll ERP-Erfahrung (XALAX, proALPHA, Softline, Energy Services) + Red Bull Ring einbauen
 
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+### Persönliches
+- Pragmatisch: kein Aufwand ohne konkreten Nutzen ("erst wenn ich sicher einen Auftrag habe")
