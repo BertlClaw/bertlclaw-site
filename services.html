@@ -37,19 +37,61 @@
     @media(max-width:480px){.wrap{width:min(calc(100% - 20px),var(--max))}.nav-inner{display:grid;grid-template-columns:1fr;gap:10px}.footer-links{gap:10px!important;font-size:.88rem!important}.chatbot-toggle span:last-child{font-size:.95rem}}
 
   </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://bertlclaw.at/#organization","name":"BertlClaw","url":"https://bertlclaw.at/","logo":"https://bertlclaw.at/bertlclaw-assets/og-card.jpg","founder":{"@type":"Person","name":"Dominic Reisenbichler, MSc."},"sameAs":["https://github.com/BertlClaw","https://github.com/BertlClaw/bertlclaw-site"]},{"@type":"Service","name":"BertlClaw Leistungen","provider":{"@id":"https://bertlclaw.at/#organization"},"about":{"@id":"https://bertlclaw.at/#organization"},"publisher":{"@id":"https://bertlclaw.at/#organization"},"isPartOf":{"@type":"WebSite","name":"BertlClaw","url":"https://bertlclaw.at/"},"serviceType":"Landingpages, Website-Texte, Positionierung, digitale Struktur und Umsetzung","areaServed":"AT","url":"https://bertlclaw.at/services.html"}]} </script>
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"WebPage",
-    "name":"BertlClaw",
-    "isPartOf":"https://bertlclaw.at/",
-    "about":{
-      "@type":"Organization",
-      "name":"BertlClaw",
-      "url":"https://bertlclaw.at/",
-      "logo":"https://bertlclaw.at/bertlclaw-assets/og-card.jpg"
-    }
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://bertlclaw.at/#organization",
+        "name": "BertlClaw",
+        "url": "https://bertlclaw.at/",
+        "logo": "https://bertlclaw.at/bertlclaw-assets/og-card.jpg",
+        "founder": {"@type": "Person", "name": "Dominic Reisenbichler, MSc."},
+        "sameAs": ["https://github.com/BertlClaw", "https://github.com/BertlClaw/bertlclaw-site"]
+      },
+      {
+        "@type": "Service",
+        "name": "BertlClaw Leistungen",
+        "provider": {"@id": "https://bertlclaw.at/#organization"},
+        "serviceType": "Landingpages, Website-Texte, Positionierung, digitale Struktur und Umsetzung",
+        "areaServed": "AT",
+        "url": "https://bertlclaw.at/services.html",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Landingpage Sprint",
+            "description": "Fertige Landingpage mit klarem Angebot, Texten und Struktur für Selbstständige",
+            "priceRange": "ab € 590",
+            "priceCurrency": "EUR",
+            "seller": {"@id": "https://bertlclaw.at/#organization"}
+          },
+          {
+            "@type": "Offer",
+            "name": "Positionierungs-Sprint",
+            "description": "Klare Positionierung und Website-Texte für Selbstständige und Dienstleister",
+            "priceRange": "ab € 490",
+            "priceCurrency": "EUR",
+            "seller": {"@id": "https://bertlclaw.at/#organization"}
+          },
+          {
+            "@type": "Offer",
+            "name": "Website-Texte",
+            "description": "Verständliche Website-Texte und digitale Struktur für kleine Unternehmen",
+            "priceRange": "ab € 390",
+            "priceCurrency": "EUR",
+            "seller": {"@id": "https://bertlclaw.at/#organization"}
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "BertlClaw", "item": "https://bertlclaw.at/"},
+          {"@type": "ListItem", "position": 2, "name": "Leistungen", "item": "https://bertlclaw.at/services.html"}
+        ]
+      }
+    ]
   }
   </script>
   <script data-goatcounter="https://bertlclaw.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
