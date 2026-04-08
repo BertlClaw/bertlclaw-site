@@ -26,7 +26,7 @@
 - [ ] Enforce HTTPS in GitHub Pages (available after DNS propagation)
 
 ## Operations
-- [ ] Create Google Sheet lead list (template: `bertlclaw-leads-template.csv`)
+- [x] Create Google Sheet lead list (template: `bertlclaw-leads-template.csv`)
 
 ## Sales & Outreach
 - [x] Create outreach message templates (`BERTLCLAW-OUTREACH-TEMPLATES.md`)
