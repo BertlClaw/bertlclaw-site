@@ -196,11 +196,22 @@
     .quick-start-item strong{display:block;color:var(--text);margin-bottom:6px}
     .response-box{margin-top:18px;padding:18px 20px;border-radius:18px;border:1px solid rgba(143,243,206,.20);background:rgba(143,243,206,.07);color:#d8fff0;line-height:1.72}
     .response-box strong{color:#f3fffb}
+    .fit-chooser{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:start}
+    .fit-options{display:grid;gap:14px}
+    .fit-option{width:100%;text-align:left;padding:18px 20px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(18,26,47,.84), rgba(10,15,28,.76));box-shadow:var(--shadow);color:var(--text);cursor:pointer;transition:.2s ease}
+    .fit-option:hover,.fit-option.is-active{border-color:var(--line-strong);transform:translateY(-2px);box-shadow:var(--shadow),var(--glow)}
+    .fit-option strong{display:block;margin-bottom:8px;font-size:1.02rem}
+    .fit-option span{display:block;color:var(--muted);line-height:1.7}
+    .fit-preview{padding:24px;border-radius:24px;border:1px solid var(--line-strong);background:linear-gradient(180deg, rgba(18,26,47,.90), rgba(10,15,28,.82));box-shadow:var(--shadow),var(--glow);position:sticky;top:110px}
+    .fit-preview p{color:var(--muted);line-height:1.8;margin:0 0 14px}
+    .fit-preview ul{margin:0 0 18px;padding-left:18px;display:grid;gap:8px;color:var(--muted)}
+    .fit-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px}
+    .fit-meta span{padding:8px 10px;border-radius:999px;border:1px solid rgba(124,156,255,.20);background:rgba(124,156,255,.08);color:#dfe8ff;font-size:.86rem}
     .mobile-contact-bar{display:none}
     .cta-helper{margin-top:14px;color:var(--muted2);font-size:.94rem;line-height:1.7}
     .cta-helper a{color:var(--text);text-decoration:underline;text-underline-offset:3px}
     .footer{padding:38px 0 62px;text-align:center;color:var(--muted);font-size:.94rem}
-    @media (max-width:1080px){.hero-grid,.grid-2,.grid-3,.feature-strip,.usecase-grid,.proof-grid,.split-feature,.package-grid,.offer-grid,.contact-shell,.form-grid,.quick-start-grid,.process-grid,.proof-teaser-grid{grid-template-columns:1fr}.section-head,.proof-teaser-intro{display:block}}
+    @media (max-width:1080px){.hero-grid,.grid-2,.grid-3,.feature-strip,.usecase-grid,.proof-grid,.split-feature,.package-grid,.offer-grid,.contact-shell,.form-grid,.quick-start-grid,.process-grid,.proof-teaser-grid,.fit-chooser{grid-template-columns:1fr}.section-head,.proof-teaser-intro{display:block}.fit-preview{position:static;top:auto}}
     @media (max-width:860px){.nav-inner{align-items:flex-start}.nav-links{display:none}.nav-actions{gap:8px}.hero-grid{padding:24px;min-height:auto}.hero-card{min-height:auto}.hero-metrics,.trust-strip{grid-template-columns:1fr}.pill-row{display:none}h1{max-width:100%}.mobile-nav-row{display:flex;gap:10px;overflow:auto;padding:0 0 12px}.mobile-nav-row a{white-space:nowrap;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text);font-size:.92rem}}
     @media (max-width:640px){.nav{position:fixed;top:0;left:0;right:0;padding-top:env(safe-area-inset-top,0)}body{padding-top:118px}.nav-inner{display:grid;grid-template-columns:1fr;gap:12px}.nav-actions{justify-content:flex-start}.nav-actions .mini-btn:nth-child(2){display:none}.brand{min-width:0}.brand div:last-child{font-size:1rem}.mobile-nav-row{gap:8px;padding:0 0 10px}.mobile-nav-row a{font-size:.9rem;padding:9px 11px}.cta .btn{width:100%}.proof-teaser-shell{padding:18px}.mobile-contact-bar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom, 0px));z-index:9998;display:grid;grid-template-columns:1fr auto;gap:8px;padding:8px;border-radius:18px;border:1px solid rgba(124,156,255,.18);background:rgba(6,10,22,.90);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.30)}.mobile-contact-bar a{min-height:48px;padding:10px 12px;border-radius:14px;font-weight:800;display:flex;align-items:center;justify-content:center;text-align:center}.mobile-contact-bar .btn{width:100%}.mobile-contact-bar .btn-secondary{width:auto;padding-inline:14px;font-weight:700;opacity:.88}}
   
@@ -734,6 +745,52 @@
       </div>
     </section>
 
+    <section class="section" id="fit-check" aria-labelledby="fit-check-heading">
+      <div class="section-head">
+        <div>
+          <div class="micro-label">Schneller Einstiegsfinder</div>
+          <h2 id="fit-check-heading">Unsicher, womit du starten sollst?</h2>
+        </div>
+        <p>Dann entscheide nicht im Kopf weiter. Wähle die Situation, die gerade am ehesten passt — BertlClaw setzt Thema und Nachricht unten im Formular schon sinnvoll vor, damit die Anfrage leichter rausgeht.</p>
+      </div>
+      <div class="fit-chooser">
+        <div class="fit-options" aria-label="Auswahl des passenden Einstiegsangebots">
+          <button class="fit-option is-active" type="button" data-fit-topic="Landingpage Sprint" data-fit-title="Landingpage Sprint" data-fit-result="Dein Angebot soll schneller verstanden werden und Besucher klarer zur Anfrage führen." data-fit-points="Hero und Kernbotschaft schärfen|Seitenaufbau und CTA logisch ordnen|Vertrauen früher sichtbar machen" data-fit-message="Ich habe bereits ein konkretes Angebot, aber meine Seite verkauft es noch nicht klar genug. Ich will die Landingpage verständlicher machen und mehr qualifizierte Anfragen vorbereiten." data-fit-entry="fit-chooser-landingpage">
+            <strong>Meine Website ist da — aber sie zieht noch nicht.</strong>
+            <span>Gut, wenn das Angebot schon steht, die Seite aber zu generisch wirkt, zu wenig Vertrauen aufbaut oder zu viel Nach-Erklärung braucht.</span>
+          </button>
+          <button class="fit-option" type="button" data-fit-topic="Positionierung &amp; Website-Texte" data-fit-title="Positionierung &amp; Website-Texte" data-fit-result="Dein Angebot wird sprachlich klarer, glaubwürdiger und leichter einordenbar." data-fit-points="Leistung verständlicher formulieren|Nutzen und Unterschiede verdichten|FAQ und Einwände früher abfangen" data-fit-message="Mein Angebot ist fachlich gut, aber auf der Website klingt es noch zu allgemein oder zu austauschbar. Ich brauche klarere Texte und eine stärkere Positionierung." data-fit-entry="fit-chooser-texte">
+            <strong>Mein Angebot ist gut — aber online noch zu vage.</strong>
+            <span>Gut, wenn Interessenten erst im Gespräch verstehen, was du eigentlich machst, oder wenn deine Texte nach Branche statt nach dir klingen.</span>
+          </button>
+          <button class="fit-option" type="button" data-fit-topic="Digitale Ordnung &amp; Klarheit" data-fit-title="Digitale Ordnung &amp; Klarheit" data-fit-result="Offene Themen werden sortiert, priorisiert und in einen arbeitsfähigen nächsten Schritt übersetzt." data-fit-points="Offene Baustellen strukturieren|Prioritäten und nächste Schritte festlegen|Dateien, Wissen oder Projektlogik ordnen" data-fit-message="Bei mir sind gerade zu viele digitale Themen parallel offen. Ich brauche Ordnung, Prioritäten und einen klaren nächsten sinnvollen Schritt statt Dauer-Improvisation." data-fit-entry="fit-chooser-ordnung">
+            <strong>Bei mir ist digital zu viel gleichzeitig offen.</strong>
+            <span>Gut, wenn Dateien, Ideen, Tools oder Projekte nebeneinander liegen, aber nichts sauber greift und echte Umsetzung dadurch stockt.</span>
+          </button>
+        </div>
+        <aside class="fit-preview" aria-live="polite">
+          <div class="micro-label">Empfohlener Start</div>
+          <h3 id="fitPreviewTitle" style="margin-bottom:10px;">Landingpage Sprint</h3>
+          <p id="fitPreviewResult">Dein Angebot soll schneller verstanden werden und Besucher klarer zur Anfrage führen.</p>
+          <div class="fit-meta">
+            <span>Kein perfektes Briefing nötig</span>
+            <span>2–4 Sätze reichen</span>
+            <span>Formular wird unten vorausgefüllt</span>
+          </div>
+          <ul id="fitPreviewPoints">
+            <li>Hero und Kernbotschaft schärfen</li>
+            <li>Seitenaufbau und CTA logisch ordnen</li>
+            <li>Vertrauen früher sichtbar machen</li>
+          </ul>
+          <div class="cta" style="margin-top:0;">
+            <a class="btn btn-primary" href="#kontakt" id="fitPreviewCta">Diesen Einstieg anfragen</a>
+            <a class="btn btn-secondary" href="services.html">Leistungen vergleichen</a>
+          </div>
+          <div class="cta-helper">Beim Klick wird unten im Formular das passende Thema gesetzt und eine Startnachricht vorbereitet. Du kannst sie danach natürlich noch anpassen.</div>
+        </aside>
+      </div>
+    </section>
+
     <section class="section" id="warum-bertlclaw" aria-labelledby="warum-bertlclaw-heading">
       <div class="section-head">
         <div>
@@ -1161,6 +1218,11 @@
       const input=document.getElementById('chatbotMessage');
       const ask=document.getElementById('chatbotAsk');
       const toForm=document.getElementById('chatbotToForm');
+      const fitOptions=Array.from(document.querySelectorAll('.fit-option'));
+      const fitPreviewTitle=document.getElementById('fitPreviewTitle');
+      const fitPreviewResult=document.getElementById('fitPreviewResult');
+      const fitPreviewPoints=document.getElementById('fitPreviewPoints');
+      const fitPreviewCta=document.getElementById('fitPreviewCta');
       (function(){
         var p = document.getElementById('hdn_page_path');
         var t = document.getElementById('hdn_page_title');
@@ -1224,22 +1286,48 @@
         }
         window.location.href='index.html?chat='+encodeURIComponent(message)+'#kontakt';
       }
-      function applyStarterMessage(message){
+      function applyStarterMessage(message, topicOverride, leadEntry){
         const form=document.getElementById('contactForm');
         const textarea=form ? form.querySelector('textarea[name="message"]') : null;
         const topic=form ? form.querySelector('select[name="topic"]') : null;
+        const leadEntryField=document.getElementById('hdn_lead_entry');
         if(textarea){
           textarea.value=message;
           textarea.focus();
           textarea.setSelectionRange(textarea.value.length, textarea.value.length);
           location.hash='kontakt';
         }
-        if(topic){
+        if(topicOverride && topic){
+          topic.value=topicOverride;
+        }else if(topic){
           if(message.toLowerCase().includes('landingpage')) topic.value='Landingpage Sprint';
           else if(message.toLowerCase().includes('website')) topic.value='Positionierung & Website-Texte';
           else if(message.toLowerCase().includes('ordnung') || message.toLowerCase().includes('prioritäten')) topic.value='Digitale Ordnung & Klarheit';
         }
+        if(leadEntryField && leadEntry){
+          leadEntryField.value=leadEntry;
+        }
         clearFormStatus();
+      }
+      function updateFitPreview(option){
+        if(!option) return;
+        fitOptions.forEach(btn => btn.classList.toggle('is-active', btn===option));
+        if(fitPreviewTitle) fitPreviewTitle.textContent=option.dataset.fitTitle || option.dataset.fitTopic || 'Passender Einstieg';
+        if(fitPreviewResult) fitPreviewResult.textContent=option.dataset.fitResult || '';
+        if(fitPreviewPoints){
+          fitPreviewPoints.innerHTML='';
+          (option.dataset.fitPoints || '').split('|').filter(Boolean).forEach(point => {
+            const li=document.createElement('li');
+            li.textContent=point;
+            fitPreviewPoints.appendChild(li);
+          });
+        }
+        if(fitPreviewCta){
+          fitPreviewCta.onclick=(event)=>{
+            event.preventDefault();
+            applyStarterMessage(option.dataset.fitMessage || '', option.dataset.fitTopic || '', option.dataset.fitEntry || 'fit-chooser');
+          };
+        }
       }
       toggle.addEventListener('click',()=>setOpen(!panel.classList.contains('open')));
       close.addEventListener('click',()=>setOpen(false));
@@ -1284,6 +1372,16 @@
       toForm.addEventListener('click',()=>moveQuestionToContact(input.value));
       document.querySelectorAll('[data-answer]').forEach(btn=>{ btn.addEventListener('click',()=>submitQuestion(btn.textContent)); });
       document.querySelectorAll('[data-starter]').forEach(btn=>{ btn.addEventListener('click',()=>applyStarterMessage(btn.getAttribute('data-starter') || btn.textContent)); });
+      fitOptions.forEach(option=>{
+        option.addEventListener('click',()=>updateFitPreview(option));
+        option.addEventListener('keydown',(event)=>{
+          if(event.key==='Enter' || event.key===' '){
+            event.preventDefault();
+            updateFitPreview(option);
+          }
+        });
+      });
+      if(fitOptions.length) updateFitPreview(fitOptions[0]);
     })();
   </script>
 
