@@ -21,8 +21,8 @@
   <link rel="apple-touch-icon" href="bertlclaw-assets/logo-180.png" />
   <style>
     :root { --bg:#040712; --panel:rgba(15,22,40,.82); --line:rgba(140,164,255,.14); --text:#eef3ff; --muted:#afbadc; --accent:#7c9cff; --accent2:#59e1bf; --shadow:0 28px 80px rgba(0,0,0,.40); --max:1160px; }
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:var(--text);background:radial-gradient(circle at 10% 0%, rgba(124,156,255,.18), transparent 24%),linear-gradient(180deg,#040712 0%,#09101d 42%,#060915 100%)} a{color:inherit;text-decoration:none} img{max-width:100%;display:block} .wrap{width:min(calc(100% - 32px),var(--max));margin:0 auto} .nav{position:sticky;top:0;z-index:40;background:rgba(5,8,20,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)} .nav-inner{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:18px} .brand{display:flex;align-items:center;gap:12px;font-weight:800} .mark{width:48px;height:48px;border-radius:15px;overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg, rgba(124,156,255,.16), rgba(89,225,191,.14));border:1px solid rgba(255,255,255,.12);padding:5px;box-shadow:0 0 0 1px rgba(124,156,255,.10),0 0 22px rgba(124,156,255,.10)} .mark img{width:100%;height:100%;object-fit:contain;display:block;border-radius:11px} .nav-links{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.95rem} .nav-links a:hover{color:var(--text)} .hero{padding:62px 0 26px} .panel,.card{background:linear-gradient(180deg, rgba(18,28,51,.88), rgba(10,15,28,.78));border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow)} .panel{padding:38px} .grid-2,.grid-4{display:grid;gap:18px} .grid-2{grid-template-columns:repeat(2,1fr)} .grid-4{grid-template-columns:repeat(4,1fr)} h1,h2,h3{margin:0 0 14px;line-height:1.04} h1{font-size:clamp(2.4rem,5vw,4rem);letter-spacing:-.05em} h2{font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-.04em} h3{font-size:1.16rem} p,li{color:var(--muted);line-height:1.78} .lead{font-size:1.07rem;max-width:68ch} .eyebrow{display:inline-flex;padding:8px 14px;border-radius:999px;border:1px solid rgba(124,156,255,.26);background:rgba(124,156,255,.10);margin-bottom:18px;font-size:.82rem} .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px} .btn{padding:14px 22px;border-radius:14px;font-weight:700;border:1px solid transparent;display:inline-flex;align-items:center;justify-content:center;font-size:1rem} .primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#08111f} .secondary{background:rgba(255,255,255,.03);border-color:var(--line);color:var(--text)} .section{padding:32px 0 12px} .card{padding:28px;border-radius:22px} .price-badge{display:inline-flex;align-items:center;padding:8px 16px;border-radius:999px;border:1px solid rgba(89,225,191,.28);background:rgba(89,225,191,.08);color:#a8f0e0;font-size:.92rem;font-weight:700;margin:12px 0 16px} .price-big{font-size:2rem;font-weight:800;color:var(--text);letter-spacing:-.04em} .includes{margin:16px 0 0;padding-left:18px;display:grid;gap:8px} .includes li{color:var(--muted)} .badge-save{display:inline-flex;padding:5px 12px;border-radius:999px;border:1px solid rgba(124,156,255,.26);background:rgba(124,156,255,.10);color:var(--accent);font-size:.82rem;font-weight:600;margin-left:10px} .package-card{background:linear-gradient(135deg, rgba(18,28,51,.92), rgba(10,15,28,.88));border:1px solid var(--line);border-radius:22px;padding:28px;position:relative;overflow:hidden} .package-card.featured{border-color:rgba(124,156,255,.40);box-shadow:0 0 0 1px rgba(124,156,255,.12),var(--shadow)} .package-card.featured::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent2))} .faq-item{border-bottom:1px solid var(--line);padding:18px 0} .faq-item:last-child{border-bottom:none} .faq-q{font-weight:700;color:var(--text);margin-bottom:8px;font-size:1.04rem} .faq-a{color:var(--muted);line-height:1.78} .band{padding:28px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(135deg, rgba(124,156,255,.10), rgba(89,225,191,.08)),linear-gradient(180deg, rgba(18,28,51,.92), rgba(10,15,28,.88));margin-top:18px;text-align:center} .table-wrap{overflow-x:auto;margin:18px 0} table{width:100%;border-collapse:collapse} th{text-align:left;padding:12px 16px;color:var(--muted);font-size:.88rem;font-weight:600;border-bottom:1px solid var(--line)} td{padding:14px 16px;border-bottom:1px solid rgba(140,164,255,.07);vertical-align:top} tr:last-child td{border-bottom:none} .td-price{color:#a8f0e0;font-weight:700;white-space:nowrap} .footer{padding:38px 0 60px;text-align:center;color:var(--muted)} .footer-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:14px;font-size:.92rem}
-    @media (max-width:980px){.grid-2,.grid-4{grid-template-columns:1fr 1fr}} @media (max-width:640px){.grid-2,.grid-4{grid-template-columns:1fr}.hero{padding:42px 0 18px}.panel{padding:24px}.card,.package-card{padding:20px}.nav-inner{display:grid;grid-template-columns:1fr;gap:8px}.nav-links{display:none}h1{font-size:clamp(2rem,9vw,3rem)}.btn{width:100%}}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:var(--text);background:radial-gradient(circle at 10% 0%, rgba(124,156,255,.18), transparent 24%),linear-gradient(180deg,#040712 0%,#09101d 42%,#060915 100%)} a{color:inherit;text-decoration:none} img{max-width:100%;display:block} .wrap{width:min(calc(100% - 32px),var(--max));margin:0 auto} .nav{position:sticky;top:0;z-index:40;background:rgba(5,8,20,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)} .nav-inner{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:18px} .brand{display:flex;align-items:center;gap:12px;font-weight:800} .mark{width:48px;height:48px;border-radius:15px;overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg, rgba(124,156,255,.16), rgba(89,225,191,.14));border:1px solid rgba(255,255,255,.12);padding:5px;box-shadow:0 0 0 1px rgba(124,156,255,.10),0 0 22px rgba(124,156,255,.10)} .mark img{width:100%;height:100%;object-fit:contain;display:block;border-radius:11px} .nav-links{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.95rem} .nav-links a:hover{color:var(--text)} .hero{padding:62px 0 26px} .panel,.card{background:linear-gradient(180deg, rgba(18,28,51,.88), rgba(10,15,28,.78));border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow)} .panel{padding:38px} .grid-2,.grid-3,.grid-4{display:grid;gap:18px} .grid-2{grid-template-columns:repeat(2,1fr)} .grid-3{grid-template-columns:repeat(3,1fr)} .grid-4{grid-template-columns:repeat(4,1fr)} h1,h2,h3{margin:0 0 14px;line-height:1.04} h1{font-size:clamp(2.4rem,5vw,4rem);letter-spacing:-.05em} h2{font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-.04em} h3{font-size:1.16rem} p,li{color:var(--muted);line-height:1.78} .lead{font-size:1.07rem;max-width:68ch} .eyebrow{display:inline-flex;padding:8px 14px;border-radius:999px;border:1px solid rgba(124,156,255,.26);background:rgba(124,156,255,.10);margin-bottom:18px;font-size:.82rem} .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px} .btn{padding:14px 22px;border-radius:14px;font-weight:700;border:1px solid transparent;display:inline-flex;align-items:center;justify-content:center;font-size:1rem} .primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#08111f} .secondary{background:rgba(255,255,255,.03);border-color:var(--line);color:var(--text)} .section{padding:32px 0 12px} .card{padding:28px;border-radius:22px} .price-badge{display:inline-flex;align-items:center;padding:8px 16px;border-radius:999px;border:1px solid rgba(89,225,191,.28);background:rgba(89,225,191,.08);color:#a8f0e0;font-size:.92rem;font-weight:700;margin:12px 0 16px} .price-big{font-size:2rem;font-weight:800;color:var(--text);letter-spacing:-.04em} .includes{margin:16px 0 0;padding-left:18px;display:grid;gap:8px} .includes li{color:var(--muted)} .badge-save{display:inline-flex;padding:5px 12px;border-radius:999px;border:1px solid rgba(124,156,255,.26);background:rgba(124,156,255,.10);color:var(--accent);font-size:.82rem;font-weight:600;margin-left:10px} .package-card{background:linear-gradient(135deg, rgba(18,28,51,.92), rgba(10,15,28,.88));border:1px solid var(--line);border-radius:22px;padding:28px;position:relative;overflow:hidden} .package-card.featured{border-color:rgba(124,156,255,.40);box-shadow:0 0 0 1px rgba(124,156,255,.12),var(--shadow)} .package-card.featured::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent2))} .faq-item{border-bottom:1px solid var(--line);padding:18px 0} .faq-item:last-child{border-bottom:none} .faq-q{font-weight:700;color:var(--text);margin-bottom:8px;font-size:1.04rem} .faq-a{color:var(--muted);line-height:1.78} .band{padding:28px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(135deg, rgba(124,156,255,.10), rgba(89,225,191,.08)),linear-gradient(180deg, rgba(18,28,51,.92), rgba(10,15,28,.88));margin-top:18px;text-align:center} .table-wrap{overflow-x:auto;margin:18px 0} table{width:100%;border-collapse:collapse} th{text-align:left;padding:12px 16px;color:var(--muted);font-size:.88rem;font-weight:600;border-bottom:1px solid var(--line)} td{padding:14px 16px;border-bottom:1px solid rgba(140,164,255,.07);vertical-align:top} tr:last-child td{border-bottom:none} .td-price{color:#a8f0e0;font-weight:700;white-space:nowrap} .trust-note{padding:20px 22px;border-radius:20px;border:1px solid rgba(89,225,191,.18);background:rgba(89,225,191,.06)} .trust-note strong,.budget-fit strong{color:var(--text)} .budget-fit{margin-top:14px;padding:14px 16px;border-radius:16px;border:1px solid rgba(124,156,255,.18);background:rgba(124,156,255,.06);color:var(--muted)} .signal-list{margin:0;padding-left:18px;display:grid;gap:8px} .footer{padding:38px 0 60px;text-align:center;color:var(--muted)} .footer-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:14px;font-size:.92rem}
+    @media (max-width:980px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr 1fr}} @media (max-width:640px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}.hero{padding:42px 0 18px}.panel{padding:24px}.card,.package-card{padding:20px}.nav-inner{display:grid;grid-template-columns:1fr;gap:8px}.nav-links{display:none}h1{font-size:clamp(2rem,9vw,3rem)}.btn{width:100%}}
   </style>
   <script type="application/ld+json">
   {
@@ -232,6 +232,70 @@
             </tr>
           </tbody>
         </table>
+      </div>
+    </section>
+
+    <section class="section" id="kauf-sicherheit">
+      <h2>Was diese Preise kaufbar und glaubwürdig macht</h2>
+      <div class="grid-3" style="margin-top:18px;">
+        <article class="card">
+          <h3>Klare Scope-Grenzen vor dem Start</h3>
+          <p>Jeder Einstieg ist bewusst klein und klar umrissen. Vor Projektstart ist benannt, was enthalten ist, was geliefert wird und wo ein größerer Scope erst als Folgeprojekt Sinn ergibt.</p>
+          <div class="budget-fit"><strong>Wichtig:</strong> Kein offener Stundenzettel, kein vages „wir schauen mal“. Erst Scope, dann Start.</div>
+        </article>
+        <article class="card">
+          <h3>Direkter Kontakt statt Übergabe-Kette</h3>
+          <p>Du sprichst nicht mit Vertrieb, Projektleitung und dann noch jemand Drittem. Du arbeitest direkt mit Dominic Reisenbichler. Das reduziert Missverständnisse und macht Angebote nachvollziehbarer.</p>
+          <div class="budget-fit"><strong>Trust-Signal:</strong> Ein Ansprechpartner vom Erstkontakt bis zur Übergabe.</div>
+        </article>
+        <article class="card">
+          <h3>Proof und Preise hängen zusammen</h3>
+          <p>BertlClaw verkauft keine mysteriösen Marketing-Pakete, sondern sichtbare Deliverables: Seitenstruktur, Texte, FAQ-Blöcke, Prioritätenlisten oder umsetzungsreife HTML-Seiten.</p>
+          <div class="budget-fit"><strong>Zum Prüfen:</strong> <a href="proof.html" data-track-click="preise-kaufsicherheit-proof" style="text-decoration:underline;text-underline-offset:3px;">Proof ansehen</a> oder <a href="use-cases.html" data-track-click="preise-kaufsicherheit-usecases" style="text-decoration:underline;text-underline-offset:3px;">Anwendungsfälle öffnen</a>.</div>
+        </article>
+      </div>
+      <div class="trust-note" style="margin-top:18px;">
+        <strong>Kaufsicherheits-Regel:</strong> Wenn ein Projekt fachlich oder wirtschaftlich nicht zu einem klaren Einstieg passt, wird nicht künstlich verkauft. Lieber kleiner und sinnvoll starten als einen zu großen Scope schönreden.
+      </div>
+    </section>
+
+    <section class="section" id="beispielbudgets">
+      <h2>Beispielbudgets mit realistischem Zuschnitt</h2>
+      <p style="max-width:70ch;">Nicht als Fantasie-Pakete, sondern als ehrliche Einordnung: So sehen typische Startprojekte aus, wenn jemand mit einem konkreten Budget und einer klaren Ausgangslage kommt.</p>
+      <div class="grid-3" style="margin-top:18px;">
+        <article class="card">
+          <div class="eyebrow" style="font-size:.78rem;">ca. EUR 390–490</div>
+          <h3>Wenn das Angebot schon da ist, aber sprachlich nicht sitzt</h3>
+          <p>Typisch für Selbstständige mit bestehender Website, deren Texte zu generisch sind oder zu viel Nach-Erklärung brauchen.</p>
+          <ul class="signal-list">
+            <li>Positionierungs-Sprint oder Website-Texte als sauberer Einstieg</li>
+            <li>Geeignet für Text, Nutzenargumente, FAQ und Angebotsklarheit</li>
+            <li>Nicht gedacht für kompletten Relaunch mit vielen Unterseiten</li>
+          </ul>
+          <div class="budget-fit"><strong>Passt gut, wenn:</strong> Erstgespräche oft mit Grundsatz-Erklärung statt mit echten Projektfragen starten.</div>
+        </article>
+        <article class="card">
+          <div class="eyebrow" style="font-size:.78rem;">ca. EUR 890</div>
+          <h3>Wenn eine Angebotsseite konkret Anfragen vorbereiten soll</h3>
+          <p>Typisch für ein klares Angebot, das online schon sichtbar ist oder jetzt sichtbar werden soll — aber noch keine überzeugende Landingpage hat.</p>
+          <ul class="signal-list">
+            <li>Landingpage Sprint mit Struktur, Text und HTML-Umsetzung</li>
+            <li>Gut für einen fokussierten, conversion-nahen Einstieg</li>
+            <li>Nicht gedacht als Full-Service-Marketing oder kompletter Unternehmensauftritt</li>
+          </ul>
+          <div class="budget-fit"><strong>Passt gut, wenn:</strong> Besucher die Seite sehen, aber noch nicht schnell genug verstehen, was angeboten wird und warum sie anfragen sollten.</div>
+        </article>
+        <article class="card">
+          <div class="eyebrow" style="font-size:.78rem;">ca. EUR 1.290–1.590</div>
+          <h3>Wenn Positionierung und Website gemeinsam sauber werden sollen</h3>
+          <p>Typisch für Gründer, Relaunches oder Selbstständige, die nicht nur schönere Texte wollen, sondern einen stimmigen digitalen Start.</p>
+          <ul class="signal-list">
+            <li>Starter- oder Komplett-Paket für logisch aufeinander aufbauende Arbeit</li>
+            <li>Sinnvoll, wenn Sprache, Struktur und Seite gerade gemeinsam schwach sind</li>
+            <li>Stärker als Einzelmaßnahmen, wenn der Engpass nicht nur an einer Stelle sitzt</li>
+          </ul>
+          <div class="budget-fit"><strong>Passt gut, wenn:</strong> du nicht nur eine Seite „überarbeiten“, sondern deinen Außenauftritt spürbar klarer und professioneller machen willst.</div>
+        </article>
       </div>
     </section>
 
