@@ -184,8 +184,8 @@
         Du weißt vorher, was du bekommst — und was es kostet.
       </p>
       <div class="cta">
-        <a class="btn primary" href="#leistungen">Leistungen ansehen</a>
-        <a class="btn secondary" href="erstgespraech.html">Kostenloses Erstgespräch</a>
+        <a class="btn primary" href="#leistungen" data-track-click="preise-hero-leistungen">Leistungen ansehen</a>
+        <a class="btn secondary" href="erstgespraech.html" data-track-click="preise-hero-erstgespraech">Kostenloses Erstgespräch</a>
       </div>
     </section>
   </header>
@@ -253,7 +253,7 @@
             <li>1 Korrektur-Runde</li>
             <li><strong>Lieferzeit: 5–10 Werktage</strong></li>
           </ul>
-          <div class="cta"><a class="btn primary" href="landingpage-sprint.html">Details ansehen</a></div>
+          <div class="cta"><a class="btn primary" href="landingpage-sprint.html" data-track-click="preise-landingpage-details">Details ansehen</a></div>
         </article>
 
         <article class="card">
@@ -269,7 +269,7 @@
             <li>Angebots-Sprache für Website und LinkedIn</li>
             <li><strong>Lieferzeit: 5–7 Werktage</strong></li>
           </ul>
-          <div class="cta"><a class="btn primary" href="positionierung-website-texte.html">Details ansehen</a></div>
+          <div class="cta"><a class="btn primary" href="positionierung-website-texte.html" data-track-click="preise-positionierung-details">Details ansehen</a></div>
         </article>
 
         <article class="card">
@@ -284,7 +284,7 @@
             <li>1 Korrektur-Runde</li>
             <li><strong>Lieferzeit: 5–7 Werktage</strong></li>
           </ul>
-          <div class="cta"><a class="btn secondary" href="erstgespraech.html">Anfragen</a></div>
+          <div class="cta"><a class="btn secondary" href="erstgespraech.html" data-track-click="preise-website-texte-anfragen">Anfragen</a></div>
         </article>
 
         <article class="card">
@@ -298,7 +298,7 @@
             <li>Schriftlicher Aktionsplan</li>
             <li><strong>Lieferzeit: 3–5 Werktage</strong></li>
           </ul>
-          <div class="cta"><a class="btn primary" href="digital-clarity-setup.html">Details ansehen</a></div>
+          <div class="cta"><a class="btn primary" href="digital-clarity-setup.html" data-track-click="preise-digital-clarity-details">Details ansehen</a></div>
         </article>
 
       </div>
@@ -326,7 +326,7 @@
             <li>Logisch sequenziert: erst Positionierung, dann Seite</li>
             <li>Lieferzeit gesamt: ca. 2–3 Wochen</li>
           </ul>
-          <div class="cta"><a class="btn primary" href="erstgespraech.html">Starter-Paket anfragen</a></div>
+          <div class="cta"><a class="btn primary" href="erstgespraech.html" data-track-click="preise-starter-paket-anfragen">Starter-Paket anfragen</a></div>
         </div>
 
         <div class="package-card">
@@ -346,7 +346,7 @@
             <li>Konsistente Sprache über alle Seiten</li>
             <li>Lieferzeit gesamt: ca. 3–4 Wochen</li>
           </ul>
-          <div class="cta"><a class="btn primary" href="erstgespraech.html">Komplett-Paket anfragen</a></div>
+          <div class="cta"><a class="btn primary" href="erstgespraech.html" data-track-click="preise-komplett-paket-anfragen">Komplett-Paket anfragen</a></div>
         </div>
 
       </div>
@@ -425,8 +425,8 @@
         <h2 style="font-size:1.6rem;">Bereit für den nächsten Schritt?</h2>
         <p style="max-width:56ch;margin:0 auto 24px;">Im kostenlosen Erstgespräch (30 Min.) klären wir, welche Leistung passt, was dein Projekt kostet und wie wir starten.</p>
         <div class="cta" style="justify-content:center;">
-          <a class="btn primary" href="erstgespraech.html">Kostenloses Erstgespräch buchen</a>
-          <a class="btn secondary" href="services.html">Alle Leistungen ansehen</a>
+          <a class="btn primary" href="erstgespraech.html" data-track-click="preise-final-erstgespraech">Kostenloses Erstgespräch buchen</a>
+          <a class="btn secondary" href="services.html" data-track-click="preise-final-services">Alle Leistungen ansehen</a>
         </div>
       </div>
     </section>
@@ -450,5 +450,18 @@
     BertlClaw · Leistungen &amp; Preise für Websites, Texte und digitale Struktur.
   </footer>
 
+<script>
+  (function(){
+    function trackClick(name){
+      if(!name || !window.goatcounter || typeof window.goatcounter.count !== 'function') return;
+      window.goatcounter.count({ path: '/click/' + name, title: document.title + ' :: ' + name, event: true });
+    }
+    document.addEventListener('click', function(event){
+      const target = event.target.closest('[data-track-click]');
+      if(!target) return;
+      trackClick(target.getAttribute('data-track-click'));
+    }, { passive: true });
+  })();
+</script>
 </body>
 </html>
