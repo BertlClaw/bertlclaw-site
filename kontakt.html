@@ -190,6 +190,19 @@
     /* CONTACT PROOF */
     .contact-proof{padding:16px 18px;border-radius:18px;border:1px solid rgba(124,156,255,.18);background:rgba(124,156,255,.06);color:#dfe8ff;line-height:1.72;margin-bottom:18px}
 
+    /* FIT + PRICING CLARITY */
+    .fit-box{padding:26px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(18,26,47,.82), rgba(10,15,28,.74));box-shadow:var(--shadow)}
+    .fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+    .fit-card{padding:16px 18px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+    .fit-card.good{border-color:rgba(89,225,191,.24);background:rgba(89,225,191,.06)}
+    .fit-card.bad{border-color:rgba(124,156,255,.20);background:rgba(124,156,255,.05)}
+    .fit-card strong{display:block;margin-bottom:8px;color:var(--text)}
+    .fit-card ul{margin:0;padding-left:18px;color:var(--muted);line-height:1.7;font-size:.95rem}
+    .fit-card li + li{margin-top:6px}
+    .price-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+    .price-pill{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:999px;border:1px solid rgba(124,156,255,.22);background:rgba(124,156,255,.08);color:#dfe8ff;font-size:.9rem;line-height:1.4}
+    .fit-note{margin-top:14px;color:var(--muted);font-size:.94rem;line-height:1.72}
+
     /* CTA BAND */
     .cta-band{margin-top:18px;padding:28px;border-radius:26px;border:1px solid var(--line-strong);background:linear-gradient(135deg, rgba(124,156,255,.10), rgba(89,225,191,.08)),linear-gradient(180deg, rgba(18,26,47,.92), rgba(10,15,28,.88));box-shadow:var(--shadow),var(--glow)}
     .cta-band p{color:var(--muted);line-height:1.8;margin:0 0 16px;max-width:72ch}
@@ -199,7 +212,7 @@
     .footer-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:14px;font-size:.92rem}
 
     /* RESPONSIVE */
-    @media(max-width:900px){.grid-2,.grid-3,.form-grid{grid-template-columns:1fr}.section-head{display:block}}
+    @media(max-width:900px){.grid-2,.grid-3,.form-grid,.fit-grid{grid-template-columns:1fr}.section-head{display:block}}
     @media(max-width:640px){.nav{position:fixed;top:0;left:0;right:0;padding-top:env(safe-area-inset-top,0)}body{padding-top:80px}.nav-inner{display:grid;grid-template-columns:1fr;gap:10px}.nav-links{gap:10px;font-size:.88rem}.hero{padding:42px 0 20px}.contact-form{padding:20px}.cta .btn{width:100%}}
   </style>
 </head>
@@ -315,8 +328,44 @@
         </article>
 
         <aside>
+          <section class="fit-box" aria-labelledby="fit-heading">
+            <div class="micro-label">Vor dem Absenden</div>
+            <strong id="fit-heading" style="display:block;color:var(--text);font-size:1.05rem;margin-bottom:4px;">Passt BertlClaw wahrscheinlich?</strong>
+            <p style="margin:0;color:var(--muted);line-height:1.72;">Diese Anfrage lohnt sich besonders, wenn du nicht noch mehr Agentur-Show willst, sondern einen klaren Einstieg, eine ehrliche Einordnung und greifbare Ergebnisse.</p>
+            <div class="fit-grid">
+              <div class="fit-card good">
+                <strong>✅ Gute Anfragen sind oft:</strong>
+                <ul>
+                  <li>ein konkretes Angebot, das online noch nicht klar genug wirkt</li>
+                  <li>eine bestehende Website mit zu wenig Vertrauen, Struktur oder CTA-Klarheit</li>
+                  <li>zu viele offene digitale Themen ohne klare Priorität oder nächsten Schritt</li>
+                </ul>
+              </div>
+              <div class="fit-card bad">
+                <strong>⛔ Eher unpassend ist es, wenn du:</strong>
+                <ul>
+                  <li>nur den billigsten Anbieter suchst – unabhängig vom Ergebnis</li>
+                  <li>eine große Full-Service-Agentur mit Team für Ads, Branding und Entwicklung erwartest</li>
+                  <li>schon sicher weißt, dass du gerade noch nicht starten willst</li>
+                </ul>
+              </div>
+            </div>
+            <div class="price-pills" aria-label="Typische Einstiege und Budgetsignale">
+              <span class="price-pill">🏁 Positionierungs-Sprint ab € 490</span>
+              <span class="price-pill">🌐 Landingpage Sprint ab € 890</span>
+              <span class="price-pill">🗂️ Digitale Ordnung ab € 290</span>
+            </div>
+            <div class="fit-note">
+              Wenn du noch unsicher bist, ist das kein Problem: Im Zweifel reichen 2–4 Sätze und du bekommst eine ehrliche Einschätzung, ob ein kleiner Einstieg sinnvoll ist oder ob es gerade noch nicht passt.
+            </div>
+            <div class="cta" style="margin-top:16px;">
+              <a class="btn btn-secondary" href="preise.html">Preise ansehen</a>
+              <a class="btn btn-secondary" href="proof.html">Proof ansehen</a>
+            </div>
+          </section>
+
           <!-- ALTERNATIVE CONTACT -->
-          <section aria-labelledby="alt-contact-heading">
+          <section aria-labelledby="alt-contact-heading" style="margin-top:22px;">
             <div class="micro-label" style="margin-bottom:12px;">Alternative Kontaktwege</div>
             <div class="grid-3" style="gap:14px;">
               <article class="contact-alt-card">
