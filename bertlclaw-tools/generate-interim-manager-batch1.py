@@ -1,0 +1,430 @@
+from pathlib import Path
+
+ROOT = Path('/home/dominic/.openclaw/workspace')
+DATE = '2026-04-10'
+
+cities = [
+    {
+        'slug': 'kiel',
+        'name': 'Kiel',
+        'state': 'Schleswig-Holstein',
+        'locale': 'de_DE',
+        'country': 'Deutschland',
+        'intro': 'maritime Wirtschaft, Mittelstand, öffentliche Projekte und technologiegetriebene Dienstleister',
+        'focus': 'Transformation, Restrukturierung, Turnaround und operative Führungsverantwortung auf Zeit'
+    },
+    {
+        'slug': 'luebeck',
+        'name': 'Lübeck',
+        'state': 'Schleswig-Holstein',
+        'locale': 'de_DE',
+        'country': 'Deutschland',
+        'intro': 'Logistik, Gesundheitswirtschaft, Handel und hanseatisch geprägten Mittelstand',
+        'focus': 'operative Stabilisierung, Wachstumsphasen und Veränderungsprojekte mit klarer Ergebnisverantwortung'
+    },
+    {
+        'slug': 'magdeburg',
+        'name': 'Magdeburg',
+        'state': 'Sachsen-Anhalt',
+        'locale': 'de_DE',
+        'country': 'Deutschland',
+        'intro': 'Industrie, Logistik, Energiethemen und öffentlicher Infrastruktur',
+        'focus': 'Umsetzungskraft in Wachstum, Reorganisation und anspruchsvollen Übergangsphasen'
+    },
+    {
+        'slug': 'krefeld',
+        'name': 'Krefeld',
+        'state': 'Nordrhein-Westfalen',
+        'locale': 'de_DE',
+        'country': 'Deutschland',
+        'intro': 'Industrie, Mittelstand, produzierenden Unternehmen und niederrheinischen Dienstleistungsstrukturen',
+        'focus': 'Interimsmanagement für Transformation, operative Stabilisierung und klare Verantwortung auf Zeit'
+    },
+    {
+        'slug': 'leverkusen',
+        'name': 'Leverkusen',
+        'state': 'Nordrhein-Westfalen',
+        'locale': 'de_DE',
+        'country': 'Deutschland',
+        'intro': 'Industrie, Chemieumfeld, B2B-Dienstleistungen und organisationsintensiven Wachstumsphasen',
+        'focus': 'Führung auf Zeit für Reorganisation, Übergaben und anspruchsvolle operative Veränderung'
+    },
+]
+
+base_css = '''    :root {
+      --bg:#040712;
+      --bg2:#09101d;
+      --bg3:#0d1528;
+      --panel:rgba(13,20,38,.76);
+      --panel-strong:rgba(15,24,45,.90);
+      --line:rgba(129,155,255,.14);
+      --line-strong:rgba(124,156,255,.24);
+      --text:#eef3ff;
+      --muted:#afbadc;
+      --muted2:#93a1c8;
+      --accent:#8ea8ff;
+      --accent2:#6ee7d8;
+      --accent3:#c6b2ff;
+      --shadow:0 30px 90px rgba(0,0,0,.45);
+      --glow:0 0 0 1px rgba(124,156,255,.08), 0 0 45px rgba(124,156,255,.10);
+      --radius:26px;
+      --max:1240px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(circle at 10% 0%, rgba(124,156,255,.16), transparent 24%),radial-gradient(circle at 90% 8%, rgba(89,225,191,.10), transparent 24%),radial-gradient(circle at 50% 100%, rgba(164,143,255,.10), transparent 32%),linear-gradient(180deg,#040712 0%,#09101d 42%,#060915 100%)}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.55;background-image:linear-gradient(rgba(124,156,255,.03) 1px, transparent 1px),linear-gradient(90deg, rgba(124,156,255,.03) 1px, transparent 1px);background-size:32px 32px;mask-image:radial-gradient(circle at center, rgba(0,0,0,.8), transparent 88%)}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{width:min(calc(100% - 32px),var(--max));margin:0 auto;position:relative;z-index:1}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(4,7,18,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line);box-shadow:0 10px 34px rgba(0,0,0,.22)}
+    .nav-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.02em}
+    .brand-mark{width:52px;height:52px;border-radius:16px;overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg, rgba(124,156,255,.16), rgba(110,231,216,.14));box-shadow:var(--shadow), 0 0 0 1px rgba(124,156,255,.10), 0 0 28px rgba(124,156,255,.12);border:1px solid rgba(255,255,255,.12);padding:5px}
+    .brand-mark img{width:100%;height:100%;object-fit:contain;object-position:center center;display:block;border-radius:12px}
+    .nav-links{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.95rem}
+    .nav-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+    .mini-btn{padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.03);font-size:.9rem;white-space:nowrap}
+    .mobile-nav-row{display:none}
+    h1,h2,h3,h4{margin:0 0 14px;line-height:1.08}
+    h1{font-size:clamp(2.4rem,5vw,4.8rem);letter-spacing:-.05em}
+    h2{font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-.04em}
+    h3{font-size:1.18rem}
+    .lead{color:var(--muted);line-height:1.82;font-size:1.08rem;max-width:66ch}
+    .accent-text{background:linear-gradient(135deg,#eef3ff 0%, #9db8ff 46%, #7cf0d6 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .micro-label{display:inline-block;margin-bottom:10px;color:#d7e3ff;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
+    .section{padding:36px 0}
+    .hero{padding:72px 0 40px}
+    .hero-inner{max-width:860px}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;padding:8px 14px;border-radius:999px;border:1px solid rgba(124,156,255,.24);background:rgba(124,156,255,.10);color:#dfe8ff;font-size:.82rem;letter-spacing:.05em;margin-bottom:18px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:16px 22px;border-radius:14px;font-weight:700;border:1px solid transparent;transition:.2s ease;font-size:1rem;min-height:48px}
+    .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#08111f;box-shadow:0 12px 28px rgba(89,225,191,.16)}
+    .btn-secondary{background:rgba(255,255,255,.03);border-color:var(--line-strong);color:var(--text)}
+    .btn:hover{transform:translateY(-1px)}
+    .card{padding:26px;border-radius:22px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(18,26,47,.76), rgba(10,15,28,.72));box-shadow:var(--shadow);backdrop-filter:blur(8px)}
+    .icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;margin-bottom:14px;border:1px solid rgba(124,156,255,.22);background:linear-gradient(135deg, rgba(124,156,255,.18), rgba(89,225,191,.14));color:#e8f0ff;font-size:1.2rem}
+    .card p{color:var(--muted);line-height:1.74;margin:10px 0 0}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .section-head{margin-bottom:28px}
+    .section-head p{margin:10px 0 0;color:var(--muted);line-height:1.8;max-width:68ch}
+    .article-body{max-width:72ch;line-height:1.85;color:var(--muted);font-size:1.05rem}
+    .article-body h2{color:var(--text);margin:36px 0 14px;font-size:clamp(1.3rem,2.5vw,1.8rem)}
+    .article-body h3{color:var(--text);margin:28px 0 10px}
+    .article-body p{margin:0 0 18px}
+    .article-body ul{padding-left:22px;margin:0 0 18px;display:grid;gap:8px}
+    .article-body li{line-height:1.78}
+    .article-body strong{color:var(--text)}
+    .link-card{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 26px;border-radius:22px;border:1px solid rgba(124,156,255,.22);background:linear-gradient(135deg, rgba(124,156,255,.08), rgba(89,225,191,.05));box-shadow:var(--shadow);transition:.2s ease}
+    .link-card:hover{transform:translateY(-2px);border-color:var(--line-strong)}
+    .link-card-arrow{font-size:1.4rem;color:var(--accent2);flex:0 0 auto}
+    .link-card p{margin:6px 0 0;color:var(--muted);font-size:.95rem;line-height:1.7}
+    .cta-band{margin-top:18px;padding:36px;border-radius:26px;border:1px solid var(--line-strong);background:linear-gradient(135deg, rgba(124,156,255,.10), rgba(89,225,191,.08)),linear-gradient(180deg, rgba(18,26,47,.92), rgba(10,15,28,.88));box-shadow:var(--shadow),var(--glow);text-align:center}
+    .cta-band h2{margin-bottom:12px}
+    .cta-band p{color:var(--muted);line-height:1.8;margin:0 auto 24px;max-width:68ch}
+    .cta-band .cta{justify-content:center}
+    .footer{padding:38px 0 62px;text-align:center;color:var(--muted);font-size:.94rem}
+    .footer-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:14px;font-size:.92rem}
+    @media(max-width:860px){
+      .nav-links{display:none}
+      .mobile-nav-row{display:flex;gap:10px;overflow:auto;padding:0 0 12px}
+      .mobile-nav-row a{white-space:nowrap;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text);font-size:.92rem}
+      .grid-3{grid-template-columns:1fr}
+    }
+    @media(max-width:768px){
+      .grid-2{grid-template-columns:1fr}
+      .cta-band{padding:24px 18px}
+      .link-card{flex-direction:column;align-items:flex-start}
+      .hero{padding:52px 0 28px}
+      .section{padding:24px 0}
+    }
+    @media(max-width:640px){
+      .nav{position:fixed;top:0;left:0;right:0;padding-top:env(safe-area-inset-top,0)}
+      body{padding-top:118px}
+      .nav-inner{display:grid;grid-template-columns:1fr;gap:12px}
+      .nav-actions{justify-content:flex-start}
+      .cta .btn{width:100%}
+      .cta-band .cta .btn{width:100%}
+      h1{font-size:2rem}
+    }'''
+
+
+def generic_page():
+    return f'''<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landingpage für Interim Manager | BertlClaw</title>
+  <meta name="description" content="Landingpage für Interim Manager: Interimsmanagement braucht eine klare Website, die Vertrauen, Veränderungskompetenz und Ergebnisverantwortung sichtbar macht." />
+  <link rel="canonical" href="https://bertlclaw.at/landingpage-interim-manager.html" />
+  <link rel="alternate" hreflang="de" href="https://bertlclaw.at/landingpage-interim-manager.html" />
+  <link rel="alternate" hreflang="x-default" href="https://bertlclaw.at/landingpage-interim-manager.html" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="bertlclaw-assets/logo-32.png" />
+  <link rel="apple-touch-icon" href="bertlclaw-assets/logo-180.png" />
+  <meta property="og:title" content="Landingpage für Interim Manager | BertlClaw" />
+  <meta property="og:description" content="Landingpage für Interim Manager: Interimsmanagement braucht eine klare Website, die Vertrauen, Veränderungskompetenz und Ergebnisverantwortung sichtbar macht." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://bertlclaw.at/landingpage-interim-manager.html" />
+  <meta property="og:image" content="https://bertlclaw.at/bertlclaw-assets/og-card.jpg" />
+  <meta property="og:site_name" content="BertlClaw" />
+  <meta property="og:locale" content="de_AT" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Landingpage für Interim Manager | BertlClaw" />
+  <meta name="twitter:description" content="Landingpage für Interim Manager: Interimsmanagement braucht eine klare Website, die Vertrauen, Veränderungskompetenz und Ergebnisverantwortung sichtbar macht." />
+  <meta name="twitter:image" content="https://bertlclaw.at/bertlclaw-assets/og-card.jpg" />
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Landingpage für Interim Manager",
+    "description": "Landingpage für Interim Manager: Interimsmanagement braucht eine klare Website, die Vertrauen, Veränderungskompetenz und Ergebnisverantwortung sichtbar macht.",
+    "author": {{
+      "@type": "Organization",
+      "name": "BertlClaw",
+      "url": "https://bertlclaw.at/"
+    }},
+    "publisher": {{
+      "@type": "Organization",
+      "name": "BertlClaw",
+      "url": "https://bertlclaw.at/"
+    }},
+    "url": "https://bertlclaw.at/landingpage-interim-manager.html",
+    "datePublished": "{DATE}",
+    "dateModified": "{DATE}",
+    "inLanguage": "de-AT"
+  }}
+  </script>
+  <script data-goatcounter="https://bertlclaw.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <style>
+{base_css}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand"><div class="brand-mark"><img src="bertlclaw-assets/logo-main.jpg" alt="BertlClaw Logo" /></div><div>BertlClaw</div></div>
+      <div class="nav-links">
+        <a href="services.html">Leistungen</a>
+        <a href="use-cases.html">Anwendungsfälle</a>
+        <a href="proof.html">Proof</a>
+        <a href="ueber-bertlclaw.html">Über BertlClaw</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+      <div class="nav-actions">
+        <a class="mini-btn" href="landingpages.html">Landingpages</a>
+      </div>
+    </div>
+    <div class="wrap mobile-nav-row">
+      <a href="services.html">Leistungen</a>
+      <a href="use-cases.html">Anwendungsfälle</a>
+      <a href="proof.html">Proof</a>
+      <a href="ueber-bertlclaw.html">Über</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </nav>
+  <header class="hero wrap">
+    <div class="hero-inner">
+      <span class="eyebrow">🧭 Landingpage für Interim Manager</span>
+      <h1 class="accent-text">Interimsmanagement verkauft sich nicht über Buzzwords, sondern über Klarheit</h1>
+      <p class="lead">Wer als Interim Manager Verantwortung auf Zeit übernimmt, muss online sofort vermitteln, in welchen Situationen er einspringt, welche Resultate er liefert und warum er auch unter Druck Vertrauen verdient. Genau dafür baut BertlClaw fokussierte Landingpages.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="erstgespraech.html">Erstgespräch vereinbaren</a>
+        <a class="btn btn-secondary" href="services.html">Leistungen ansehen</a>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="section">
+      <div class="article-body">
+        <h2>Warum Interim Manager eine eigene Landingpage brauchen</h2>
+        <p>Interimsmanagement ist fast immer mit Druck, Zeitkritik und Unsicherheit verbunden. Unternehmen suchen nicht einfach „Beratung", sondern jemanden, der schnell Orientierung schafft, Verantwortung übernimmt und in einer heiklen Phase Ergebnisse möglich macht. Eine gute Landingpage muss deshalb in wenigen Sekunden zeigen, wofür du stehst.</p>
+        <p>Gerade bei Interim-Rollen zählen Vertrauen, Spezialisierung und Mandatsfit. Wer nur allgemeine Management-Floskeln zeigt, wirkt austauschbar. Wer dagegen klar macht, ob er eher für Restrukturierung, Post-Merger-Integration, CFO-Übergänge, Vertriebsaufbau oder operative Stabilisierung steht, gewinnt die besseren Gespräche.</p>
+
+        <h2>Das typische Problem: Viel Erfahrung, aber keine klare Online-Erzählung</h2>
+        <p>Viele Interim Manager haben starke Lebensläufe, langjährige Führungserfahrung und überzeugende Mandate im Rücken. Online sieht man davon oft zu wenig: lange CV-Abschnitte, unklare Nutzenkommunikation, kein sauberer Einstieg für Auftraggeber, Investoren oder Beiräte. Das kostet Sichtbarkeit und Vertrauen.</p>
+        <p>Eine fokussierte Landingpage übersetzt Erfahrung in Entscheidungsrelevanz: In welcher Lage wirst du geholt? Welche Verantwortung übernimmst du? Woran merkt ein Unternehmen nach wenigen Wochen, dass dein Einsatz wirkt? Genau diese Fragen müssen beantwortet werden.</p>
+
+        <h2>Was BertlClaw für Interim Manager macht</h2>
+        <p>BertlClaw schärft Positionierung, Sprache und Struktur so, dass deine Seite nicht nach generischer Beratung aussieht, sondern nach echter Umsetzungsverantwortung. Interimsmanagement braucht eine andere Dramaturgie als klassische Consulting-Seiten: weniger Theorie, mehr Relevanz, mehr Klarheit zu Situationen, Ergebnissen und Vorgehen.</p>
+        <p>So entsteht eine Landingpage, die zu deinem Profil passt — für Interim-CEOs, Interim-CFOs, Transformationsmanager, operative Geschäftsführer auf Zeit oder funktionsspezifische Einsätze in Vertrieb, Operations, Finance oder HR.</p>
+
+        <h2>Positionierungs-Sprint + Landingpage Sprint</h2>
+        <p>Wenn dein Profil noch zu breit wirkt, ist der <strong>Positionierungs-Sprint</strong> der beste Start. Danach übersetzt der <strong>Landingpage Sprint</strong> deine Stärken in einen klaren Marktauftritt. Das Ergebnis: weniger diffuse Anfragen, mehr passende Mandate und ein professionellerer erster Eindruck.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-head">
+        <span class="micro-label">Verwandter Artikel</span>
+      </div>
+      <a class="link-card" href="positionierung-website-texte.html">
+        <div>
+          <h3 style="margin:0 0 6px">Positionierung und Website-Texte für beratungsnahe Angebote →</h3>
+          <p>Wie du komplexe Leistungen so formulierst, dass Vertrauen und Relevanz schneller sichtbar werden.</p>
+        </div>
+        <span class="link-card-arrow">→</span>
+      </a>
+    </section>
+    <section class="section"><div class="cta-band"><span class="micro-label">Jetzt starten</span><h2>Deine Landingpage für Interimsmanagement</h2><p>Im kostenlosen Erstgespräch klären wir, wie dein Interim-Profil online klarer, glaubwürdiger und mandatsnäher präsentiert werden sollte — ohne Agentur-Nebel und ohne unnötige Schleifen.</p><div class="cta"><a class="btn btn-primary" href="erstgespraech.html">Erstgespräch vereinbaren</a><a class="btn btn-secondary" href="landingpages.html">Mehr zu Landingpages</a></div></div></section>
+  </main>
+  <footer class="footer wrap"><div class="footer-links"><a href="index.html">Startseite</a><a href="services.html">Leistungen</a><a href="use-cases.html">Anwendungsfälle</a><a href="proof.html">Proof</a><a href="ueber-bertlclaw.html">Über BertlClaw</a><a href="arbeitsweise.html">Arbeitsweise</a><a href="faq.html">FAQ</a><a href="kontakt.html">Kontakt</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB</a></div>BertlClaw · Landingpage für Interim Manager</footer>
+</body>
+</html>
+'''
+
+
+def city_page(city):
+    slug = city['slug']
+    name = city['name']
+    state = city['state']
+    locale = city['locale']
+    intro = city['intro']
+    focus = city['focus']
+    return f'''<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landingpage für Interim Manager in {name} | BertlClaw</title>
+  <meta name="description" content="Interim Manager in {name} ({state}): Professionelle Landingpage und Website-Texte von BertlClaw." />
+  <link rel="canonical" href="https://bertlclaw.at/landingpage-{slug}-interim-manager.html" />
+  <link rel="alternate" hreflang="de" href="https://bertlclaw.at/landingpage-{slug}-interim-manager.html" />
+  <link rel="alternate" hreflang="x-default" href="https://bertlclaw.at/landingpage-{slug}-interim-manager.html" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="bertlclaw-assets/logo-32.png" />
+  <link rel="apple-touch-icon" href="bertlclaw-assets/logo-180.png" />
+  <meta property="og:title" content="Landingpage für Interim Manager in {name} | BertlClaw" />
+  <meta property="og:description" content="Interim Manager in {name} ({state}): Professionelle Landingpage und Website-Texte von BertlClaw." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://bertlclaw.at/landingpage-{slug}-interim-manager.html" />
+  <meta property="og:image" content="https://bertlclaw.at/bertlclaw-assets/og-card.jpg" />
+  <meta property="og:site_name" content="BertlClaw" />
+  <meta property="og:locale" content="{locale}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Landingpage für Interim Manager in {name} | BertlClaw" />
+  <meta name="twitter:description" content="Interim Manager in {name} ({state}): Professionelle Landingpage und Website-Texte von BertlClaw." />
+  <meta name="twitter:image" content="https://bertlclaw.at/bertlclaw-assets/og-card.jpg" />
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Landingpage für Interim Manager in {name}",
+    "description": "Interim Manager in {name} ({state}): Professionelle Landingpage und Website-Texte von BertlClaw.",
+    "author": {{
+      "@type": "Organization",
+      "name": "BertlClaw",
+      "url": "https://bertlclaw.at/"
+    }},
+    "publisher": {{
+      "@type": "Organization",
+      "name": "BertlClaw",
+      "url": "https://bertlclaw.at/"
+    }},
+    "url": "https://bertlclaw.at/landingpage-{slug}-interim-manager.html",
+    "datePublished": "{DATE}",
+    "dateModified": "{DATE}",
+    "inLanguage": "de"
+  }}
+  </script>
+  <script data-goatcounter="https://bertlclaw.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <style>
+{base_css}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand"><div class="brand-mark"><img src="bertlclaw-assets/logo-main.jpg" alt="BertlClaw Logo" /></div><div>BertlClaw</div></div>
+      <div class="nav-links">
+        <a href="services.html">Leistungen</a>
+        <a href="use-cases.html">Anwendungsfälle</a>
+        <a href="proof.html">Proof</a>
+        <a href="ueber-bertlclaw.html">Über BertlClaw</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+      <div class="nav-actions"><a class="mini-btn" href="landingpages.html">Landingpages</a></div>
+    </div>
+    <div class="wrap mobile-nav-row">
+      <a href="services.html">Leistungen</a><a href="use-cases.html">Anwendungsfälle</a><a href="proof.html">Proof</a><a href="ueber-bertlclaw.html">Über</a><a href="kontakt.html">Kontakt</a>
+    </div>
+  </nav>
+  <header class="hero wrap">
+    <div class="hero-inner">
+      <span class="eyebrow">📍 Interim Manager in {name}</span>
+      <h1 class="accent-text">Landingpage für Interim Manager in {name}</h1>
+      <p class="lead">Du bist als Interim Manager in {name} tätig und willst online gefunden werden? BertlClaw erstellt professionelle Landingpages für Interim Manager in {name} ({state}) — klar positioniert, überzeugend getextet und in wenigen Tagen live.</p>
+      <div class="cta"><a class="btn btn-primary" href="erstgespraech.html">Erstgespräch vereinbaren</a><a class="btn btn-secondary" href="services.html">Leistungen ansehen</a></div>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="section">
+      <div class="article-body">
+        <h2>Interim Manager in {name} — professionelle Landingpage von BertlClaw</h2>
+        <p>Interim Manager werden geholt, wenn Führung, Umsetzung und Stabilisierung schnell gebraucht werden. Eine Landingpage muss deshalb sofort zeigen, in welchen Situationen du einspringst und worin dein konkreter Hebel liegt. In {name} treffen {intro} aufeinander — ein Umfeld, in dem {focus} besonders relevant ist.</p>
+
+        <h2>Interimsmanagement in {city['country']}: Warum Klarheit mehr zählt als Selbstdarstellung</h2>
+        <p>Unternehmen suchen in Übergangsphasen keine diffuse Selbstdarstellung, sondern Orientierung. Sie wollen verstehen, ob du in Restrukturierung, Transformation, Post-Merger-Phasen, Wachstumsprojekten oder akuten Führungslücken wirklich helfen kannst. Genau deshalb braucht Interimsmanagement in {name} ({state}) eine fokussierte Landingpage, die Vertrauen, Tempo und Entscheidungssicherheit vermittelt.</p>
+
+        <h2>Was BertlClaw für Interim Manager in {name} macht</h2>
+        <p>BertlClaw entwickelt Landingpages für Interim Manager, die Erfahrung nicht nur aufzählen, sondern in Marktrelevanz übersetzen. Statt eines langen Lebenslaufs entsteht eine Seite, die Mandatssituationen, Verantwortungsbereiche, Resultate und den sinnvollen nächsten Schritt klar strukturiert. So wird aus Erfahrung ein überzeugender Auftritt.</p>
+        <p>BertlClaw arbeitet vollständig remote und betreut Interim Manager im gesamten DACH-Raum — auch in {name}. Der Prozess ist schlank: kostenloses Erstgespräch, klare Positionierung, fokussierte Umsetzung und in wenigen Tagen eine fertige Seite, die deinen Marktauftritt in {city['country']} sichtbar stärkt.</p>
+
+        <h2>Wie du mit BertlClaw startest</h2>
+        <p>Im kostenlosen Erstgespräch klären wir, wie du dich als Interim Manager in {name} positionieren willst, welche Mandate du anziehen möchtest und wie deine Landingpage diese Relevanz online transportiert. Ohne Umwege, ohne Agentur-Floskeln, aber mit klarer Richtung.</p>
+        <p>Wenn du bereit bist — buche jetzt dein Erstgespräch. Kostenlos, unverbindlich, direkt.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-head"><span class="micro-label">Mehr erfahren</span><h2>Was kostet eine Landingpage?</h2><p>Transparente Infos zu Preisen, Paketen und was im Landingpage Sprint enthalten ist.</p></div>
+      <a class="link-card" href="was-kostet-eine-landingpage.html"><div><h3 style="margin:0 0 6px">Was kostet eine Landingpage? Preise und Pakete →</h3><p>Alle Infos zu Umfang, Preisen und dem Ablauf des Landingpage Sprints von BertlClaw.</p></div><span class="link-card-arrow">→</span></a>
+    </section>
+    <section class="section"><div class="cta-band"><span class="micro-label">Jetzt starten</span><h2>Landingpage für Interim Manager in {name} — los geht's</h2><p>Im kostenlosen Erstgespräch besprechen wir, wie deine Landingpage für {name} aufgebaut werden sollte — mit klarer Positionierung, nachvollziehbarer Ergebnislogik und einem professionellen Auftritt, der Vertrauen schafft.</p><div class="cta"><a class="btn btn-primary" href="erstgespraech.html">Erstgespräch vereinbaren</a><a class="btn btn-secondary" href="landingpages.html">Mehr zu Landingpages</a></div></div></section>
+  </main>
+  <footer class="footer wrap"><div class="footer-links"><a href="index.html">Startseite</a><a href="services.html">Leistungen</a><a href="use-cases.html">Anwendungsfälle</a><a href="proof.html">Proof</a><a href="ueber-bertlclaw.html">Über BertlClaw</a><a href="arbeitsweise.html">Arbeitsweise</a><a href="faq.html">FAQ</a><a href="kontakt.html">Kontakt</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB</a></div>BertlClaw · Landingpage für Interim Manager in {name} · {state}</footer>
+</body>
+</html>
+'''
+
+ROOT.joinpath('landingpage-interim-manager.html').write_text(generic_page())
+for city in cities:
+    ROOT.joinpath(f"landingpage-{city['slug']}-interim-manager.html").write_text(city_page(city))
+
+city_section_tpl = '''\n    <section class="section">\n      <div class="section-head">\n        <span class="micro-label">Für Interimsmanagement</span>\n        <h2>Auch für Interim Manager in {name}</h2>\n        <p>Wenn du in {name} Unternehmen in Übergangs- oder Veränderungsphasen führst, lohnt sich eine fokussierte Nischenseite für Interimsmanagement mit klarer Ergebnis- und Vertrauenskommunikation.</p>\n      </div>\n      <a class="link-card" href="landingpage-{slug}-interim-manager.html">\n        <div>\n          <h3 style="margin:0 0 6px">Landingpage für Interim Manager in {name} →</h3>\n          <p>Für Interimsmanagement in {name} mit Fokus auf Verantwortung auf Zeit, Klarheit und Mandatsfit.</p>\n        </div>\n        <span class="link-card-arrow">→</span>\n      </a>\n    </section>'''
+
+for city in cities:
+    path = ROOT / f"landingpage-{city['slug']}.html"
+    text = path.read_text()
+    marker = '\n    <section class="section">\n      <div class="section-head">\n        <span class="micro-label">Mehr erfahren</span>'
+    if f'landingpage-{city["slug"]}-interim-manager.html' not in text:
+        text = text.replace(marker, city_section_tpl.format(**city) + marker)
+        path.write_text(text)
+
+landingpages = ROOT / 'landingpages.html'
+text = landingpages.read_text()
+section = '''<section class="section"><div class="card"><h2>Interim-Management-Cluster: erste DE-Batch</h2><p>Für das neue Professionen-Cluster rund um <strong>Interim Manager</strong> wurde bewusst die suchintuitive deutsche URL-Logik mit dem etablierten B2B-Slug <strong>interim-manager</strong> gewählt. Die erste Produktionsrunde ergänzt fünf bereits ausgebaute deutsche Städte um eine passende Companion-Seite für Interimsmanagement.</p><div class="grid-3"><article class="card"><h3><a href="landingpage-interim-manager.html">Landingpage für Interim Manager</a></h3><p>Die zentrale Berufsseite für Interimsmanagement, Führung auf Zeit und veränderungsnahe Mandate.</p></article><article class="card"><h3><a href="landingpage-kiel-interim-manager.html">Interim Manager in Kiel</a></h3><p>Für Interimsmanagement im maritimen, mittelständischen und projektgetriebenen Umfeld Schleswig-Holsteins.</p></article><article class="card"><h3><a href="landingpage-luebeck-interim-manager.html">Interim Manager in Lübeck</a></h3><p>Für Führung auf Zeit in Logistik, Handel, Gesundheitswirtschaft und hanseatischem Mittelstand.</p></article><article class="card"><h3><a href="landingpage-magdeburg-interim-manager.html">Interim Manager in Magdeburg</a></h3><p>Für Übergangsmanagement in Industrie, Energie, Infrastruktur und wachstumsnahen Organisationen.</p></article><article class="card"><h3><a href="landingpage-krefeld-interim-manager.html">Interim Manager in Krefeld</a></h3><p>Für Verantwortung auf Zeit in Industrie, Mittelstand und niederrheinischen Transformationskontexten.</p></article><article class="card"><h3><a href="landingpage-leverkusen-interim-manager.html">Interim Manager in Leverkusen</a></h3><p>Für Führung auf Zeit im industriegeprägten B2B-Umfeld zwischen Chemie, Organisation und Wandel.</p></article></div></div></section>'''
+if 'Interim-Management-Cluster: erste DE-Batch' not in text:
+    insert_after = '<section class="section"><div class="card"><h2>Beispiele für B2B-Beratungsnischen</h2>'
+    idx = text.find(insert_after)
+    if idx != -1:
+        # insert after the full existing section closing tag
+        end_idx = text.find('</section>', idx)
+        end_idx = text.find('</section>', end_idx + 10)
+    # fallback: prepend before Hochschul section
+    marker = '<section class="section"><div class="card"><h2>Hochschul- &amp; Universitäts-Landingpages</h2>'
+    text = text.replace(marker, section + marker)
+landingpages.write_text(text)
+
+sitemap = ROOT / 'sitemap.xml'
+text = sitemap.read_text()
+entries = ['landingpage-interim-manager.html'] + [f"landingpage-{c['slug']}-interim-manager.html" for c in cities]
+for page in entries:
+    url = f'https://bertlclaw.at/{page}'
+    if url not in text:
+        text = text.replace('</urlset>', f'  <url>\n    <loc>{url}</loc>\n    <lastmod>{DATE}</lastmod>\n  </url>\n</urlset>')
+sitemap.write_text(text)
+
+print('generated', len(entries), 'pages')
