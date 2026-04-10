@@ -44,6 +44,6 @@
 - [x] Create partnership outreach templates (`BERTLCLAW-PARTNERSHIP-OUTREACH.md`)
 - [x] LinkedIn-Profil-Text verfassen (`BERTLCLAW-LINKEDIN-PROFILE-TEXT.md`)
 - [x] LinkedIn-Banner Canva-Spec erstellt (`BERTLCLAW-LINKEDIN-BANNER-SPEC.md`)
-- [ ] Send first 5 warm outreach messages (WhatsApp / LinkedIn)
+- [ ] Send first 5 warm outreach messages (WhatsApp / LinkedIn) — use `BERTLCLAW-FIRST-5-WARM-OUTREACH-SPRINT-BOARD.md`
 - [ ] Identify 3–5 potential referral partners and reach out (use `BERTLCLAW-REFERRAL-PARTNER-TARGET-TRACKER.md`)
 - [ ] Book first discovery call
