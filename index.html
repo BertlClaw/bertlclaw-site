@@ -100,6 +100,16 @@
     .trust-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
     .trust-item{padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);color:var(--muted);line-height:1.6}
     .trust-item strong{display:block;color:var(--text);margin-bottom:6px}
+    .hero-fit-box{margin-top:18px;padding:18px;border-radius:22px;border:1px solid var(--line-strong);background:linear-gradient(180deg, rgba(18,26,47,.84), rgba(10,15,28,.76));box-shadow:var(--shadow)}
+    .hero-fit-box h3{margin-bottom:8px;font-size:1.02rem}
+    .hero-fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+    .hero-fit-card{padding:14px 16px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+    .hero-fit-card.good{border-color:rgba(143,243,206,.24);background:rgba(143,243,206,.07)}
+    .hero-fit-card.bad{border-color:rgba(124,156,255,.20);background:rgba(124,156,255,.05)}
+    .hero-fit-card strong{display:block;color:var(--text);margin-bottom:8px}
+    .hero-fit-card ul{margin:0;padding-left:18px;display:grid;gap:6px;color:var(--muted);line-height:1.65}
+    .hero-fit-note{margin-top:12px;color:var(--muted2);font-size:.92rem;line-height:1.7}
+    .hero-fit-note a{color:var(--text);text-decoration:underline;text-underline-offset:3px}
     .hero-side{display:grid;gap:16px;align-self:end}
     .glass{border-radius:22px;border:1px solid rgba(255,255,255,.10);background:rgba(10,16,30,.46);backdrop-filter:blur(10px);box-shadow:var(--shadow)}
     .brand-visual{padding:18px;display:grid;place-items:center}
@@ -211,7 +221,7 @@
     .cta-helper{margin-top:14px;color:var(--muted2);font-size:.94rem;line-height:1.7}
     .cta-helper a{color:var(--text);text-decoration:underline;text-underline-offset:3px}
     .footer{padding:38px 0 62px;text-align:center;color:var(--muted);font-size:.94rem}
-    @media (max-width:1080px){.hero-grid,.grid-2,.grid-3,.feature-strip,.usecase-grid,.proof-grid,.split-feature,.package-grid,.offer-grid,.contact-shell,.form-grid,.quick-start-grid,.process-grid,.proof-teaser-grid,.fit-chooser{grid-template-columns:1fr}.section-head,.proof-teaser-intro{display:block}.fit-preview{position:static;top:auto}}
+    @media (max-width:1080px){.hero-grid,.grid-2,.grid-3,.feature-strip,.usecase-grid,.proof-grid,.split-feature,.package-grid,.offer-grid,.contact-shell,.form-grid,.quick-start-grid,.process-grid,.proof-teaser-grid,.fit-chooser,.hero-fit-grid{grid-template-columns:1fr}.section-head,.proof-teaser-intro{display:block}.fit-preview{position:static;top:auto}}
     @media (max-width:860px){.nav-inner{align-items:flex-start}.nav-links{display:none}.nav-actions{gap:8px}.hero-grid{padding:24px;min-height:auto}.hero-card{min-height:auto}.hero-metrics,.trust-strip{grid-template-columns:1fr}.pill-row{display:none}h1{max-width:100%}.mobile-nav-row{display:flex;gap:10px;overflow:auto;padding:0 0 12px}.mobile-nav-row a{white-space:nowrap;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text);font-size:.92rem}}
     @media (max-width:640px){.nav{position:fixed;top:0;left:0;right:0;padding-top:env(safe-area-inset-top,0)}body{padding-top:118px}.nav-inner{display:grid;grid-template-columns:1fr;gap:12px}.nav-actions{justify-content:flex-start}.nav-actions .mini-btn:nth-child(2){display:none}.brand{min-width:0}.brand div:last-child{font-size:1rem}.mobile-nav-row{gap:8px;padding:0 0 10px}.mobile-nav-row a{font-size:.9rem;padding:9px 11px}.cta .btn{width:100%}.proof-teaser-shell{padding:18px}.mobile-contact-bar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom, 0px));z-index:9998;display:grid;grid-template-columns:1fr auto;gap:8px;padding:8px;border-radius:18px;border:1px solid rgba(124,156,255,.18);background:rgba(6,10,22,.90);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(0,0,0,.30)}.mobile-contact-bar a{min-height:48px;padding:10px 12px;border-radius:14px;font-weight:800;display:flex;align-items:center;justify-content:center;text-align:center}.mobile-contact-bar .btn{width:100%}.mobile-contact-bar .btn-secondary{width:auto;padding-inline:14px;font-weight:700;opacity:.88}}
   
@@ -431,6 +441,29 @@
             <a class="btn btn-secondary" href="#services">Leistungen ansehen</a>
           </div>
           <p style="margin:10px 0 0;color:var(--muted2);font-size:.9rem;">Antwort innerhalb 24–48 Stunden · Kein Sales-Druck</p>
+          <div class="hero-fit-box" aria-label="Schnelle Einordnung, ob BertlClaw gerade passt">
+            <h3>Passt das gerade überhaupt für dich?</h3>
+            <p style="margin:0;color:var(--muted);line-height:1.75;">Wahrscheinlich ja, wenn du nicht noch mehr Ideen brauchst, sondern eine Seite, ein Angebot oder ein digitales Thema endlich sauber auf die Straße bringen willst.</p>
+            <div class="hero-fit-grid">
+              <div class="hero-fit-card good">
+                <strong>Passt gut, wenn …</strong>
+                <ul>
+                  <li>du schon ein echtes Angebot hast, das online klarer verkauft werden soll</li>
+                  <li>deine Website Vertrauen aufbauen soll, bevor du alles im Gespräch erklären musst</li>
+                  <li>du einen pragmatischen nächsten Schritt willst statt Agenturprozess und Buzzword-Show</li>
+                </ul>
+              </div>
+              <div class="hero-fit-card bad">
+                <strong>Eher nicht, wenn …</strong>
+                <ul>
+                  <li>du nur "mal schauen" willst, aber noch keinen konkreten Engpass benennen kannst</li>
+                  <li>du eine große Full-Service-Agentur mit Kampagnen, Ads und zig Abstimmungsrunden suchst</li>
+                  <li>du eigentlich nur technische Umsetzung ohne Positionierung, Struktur oder Copy brauchst</li>
+                </ul>
+              </div>
+            </div>
+            <div class="hero-fit-note">Wenn du unsicher bist, reicht trotzdem eine kurze Nachricht mit 2–4 Sätzen. BertlClaw sagt dir offen, ob der Hebel gerade bei Landingpage, Texten, Struktur liegt — oder ob es nicht sinnvoll passt. <a href="#kontakt">Kurz anfragen</a></div>
+          </div>
           <div class="trust-strip" aria-label="Vertrauenssignale">
             <div class="trust-item"><strong>Realer Operator</strong> BertlClaw ist ein echtes Angebot von Dominic Reisenbichler – kein anonymer Lead-Funnel.</div>
             <div class="trust-item"><strong>Saubere Nachweise</strong> Echte Artefakte, freigegebene Ausschnitte und nachvollziehbare Änderungen statt Fantasie-Testimonials.</div>
