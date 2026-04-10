@@ -190,6 +190,15 @@
     /* CONTACT PROOF */
     .contact-proof{padding:16px 18px;border-radius:18px;border:1px solid rgba(124,156,255,.18);background:rgba(124,156,255,.06);color:#dfe8ff;line-height:1.72;margin-bottom:18px}
 
+    /* PRE-FLIGHT TRUST */
+    .trust-check-box{margin-top:22px;padding:24px;border-radius:24px;border:1px solid rgba(89,225,191,.18);background:linear-gradient(180deg, rgba(89,225,191,.06), rgba(124,156,255,.05));box-shadow:var(--shadow)}
+    .trust-check-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+    .trust-link-card{display:block;padding:14px 16px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.03);transition:.15s ease}
+    .trust-link-card:hover{transform:translateY(-1px);border-color:var(--line-strong);background:rgba(255,255,255,.05)}
+    .trust-link-card strong{display:block;margin-bottom:6px;color:var(--text);font-size:.95rem}
+    .trust-link-card span{display:block;color:var(--muted);font-size:.92rem;line-height:1.62}
+    .trust-check-note{margin-top:14px;color:var(--muted2);font-size:.92rem;line-height:1.7}
+
     /* FIT + PRICING CLARITY */
     .fit-box{padding:26px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(18,26,47,.82), rgba(10,15,28,.74));box-shadow:var(--shadow)}
     .fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
@@ -362,6 +371,31 @@
               <a class="btn btn-secondary" href="preise.html">Preise ansehen</a>
               <a class="btn btn-secondary" href="proof.html">Proof ansehen</a>
             </div>
+          </section>
+
+          <section class="trust-check-box" aria-labelledby="trust-check-heading">
+            <div class="micro-label">Vor einer Anfrage prüfen</div>
+            <strong id="trust-check-heading" style="display:block;color:var(--text);font-size:1.05rem;margin-bottom:4px;">Wenn du zuerst Belege sehen willst, prüf genau diese vier Punkte.</strong>
+            <p style="margin:0;color:var(--muted);line-height:1.72;">Nicht raten, ob es seriös ist — lieber kurz verifizieren, wie BertlClaw arbeitet, was sichtbar belegt ist und wer dahintersteht.</p>
+            <div class="trust-check-grid">
+              <a class="trust-link-card" href="proof.html">
+                <strong>Proof ansehen</strong>
+                <span>Beispiele, Referenzsignale und nachvollziehbare Arbeitsresultate statt leerer Behauptungen.</span>
+              </a>
+              <a class="trust-link-card" href="preise.html">
+                <strong>Preise ansehen</strong>
+                <span>Klare Einstiegspreise und Budgetrahmen, bevor du überhaupt eine Anfrage schreibst.</span>
+              </a>
+              <a class="trust-link-card" href="arbeitsweise.html">
+                <strong>Arbeitsweise ansehen</strong>
+                <span>Wie Projekte strukturiert starten, ablaufen und zu einem konkreten nächsten Schritt führen.</span>
+              </a>
+              <a class="trust-link-card" href="ueber-bertlclaw.html">
+                <strong>Wer antwortet?</strong>
+                <span>Direkt sehen, wer BertlClaw betreibt und warum du nicht in einem anonymen Agenturprozess landest.</span>
+              </a>
+            </div>
+            <div class="trust-check-note">Wenn diese vier Punkte für dich stimmig sind, reicht danach meist eine kurze Nachricht. Mehr musst du für einen sinnvollen ersten Kontakt nicht vorbereiten.</div>
           </section>
 
           <!-- ALTERNATIVE CONTACT -->
