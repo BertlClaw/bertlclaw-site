@@ -3,7 +3,7 @@
 ---
 
 **BertlClaw · Dominic Reisenbichler, MSc.**
-dominic.reisenbichler@gmx.at · +43 678 1299919 · bertlclaw.at
+dominic-reisenbichler@gmx.at · +43 678 1299919 · bertlclaw.at
 
 ---
 
@@ -107,6 +107,6 @@ Ich freue mich darauf, loszulegen.
 
 **Dominic Reisenbichler, MSc.**
 BertlClaw
-dominic.reisenbichler@gmx.at
+dominic-reisenbichler@gmx.at
 +43 678 1299919
 bertlclaw.at

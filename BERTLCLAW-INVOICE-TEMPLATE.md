@@ -8,7 +8,7 @@ Goettelsberg 11a/6
 8160 Mortantsch
 Austria
 
-dominic.reisenbichler@gmx.at
+dominic-reisenbichler@gmx.at
 +43 678 1299919
 bertlclaw.at
 
